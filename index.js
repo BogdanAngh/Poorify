@@ -7,4 +7,6 @@ app.get('/', (req, res) => {
 
 const PORT = process.env.PORT || 5000; // process.env.PORT = environment var for production usage (Heroku); 5000 for dev usage
 
-app.listen(5000);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`App is running on port ${PORT}`)
+});
