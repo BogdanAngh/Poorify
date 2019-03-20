@@ -12,6 +12,35 @@ module.exports = (app) => {
     //after the user gives permission, it gets redirected to '/auth/google/callback' and passport handles the rest
     app.get(
         '/auth/google/callback',
-        passport.authenticate('google')
+        passport.authenticate('google'),
+        (req, res) => {
+            res.redirect('/api/current_user')
+        }
+    );
+    
+    // routes for logout
+    app.get('/api/logout', (req, res) => {
+        req.logout();
+        var s = `You have logged out successfully.`;
+        res.send(s);
+    });
+
+    app.get(
+        '/api/current_user',
+        (req, res) => {
+            if(req.user){
+                var s = ` Login successful, welcome ${req.user.name} ! `;
+            }else{
+                var s = `You are not logged in !`;
+            }
+            res.send(s);
+        }
+    );
+
+    app.get(
+        '/',
+        (req, res) => {
+            res.send('HOME PAGE')
+        }
     );
 }
