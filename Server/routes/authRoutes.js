@@ -29,7 +29,7 @@ module.exports = (app) => {
         '/api/current_user',
         (req, res) => {
             if(req.user){
-                var user = req.user;
+                var user = req.user.name;
             }else{
                 var user = {};
             }
