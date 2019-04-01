@@ -8,7 +8,7 @@ const serviceRoutes = require('./routes/serviceRoutes');
 const keys          = require('./config/keys');
 const cookieSession = require('cookie-session');
 const passport      = require('passport');
- 
+const cors          = require('cors') 
 
 require('./services/passport');
 
@@ -16,6 +16,8 @@ require('./services/passport');
 mongoose.connect(keys.mongoURI);
  
 const app = express();
+
+app.use(cors());
 
 app.set('json spaces', 2);
 
