@@ -7,10 +7,12 @@ class Dataset(data.Dataset):
     """
     Helper class for loading the dataset & getting the lyrics for each song
     """
-    def __init__(self, path):
+    def __init__(self, path, result_path):
         self.path = path
+        self.result_path = result_path
         self.lyrics_threeshold = 4
         self.read_dataset()
+
 
     def __len__(self):
         return self.dataset.shape[0]
@@ -43,6 +45,8 @@ class Dataset(data.Dataset):
             has_failed = True
             try:
                 lyrics = lyricwikia.get_lyrics(data['artist_name'], data['track_name']).split('\n')
+                lyrics.remove('')
+
                 #get each line with its frequency
                 lyrics, counts = np.unique(lyrics, return_counts=True)
 
@@ -57,5 +61,10 @@ class Dataset(data.Dataset):
                 has_failed = False
 
             print('{}. {} - {} : {}'.format(idx, artist, track, self.api_result(has_failed)))
+            
+            if idx == 10:
+                break
+
+        self.dataset.to_csv(self.result_path, index=False)
 
         print('{} samples failed to import'.format(fails))
