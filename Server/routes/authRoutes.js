@@ -29,11 +29,11 @@ module.exports = (app) => {
         '/api/current_user',
         (req, res) => {
             if(req.user){
-                var s = ` Login successful, welcome ${req.user.name} ! `;
+                var user = req.user.name;
             }else{
-                var s = `You are not logged in !`;
+                var user = {};
             }
-            res.send(s);
+            res.send(user);
         }
     );
 
