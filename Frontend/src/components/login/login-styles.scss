@@ -1,0 +1,33 @@
+@import "../../assets/styles/colors";
+
+.login {
+    text-align: center;
+
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+
+        &:hover {
+            background-color: rgb(70, 70, 70);
+
+        }
+    }
+
+    .login-container {
+        height: 400px;
+        width: 400px;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+
+        a {
+            position: relative;
+            top: 200px;
+        }
+    }
+}
