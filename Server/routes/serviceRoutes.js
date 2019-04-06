@@ -68,9 +68,9 @@ module.exports = (app) => {
             .catch(err => {
                 res.send(err);
             })
-        })
+    })
             
-    });
+    
 
     app.get('/api/songDetails', (req,res) => {
         let id = hash.MD5({name: req.query.name, artist: req.query.artist, album: req.query.album})
