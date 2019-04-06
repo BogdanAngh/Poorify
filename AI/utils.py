@@ -1,9 +1,12 @@
 import lyricwikia
+import re
+import json
 import pandas as pd
 import numpy as np
 import torch
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils import data
+from attrdict import AttrDict
 
 #in-house libraries
 from dataset import MyDataset
@@ -102,3 +105,16 @@ def load_data(path, CONFIG=None):
                                               num_workers=CONFIG['num_workers'])
 
     return data_loader
+
+def load_config(config_path):
+
+    config = AttrDict()
+    with open(config_path, "r") as f:
+        input_str = f.read()
+
+    input_str = re.sub(r'\\\n', '', input_str)
+    input_str = re.sub(r'//.*\n', '\n', input_str)
+    data = json.loads(input_str)
+    config.update(data)
+
+    return config
