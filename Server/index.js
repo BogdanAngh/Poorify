@@ -1,5 +1,7 @@
-require('./models/User');
-require('./models/Song');
+require('./models/Playlist')
+require('./models/Song')
+require('./models/User')
+
 
 const express       = require('express');
 const mongoose      = require('mongoose');
@@ -17,7 +19,11 @@ mongoose.connect(keys.mongoURI);
  
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    'origin': '*',
+    'methods': 'GET, HEAD, PUT, PATCH, POST, DELETE',
+    'preflightContinue': false
+}));
 
 app.set('json spaces', 2);
 
