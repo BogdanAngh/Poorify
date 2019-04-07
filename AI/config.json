@@ -3,8 +3,11 @@
     "embedding_size" : 128,
     "epochs" : 10,
     "batch_size" : 32,
-    "enable_log" : true,
+    "enable_log" : true, 
     "max_len" : 10,
     "shuffle" : true,
-    "num_workers" : 4
+    "num_workers" : 4,
+    "optimizer" : "adam",
+    "loss" : "mse",
+    "use_cuda" : false
 }
