@@ -1,9 +1,14 @@
 import lyricwikia
 import re
+import os
+import errno
 import json
+import datetime
 import pandas as pd
 import numpy as np
 import torch
+
+from shutil import copyfile
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils import data
 from attrdict import AttrDict
@@ -118,3 +123,29 @@ def load_config(config_path):
     config.update(data)
 
     return config
+
+def save_model(model=None):
+
+    log_path = 'log/'
+
+    try:
+        #create the log directory
+        os.mkdir(log_path)
+    except FileExistsError:
+        pass
+
+    try:
+        now = datetime.datetime.now()
+        #create an unique directory name
+        log_path += str(now)
+
+        #create the directory which holds the model
+        os.mkdir(log_path)  
+    except FileExistsError:
+        pass
+
+    #save the model in the created directory
+    torch.save(model.state_dict(), log_path)
+
+    #copy the used config
+    copyfile('config.json', log_path + '/config.json')
