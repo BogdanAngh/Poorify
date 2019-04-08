@@ -11,6 +11,7 @@ const keys          = require('./config/keys');
 const cookieSession = require('cookie-session');
 const passport      = require('passport');
 const cors          = require('cors') 
+const bodyParser    = require('body-parser');
 
 require('./services/passport');
 
@@ -18,6 +19,9 @@ require('./services/passport');
 mongoose.connect(keys.mongoURI);
  
 const app = express();
+
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 
 app.use(cors({
     'origin': '*',
