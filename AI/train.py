@@ -1,10 +1,11 @@
 import torch
 import logging
-
+from tqdm import tqdm
+import time
 #in-house imports
 from models.model import MyModel
 from models.trainer import Trainer
-from utils import load_config, load_data, load_logging
+from utils import load_config, load_data, load_logging, save_model
 import constants
 
 def main():
@@ -35,6 +36,12 @@ def main():
                       lr=CONFIG['learning_rate'], loss=CONFIG['loss'], optim=CONFIG['optimizer'],
                       train_verbose=CONFIG['train_verbose'], val_verbose=CONFIG['validation_verbose'])
     
+    #TODO
+    #trainer.train
+
+    if CONFIG['save_model'] == True:
+        save_model(model)
+
 if __name__ == "__main__":
     try:
         main()

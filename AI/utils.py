@@ -151,7 +151,7 @@ def load_logging():
 
     #change the logging format
     logger = logging.getLogger()
-    logging.basicConfig(format="[%(asctime)s | %(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s", 
+    logging.basicConfig(format="[%(asctime)s | %(levelname)s %(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s", 
                         filename='app.log', filemode='a', datefmt='%d-%b-%y %H:%M:%S')
 
     #log any kind of information
@@ -159,14 +159,16 @@ def load_logging():
 
     logging.info('Logger loaded')
 
-def save_model(model=None):
+def save_model(model):
 
     log_path = 'log/'
 
     try:
+        logging.info('Creating log directory {}'.format(log_path))
         #create the log directory
         os.mkdir(log_path)
     except FileExistsError:
+        logging.warning('Log directory already exists!')
         pass
 
     try:
@@ -175,12 +177,16 @@ def save_model(model=None):
         log_path += str(now)
 
         #create the directory which holds the model
+        logging.info('Creating model s directory {}'.format(log_path))
         os.mkdir(log_path)  
     except FileExistsError:
+        logging.warning('Model s directory already exists!')
         pass
 
     #save the model in the created directory
-    torch.save(model.state_dict(), log_path)
+    logging.info('Saving the model at {}'.format(log_path + '/my_model.pth'))
+    torch.save(model.state_dict(), log_path + '/my_model.pth')
 
     #copy the used config
+    logging.info('Saving the model s config at {}'.format(log_path + '/config.json'))
     copyfile('config.json', log_path + '/config.json')

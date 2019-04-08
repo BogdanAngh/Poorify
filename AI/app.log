@@ -1,26 +1,18 @@
-[08-Apr-19 17:03:40 | utils.py:160 -         load_logging() ] Logger loaded
-[08-Apr-19 17:03:40 | utils.py:146 -          load_config() ] Config loaded!
-[08-Apr-19 17:03:41 | utils.py:91 -            load_data() ] Loaded 10 samples
-[08-Apr-19 17:03:41 | utils.py:104 -            load_data() ] Vocab size : 47
-[08-Apr-19 17:03:41 | utils.py:121 -            load_data() ] Created training data loader having 8 samples and 1 batches of size 32
-[08-Apr-19 17:03:41 | utils.py:131 -            load_data() ] Created validation data loader having 2 samples and 1 batches of size 32
-[08-Apr-19 17:03:41 | model.py:16 -             __init__() ] Embedding layer created : Embedding(47, 128)
-[08-Apr-19 17:03:41 | model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
-[08-Apr-19 17:03:41 | model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
-[08-Apr-19 17:03:41 | model.py:28 -             __init__() ] MyModel created!
-[08-Apr-19 17:03:41 | trainer.py:35 -             __init__() ] Trainer created!
-[08-Apr-19 17:03:41 | train.py:41 -             <module>() ] Training ended!
-
-[08-Apr-19 17:03:46 | utils.py:160 -         load_logging() ] Logger loaded
-[08-Apr-19 17:03:46 | utils.py:146 -          load_config() ] Config loaded!
-[08-Apr-19 17:03:46 | utils.py:91 -            load_data() ] Loaded 10 samples
-[08-Apr-19 17:03:46 | utils.py:104 -            load_data() ] Vocab size : 47
-[08-Apr-19 17:03:46 | utils.py:121 -            load_data() ] Created training data loader having 8 samples and 1 batches of size 32
-[08-Apr-19 17:03:46 | utils.py:131 -            load_data() ] Created validation data loader having 2 samples and 1 batches of size 32
-[08-Apr-19 17:03:46 | model.py:16 -             __init__() ] Embedding layer created : Embedding(47, 128)
-[08-Apr-19 17:03:46 | model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
-[08-Apr-19 17:03:46 | model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
-[08-Apr-19 17:03:46 | model.py:28 -             __init__() ] MyModel created!
-[08-Apr-19 17:03:46 | trainer.py:35 -             __init__() ] Trainer created!
-[08-Apr-19 17:03:46 | train.py:41 -             <module>() ] Training ended!
+[08-Apr-19 17:27:04 | INFO utils.py:160 -         load_logging() ] Logger loaded
+[08-Apr-19 17:27:04 | INFO utils.py:146 -          load_config() ] Config loaded!
+[08-Apr-19 17:27:04 | INFO utils.py:91 -            load_data() ] Loaded 10 samples
+[08-Apr-19 17:27:04 | INFO utils.py:104 -            load_data() ] Vocab size : 47
+[08-Apr-19 17:27:04 | INFO utils.py:121 -            load_data() ] Created training data loader having 8 samples and 1 batches of size 32
+[08-Apr-19 17:27:04 | INFO utils.py:131 -            load_data() ] Created validation data loader having 2 samples and 1 batches of size 32
+[08-Apr-19 17:27:04 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(47, 128)
+[08-Apr-19 17:27:04 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 17:27:04 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 17:27:04 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 17:27:04 | INFO trainer.py:35 -             __init__() ] Trainer created!
+[08-Apr-19 17:27:04 | INFO utils.py:167 -           save_model() ] Creating log directory log/
+[08-Apr-19 17:27:04 | WARNING utils.py:171 -           save_model() ] Log directory already exists!
+[08-Apr-19 17:27:04 | INFO utils.py:180 -           save_model() ] Creating model s directory log/2019-04-08 17:27:04.415330
+[08-Apr-19 17:27:04 | INFO utils.py:187 -           save_model() ] Saving the model at log/2019-04-08 17:27:04.415330/my_model.pth
+[08-Apr-19 17:27:04 | INFO utils.py:191 -           save_model() ] Saving the model s config at log/2019-04-08 17:27:04.415330/config.json
+[08-Apr-19 17:27:04 | INFO train.py:48 -             <module>() ] Training ended!
 
