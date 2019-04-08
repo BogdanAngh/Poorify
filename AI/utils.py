@@ -26,7 +26,7 @@ def api_result(status):
     return 'Fail'
 
 def get_lyrics(initial_path, result_path):
-
+    
     dataset = pd.read_csv(initial_path)
     dataset['lyrics'] = '-'
     lyrics_threeshold = 4
@@ -55,9 +55,6 @@ def get_lyrics(initial_path, result_path):
             has_failed = False
 
         print('{}. {} - {} : {}'.format(idx, artist, track, api_result(has_failed)))
-        
-        if idx == 10:
-            break
 
     dataset.to_csv(result_path, index=False)
 
@@ -93,8 +90,8 @@ def load_data(path, CONFIG=None):
     #transform the dataframe into (sample, label) pairs
     #for the moment samples is a numpy array
     samples = data['lyrics'].values
-    valence = torch.tensor(data['valence'].values).to(constants.DEVICE)
-    arousal = torch.tensor(data['arousal'].values).to(constants.DEVICE)
+    valence = torch.tensor(data['valence'].values, dtype=torch.float32).to(constants.DEVICE)
+    arousal = torch.tensor(data['arousal'].values, dtype=torch.float32).to(constants.DEVICE)
 
     #build the labels tensor : (valence, arousal) x input_size
     labels = torch.t(torch.stack((valence, arousal), 0)).view(-1, 2).to(constants.DEVICE)
