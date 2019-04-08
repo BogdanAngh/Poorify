@@ -1,5 +1,6 @@
 import torch.nn as nn
 from torch.optim import Adam, SGD
+import logging
 
 #in-house imports
 from models.model import MyModel
@@ -30,6 +31,8 @@ class Trainer():
 
         if loss == 'mse':
             loss_fn = nn.MSELoss()
+
+        logging.info('Trainer created!')
 
     def train_epoch(self, epoch):
             

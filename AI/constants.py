@@ -1,5 +1,7 @@
 ROOT_PATH = ''
 CONFIG_PATH = ROOT_PATH + 'config.json'
-DATASET_PATH = ROOT_PATH + 'dataset/dataset.csv'
+DATASET_DIRECTORY_PATH = ROOT_PATH + 'dataset/'
+DATASET_PATH = DATASET_DIRECTORY_PATH + 'dataset.csv'
 USE_CUDA = True
+ENABLE_LOGGING = True
 DEVICE = 'cpu'

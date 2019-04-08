@@ -6,6 +6,7 @@ import json
 import datetime
 import pandas as pd
 import numpy as np
+import logging
 import torch
 
 from shutil import copyfile
@@ -87,7 +88,7 @@ def load_data(path, CONFIG=None):
     #delete samples without lyrics
     data = data[data['lyrics'] != '-']
 
-    print('Loaded {} samples'.format(data.shape[0]))
+    logging.info('Loaded {} samples'.format(data.shape[0]))
 
     #transform the dataframe into (sample, label) pairs
     #for the moment samples is a numpy array
@@ -100,7 +101,7 @@ def load_data(path, CONFIG=None):
 
     #build the vocabulary
     vocab = Vocabulary(''.join(str(e) for e in samples))
-    print('Vocab size : ', vocab.size())
+    logging.info('Vocab size : {}'.format(vocab.size()))
 
     #transform the samples into tensors and pad them to the maximum length
     samples = pad_sequence([text_to_tensor(e, vocab) for e in samples], batch_first=True).to(constants.DEVICE)
@@ -116,7 +117,7 @@ def load_data(path, CONFIG=None):
                                               shuffle=CONFIG['shuffle'], 
                                               num_workers=CONFIG['num_workers'])
 
-    print('Created training data loader having {} samples and {} batches of size {}'.format(
+    logging.info('Created training data loader having {} samples and {} batches of size {}'.format(
         train_size, len(train_data_loader), CONFIG['batch_size']))
 
     #build the validation data loader
@@ -126,7 +127,7 @@ def load_data(path, CONFIG=None):
                                               shuffle=CONFIG['shuffle'], 
                                               num_workers=CONFIG['num_workers'])
 
-    print('Created validation data loader having {} samples and {} batches of size {}'.format(
+    logging.info('Created validation data loader having {} samples and {} batches of size {}'.format(
         samples.shape[0] - train_size, len(validation_data_loader), CONFIG['batch_size']))
 
     return vocab, train_data_loader, validation_data_loader
@@ -142,7 +143,21 @@ def load_config(config_path):
     data = json.loads(input_str)
     config.update(data)
 
+    logging.info('Config loaded!')
+
     return config
+
+def load_logging():
+
+    #change the logging format
+    logger = logging.getLogger()
+    logging.basicConfig(format="[%(asctime)s | %(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s", 
+                        filename='app.log', filemode='a', datefmt='%d-%b-%y %H:%M:%S')
+
+    #log any kind of information
+    logger.setLevel(logging.DEBUG)
+
+    logging.info('Logger loaded')
 
 def save_model(model=None):
 
