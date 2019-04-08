@@ -35,6 +35,7 @@ router.post('/createPlaylist', (req, res) => {
                 let playlistName = req.query.playlistName;
                 var playlists = user.playlists;
 
+//Can use / make a method findByName because the for loop is used in many places and this would make the code cleaner
                 for(let i = 0; i < playlists.length; i++){
                     if(playlistName == playlists[i].name){
                         duplicate = true;
