@@ -16,6 +16,7 @@ from attrdict import AttrDict
 #in-house libraries
 from dataset import MyDataset
 from vocabulary import Vocabulary
+import constants
 
 def api_result(status):
     if status == True:
@@ -86,30 +87,49 @@ def load_data(path, CONFIG=None):
     #delete samples without lyrics
     data = data[data['lyrics'] != '-']
 
-    #transform the dataframe into (samples, labels) pair
-    #for the moment the samples is a numpy array
+    print('Loaded {} samples'.format(data.shape[0]))
+
+    #transform the dataframe into (sample, label) pairs
+    #for the moment samples is a numpy array
     samples = data['lyrics'].values
-    valence = torch.tensor(data['valence'].values)
-    arousal = torch.tensor(data['arousal'].values)
+    valence = torch.tensor(data['valence'].values).to(constants.DEVICE)
+    arousal = torch.tensor(data['arousal'].values).to(constants.DEVICE)
 
     #build the labels tensor : (valence, arousal) x input_size
-    labels = torch.t(torch.stack((valence, arousal), 0)).view(-1, 2)
+    labels = torch.t(torch.stack((valence, arousal), 0)).view(-1, 2).to(constants.DEVICE)
 
     #build the vocabulary
     vocab = Vocabulary(''.join(str(e) for e in samples))
     print('Vocab size : ', vocab.size())
 
     #transform the samples into tensors and pad them to the maximum length
-    samples = pad_sequence([text_to_tensor(e, vocab) for e in samples], batch_first=True)
+    samples = pad_sequence([text_to_tensor(e, vocab) for e in samples], batch_first=True).to(constants.DEVICE)
 
-    my_dataset = MyDataset(samples, labels)
-    #TODO : use CONFIG data
-    data_loader = torch.utils.data.DataLoader(my_dataset, 
+    train_size = int(samples.shape[0] * CONFIG['train_val_cutoff'])
+    train_samples, validation_samples = samples[:train_size], samples[train_size:]
+    train_labels, validation_labels = labels[:train_size], labels[train_size:]
+
+    #build the training data loader
+    train_dataset = MyDataset(train_samples, train_labels)
+    train_data_loader = torch.utils.data.DataLoader(train_dataset, 
                                               batch_size=CONFIG['batch_size'], 
                                               shuffle=CONFIG['shuffle'], 
                                               num_workers=CONFIG['num_workers'])
 
-    return data_loader
+    print('Created training data loader having {} samples and {} batches of size {}'.format(
+        train_size, len(train_data_loader), CONFIG['batch_size']))
+
+    #build the validation data loader
+    validation_dataset = MyDataset(train_samples, train_labels)
+    validation_data_loader = torch.utils.data.DataLoader(validation_dataset, 
+                                              batch_size=CONFIG['batch_size'], 
+                                              shuffle=CONFIG['shuffle'], 
+                                              num_workers=CONFIG['num_workers'])
+
+    print('Created validation data loader having {} samples and {} batches of size {}'.format(
+        samples.shape[0] - train_size, len(validation_data_loader), CONFIG['batch_size']))
+
+    return vocab, train_data_loader, validation_data_loader
 
 def load_config(config_path):
 

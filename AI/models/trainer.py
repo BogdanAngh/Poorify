@@ -1,14 +1,14 @@
 import torch.nn as nn
-import torch.optim import Adam, SGD
+from torch.optim import Adam, SGD
 
 #in-house imports
-from model import MyModel
+from models.model import MyModel
 
 class Trainer():
-    def __init__(self, model, epochs=10, batch_size=32, 
+    def __init__(self, model, vocab, train_generator, 
+                 val_generator, epochs=10, batch_size=32, 
                  max_grad_norm=5.0, lr=0.001, loss = 'mse',
-                 optim='adam', train_verbose=10, val_verbose=10,
-                 vocab, train_generator, val_generator):
+                 optim='adam', train_verbose=10, val_verbose=10):
         
         self.model = model
         self.epochs = epochs
@@ -64,7 +64,7 @@ class Trainer():
         
         return epoch_loss / self.train_generator_size
         
-    def val_epoch(self, hidden_start=None, epoch):
+    def val_epoch(self, epoch, hidden_start=None):
         
         #validation epoch won't do any updates
         with torch.no_grad():
@@ -93,7 +93,7 @@ class Trainer():
         hidden_start = torch.zeros(self.batch_size, self.model.rnn_size)
         for e in range(self.epochs):
             t_loss = self.train_epoch(e)
-            v_loss = self.val_epoch(e)
+            v_loss = self.val_epoch(e, hidden_start)
 
             #keep the losses from each epoch
             train_loss.append(t_loss)

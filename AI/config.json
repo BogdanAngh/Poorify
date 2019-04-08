@@ -1,8 +1,11 @@
 {
     "learning_rate" : 0.01,
     "embedding_size" : 128,
+    "rnn_size" : 128,
+    "output_size" : 2,
     "epochs" : 10,
     "batch_size" : 32,
+    "train_val_cutoff" : 0.8,
     "enable_log" : true, 
     "max_len" : 10,
     "shuffle" : true,
