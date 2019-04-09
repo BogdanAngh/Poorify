@@ -23,7 +23,7 @@ class MyModel(nn.Module):
                                 out_features = self.output_size)
         logging.info('Linear layer created : {}'.format(self.logits))
 
-        self.logits_activation = nn.ReLU()
+        self.logits_activation = nn.tanh()
 
         logging.info('MyModel created!')
 
