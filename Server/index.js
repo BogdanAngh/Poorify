@@ -1,5 +1,7 @@
-require('./models/User');
-require('./models/Song');
+require('./models/Playlist')
+require('./models/Song')
+require('./models/User')
+
 
 const express       = require('express');
 const mongoose      = require('mongoose');
@@ -9,6 +11,7 @@ const keys          = require('./config/keys');
 const cookieSession = require('cookie-session');
 const passport      = require('passport');
 const cors          = require('cors') 
+const bodyParser    = require('body-parser');
 
 require('./services/passport');
 
@@ -17,7 +20,14 @@ mongoose.connect(keys.mongoURI);
  
 const app = express();
 
-app.use(cors());
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
+
+app.use(cors({
+    'origin': '*',
+    'methods': 'GET, HEAD, PUT, PATCH, POST, DELETE',
+    'preflightContinue': false
+}));
 
 app.set('json spaces', 2);
 
