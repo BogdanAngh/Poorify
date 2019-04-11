@@ -9,7 +9,7 @@ const hash = require('object-hash');
 
  // POST: adds a song to the database
  // PARAMS: name, artist, album, genre, url
- router.post('/songCreate', (req, res) => {
+ router.post('/createSong', (req, res) => {
     let songName    = req.query.name,
         songArtist  = req.query.artist,
         songAlbum   = req.query.album,
