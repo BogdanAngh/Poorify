@@ -1,0 +1,14 @@
+html,
+body {
+    height: 100%;
+}
+
+*[ui-view] {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    //padding-left: 0;
+    width: 75%;
+    margin: auto;
+    height: 100%;
+}

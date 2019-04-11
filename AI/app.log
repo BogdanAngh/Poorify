@@ -1,0 +1,141 @@
+[08-Apr-19 20:19:05 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:19:05 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:19:05 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:19:05 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:19:05 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:19:05 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:19:05 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:19:05 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:19:05 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:19:05 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:19:05 | INFO trainer.py:38 -             __init__() ] Trainer created!
+[08-Apr-19 20:19:05 | INFO trainer.py:95 -                train() ] Starting the training...
+[08-Apr-19 20:19:35 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:19:35 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:19:35 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:19:35 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:19:35 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:19:35 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:19:35 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:19:35 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:19:35 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:19:35 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:19:35 | INFO trainer.py:38 -             __init__() ] Trainer created!
+[08-Apr-19 20:19:35 | INFO trainer.py:95 -                train() ] Starting the training...
+[08-Apr-19 20:19:59 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:19:59 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:19:59 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:19:59 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:19:59 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:19:59 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:19:59 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:19:59 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:19:59 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:19:59 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:19:59 | INFO trainer.py:38 -             __init__() ] Trainer created!
+[08-Apr-19 20:19:59 | INFO trainer.py:95 -                train() ] Starting the training...
+[08-Apr-19 20:21:01 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:21:01 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:21:01 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:21:01 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:21:01 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:21:01 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:21:01 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:21:01 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:21:01 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:21:01 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:21:01 | INFO trainer.py:38 -             __init__() ] Trainer created!
+[08-Apr-19 20:21:01 | INFO trainer.py:95 -                train() ] Starting the training...
+[08-Apr-19 20:21:42 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:21:42 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:21:42 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:21:42 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:21:42 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:21:42 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:21:42 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:21:42 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:21:42 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:21:42 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:21:42 | INFO trainer.py:38 -             __init__() ] Trainer created!
+[08-Apr-19 20:21:42 | INFO trainer.py:95 -                train() ] Starting the training...
+[08-Apr-19 20:22:11 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:22:11 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:22:11 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:22:11 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:22:11 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:22:11 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:22:11 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:22:11 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:22:11 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:22:11 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:22:19 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:22:19 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:22:19 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:22:19 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:22:19 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:22:19 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:22:19 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:22:19 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:22:19 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:22:19 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:22:19 | INFO trainer.py:41 -             __init__() ] Trainer created!
+[08-Apr-19 20:22:19 | INFO trainer.py:98 -                train() ] Starting the training...
+[08-Apr-19 20:22:45 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:22:45 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:22:45 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:22:45 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:22:45 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:22:45 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:22:45 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:22:45 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:22:45 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:22:45 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:22:45 | INFO trainer.py:41 -             __init__() ] Trainer created!
+[08-Apr-19 20:22:45 | INFO trainer.py:101 -                train() ] Starting the training...
+[08-Apr-19 20:24:02 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:24:02 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:24:02 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:24:02 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:24:02 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:24:02 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:24:02 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:24:02 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:24:02 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:24:02 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:24:02 | INFO trainer.py:41 -             __init__() ] Trainer created!
+[08-Apr-19 20:24:02 | INFO trainer.py:105 -                train() ] Starting the training...
+[08-Apr-19 20:24:16 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:24:16 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:24:16 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:24:16 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:24:16 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:24:16 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:24:16 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:24:16 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:24:16 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:24:16 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:24:16 | INFO trainer.py:41 -             __init__() ] Trainer created!
+[08-Apr-19 20:24:16 | INFO trainer.py:105 -                train() ] Starting the training...
+[08-Apr-19 20:24:21 | WARNING train.py:54 -             <module>() ] Keyboard interrupt!
+
+[08-Apr-19 20:25:00 | INFO utils.py:157 -         load_logging() ] Logger loaded
+[08-Apr-19 20:25:00 | INFO utils.py:143 -          load_config() ] Config loaded!
+[08-Apr-19 20:25:00 | INFO utils.py:88 -            load_data() ] Loaded 48 samples
+[08-Apr-19 20:25:00 | INFO utils.py:101 -            load_data() ] Vocab size : 58
+[08-Apr-19 20:25:00 | INFO utils.py:118 -            load_data() ] Created training data loader having 38 samples and 2 batches of size 32
+[08-Apr-19 20:25:00 | INFO utils.py:128 -            load_data() ] Created validation data loader having 10 samples and 2 batches of size 32
+[08-Apr-19 20:25:00 | INFO model.py:16 -             __init__() ] Embedding layer created : Embedding(59, 128)
+[08-Apr-19 20:25:00 | INFO model.py:20 -             __init__() ] Recurrent layer created : GRUCell(128, 128)
+[08-Apr-19 20:25:00 | INFO model.py:24 -             __init__() ] Linear layer created : Linear(in_features=128, out_features=2, bias=True)
+[08-Apr-19 20:25:00 | INFO model.py:28 -             __init__() ] MyModel created!
+[08-Apr-19 20:25:00 | INFO trainer.py:41 -             __init__() ] Trainer created!
+[08-Apr-19 20:25:00 | INFO trainer.py:105 -                train() ] Starting the training...
+[08-apr-19 20:25:06 | DEBUG _base.py:2515 - _update_title_position() ] update_title_pos
+[08-apr-19 20:25:07 | DEBUG font_manager.py:1254 -     _findfont_cached() ] findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/andrei/miniconda3/envs/test/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+[08-apr-19 20:25:23 | INFO utils.py:164 -           save_model() ] Creating log directory log/
+[08-apr-19 20:25:23 | WARNING utils.py:168 -           save_model() ] Log directory already exists!
+[08-apr-19 20:25:23 | INFO utils.py:177 -           save_model() ] Creating model s directory log/2019-04-08 20:25:23.227587
+[08-apr-19 20:25:23 | INFO utils.py:184 -           save_model() ] Saving the model at log/2019-04-08 20:25:23.227587/my_model.pth
+[08-apr-19 20:25:23 | INFO utils.py:188 -           save_model() ] Saving the model s config at log/2019-04-08 20:25:23.227587/config.json
+[08-apr-19 20:25:23 | INFO train.py:51 -             <module>() ] Training ended!
+

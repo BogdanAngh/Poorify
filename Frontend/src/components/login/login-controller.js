@@ -5,13 +5,13 @@ class LoginController {
         this.$http = $http;
     }
 
-    googleAuth() {
+    getUser() {
         console.log('ayyy')
         /* this.$http.get('https://secure-coast-35315.herokuapp.com/auth/google')
             .then(console.log) */
         this.$http({
             method: 'get',
-            url: 'https://secure-coast-35315.herokuapp.com/auth/google',
+            url: 'https://secure-coast-35315.herokuapp.com/api/current_user'
         });
     }
 

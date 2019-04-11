@@ -6,6 +6,7 @@ import json
 import datetime
 import pandas as pd
 import numpy as np
+import logging
 import torch
 
 from shutil import copyfile
@@ -25,7 +26,7 @@ def api_result(status):
     return 'Fail'
 
 def get_lyrics(initial_path, result_path):
-
+    
     dataset = pd.read_csv(initial_path)
     dataset['lyrics'] = '-'
     lyrics_threeshold = 4
@@ -54,9 +55,6 @@ def get_lyrics(initial_path, result_path):
             has_failed = False
 
         print('{}. {} - {} : {}'.format(idx, artist, track, api_result(has_failed)))
-        
-        if idx == 10:
-            break
 
     dataset.to_csv(result_path, index=False)
 
@@ -87,20 +85,20 @@ def load_data(path, CONFIG=None):
     #delete samples without lyrics
     data = data[data['lyrics'] != '-']
 
-    print('Loaded {} samples'.format(data.shape[0]))
+    logging.info('Loaded {} samples'.format(data.shape[0]))
 
     #transform the dataframe into (sample, label) pairs
     #for the moment samples is a numpy array
     samples = data['lyrics'].values
-    valence = torch.tensor(data['valence'].values).to(constants.DEVICE)
-    arousal = torch.tensor(data['arousal'].values).to(constants.DEVICE)
+    valence = torch.tensor(data['valence'].values, dtype=torch.float32).to(constants.DEVICE)
+    arousal = torch.tensor(data['arousal'].values, dtype=torch.float32).to(constants.DEVICE)
 
     #build the labels tensor : (valence, arousal) x input_size
     labels = torch.t(torch.stack((valence, arousal), 0)).view(-1, 2).to(constants.DEVICE)
 
     #build the vocabulary
     vocab = Vocabulary(''.join(str(e) for e in samples))
-    print('Vocab size : ', vocab.size())
+    logging.info('Vocab size : {}'.format(vocab.size()))
 
     #transform the samples into tensors and pad them to the maximum length
     samples = pad_sequence([text_to_tensor(e, vocab) for e in samples], batch_first=True).to(constants.DEVICE)
@@ -116,7 +114,7 @@ def load_data(path, CONFIG=None):
                                               shuffle=CONFIG['shuffle'], 
                                               num_workers=CONFIG['num_workers'])
 
-    print('Created training data loader having {} samples and {} batches of size {}'.format(
+    logging.info('Created training data loader having {} samples and {} batches of size {}'.format(
         train_size, len(train_data_loader), CONFIG['batch_size']))
 
     #build the validation data loader
@@ -126,7 +124,7 @@ def load_data(path, CONFIG=None):
                                               shuffle=CONFIG['shuffle'], 
                                               num_workers=CONFIG['num_workers'])
 
-    print('Created validation data loader having {} samples and {} batches of size {}'.format(
+    logging.info('Created validation data loader having {} samples and {} batches of size {}'.format(
         samples.shape[0] - train_size, len(validation_data_loader), CONFIG['batch_size']))
 
     return vocab, train_data_loader, validation_data_loader
@@ -142,16 +140,32 @@ def load_config(config_path):
     data = json.loads(input_str)
     config.update(data)
 
+    logging.info('Config loaded!')
+
     return config
 
-def save_model(model=None):
+def load_logging():
+
+    #change the logging format
+    logger = logging.getLogger()
+    logging.basicConfig(format="[%(asctime)s | %(levelname)s %(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s", 
+                        filename='app.log', filemode='a', datefmt='%d-%b-%y %H:%M:%S')
+
+    #log any kind of information
+    logger.setLevel(logging.DEBUG)
+
+    logging.info('Logger loaded')
+
+def save_model(model):
 
     log_path = 'log/'
 
     try:
+        logging.info('Creating log directory {}'.format(log_path))
         #create the log directory
         os.mkdir(log_path)
     except FileExistsError:
+        logging.warning('Log directory already exists!')
         pass
 
     try:
@@ -160,12 +174,16 @@ def save_model(model=None):
         log_path += str(now)
 
         #create the directory which holds the model
+        logging.info('Creating model s directory {}'.format(log_path))
         os.mkdir(log_path)  
     except FileExistsError:
+        logging.warning('Model s directory already exists!')
         pass
 
     #save the model in the created directory
-    torch.save(model.state_dict(), log_path)
+    logging.info('Saving the model at {}'.format(log_path + '/my_model.pth'))
+    torch.save(model.state_dict(), log_path + '/my_model.pth')
 
     #copy the used config
+    logging.info('Saving the model s config at {}'.format(log_path + '/config.json'))
     copyfile('config.json', log_path + '/config.json')

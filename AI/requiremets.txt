@@ -2,3 +2,5 @@ lyricwikia
 pandas
 numpy
 torch
+tqdm
+attrdict
