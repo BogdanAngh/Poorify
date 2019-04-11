@@ -1,46 +1,34 @@
 class SongsController {
-    constructor($http, uiGridConstants) {
+    constructor($http, uiGridConstants, BACKEND_URL) {
         this.$http = $http;
         this.uiGridConstants = uiGridConstants;
+        this.url = BACKEND_URL;
+
+        this.songs = [];
     }
 
     getSongs() {
-        this.$http.get('https://secure-coast-35315.herokuapp.com/api/songs')
+        return this.$http.get(this.url + 'api/songs/getSongs')
             .then(response => {
-                this.songs = response.data;
+                return response.data;
             });
     }
 
-    showSongs() {
-        console.log(this.songs);
-    }
-
     $onInit() {
-        // this.getSongs();
+/*         this.$http.get(this.url + 'api/current_user', {withCredentials: true}).then((response) => console.log(response.data ))*/
 
-        this.songs = [
-            {
-                name: "Song 13",
-                artist: "Trinity Force (feat. Teo)",
-                album: "Poverty"
-            },
-            {
-                name: "Nothing Else Sandman",
-                artist: "Megadeth",
-                album: "Raining Blood"
-            },
-            {
-                name: "Snowblind",
-                artist: "Black Sabbath",
-                album: "Vol. 4"
-            },
-            {
-                name: "Vara nu dorm",
-                artist: "Smiley",
-                album: "Delia"
-            }
-        ];
+        console.log(this);
 
+        this.getSongs().then((songs) => {
+            console.log(songs)
+            this.songs = songs.map(song => {
+
+                delete song._id;
+                delete song.songId;
+                delete song.__v;
+
+                return song;
+            })
         this.gridOptions = {
             data: this.songs,
             enableRowSelection: true,
@@ -68,10 +56,19 @@ class SongsController {
                 }
             ]
         }
+        }
+    )
+
+        /* s */
+
+        
     }
 }
 
 angular.module('poorify').component('songs', {
     controller: SongsController,
-    template: require('./songs-template.html')
+    template: require('./songs-template.html'),
+    bindings: {
+        user: '<'
+    }
 })

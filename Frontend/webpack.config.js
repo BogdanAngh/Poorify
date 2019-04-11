@@ -8,7 +8,12 @@ module.exports = {
         filename: "bundle.js"
     },
     devServer: {
-        contentBase: "./dist"
+        contentBase: "./dist",
+        historyApiFallback: true,
+        proxy: [{
+            context: ['/auth', '/api'],
+            target: 'http://localhost:5000'
+        }]
     },
     module: {
         rules: [

@@ -28,7 +28,7 @@ passport.use(
         User.findOne({ googleId: profile.id })
             .then((existingUser) => {
                 if(existingUser){ // user is present in DB
-                   done(null, existingUser); // tell passport that everything went fine (user exists)
+                done(null, existingUser); // tell passport that everything went fine (user exists)
                 }else{ // create a new record in DB
                     new User( 
                         { 

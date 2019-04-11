@@ -12,33 +12,51 @@ const cookieSession = require('cookie-session');
 const passport      = require('passport');
 const cors          = require('cors') 
 const bodyParser    = require('body-parser');
-
-require('./services/passport');
-
-
-mongoose.connect(keys.mongoURI);
- 
 const app = express();
+app.use(
+    cookieSession({
+        name: 'session',
+        maxAge: 30 * 24 * 60 * 60 * 1000, // cookie lasts for 30 days 
+        keys: [keys.cookieKey]
+    })  
+);
+
+// app.use(function(req, res, next) {  
+//     res.header('Access-Control-Allow-Origin', req.headers.origin);
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+// });
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+app.set('trust proxy', 1)
+
+
 
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 
 app.use(cors({
-    'origin': '*',
+    'origin': 'http://localhost:8080',
+    'credentials': true,
     'methods': 'GET, HEAD, PUT, PATCH, POST, DELETE',
     'preflightContinue': false
 }));
 
 app.set('json spaces', 2);
 
-app.use(
-    cookieSession({
-        maxAge: 30 * 24 * 60 * 60 * 1000, // cookie lasts for 30 days 
-        keys: [keys.cookieKey]
-    })  
-);
-app.use(passport.initialize());
-app.use(passport.session());
+
+
+
+
+require('./services/passport');
+
+
+mongoose.connect(keys.mongoURI);
+ 
+
 
 authRoutes(app);
 serviceRoutes(app);

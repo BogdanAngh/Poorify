@@ -14,7 +14,7 @@ module.exports = (app) => {
         '/auth/google/callback',
         passport.authenticate('google'),
         (req, res) => {
-            res.redirect('/')
+            res.redirect('/#!/songs')
         }
     );
     
@@ -28,14 +28,26 @@ module.exports = (app) => {
     app.get(
         '/api/current_user',
         (req, res) => {
-            if(req.user){
-                var user = req.user.name;
-            }else{
-                var user = {};
-            }
-            res.send(user);
-        }
-    );
+            // console.log(req)
+            res
+            .send(req.user);
+            // var headers = new Headers();
+            //     headers.append('Content-Type', 'application/json');
+            //     headers.append('Accept', 'application/json');
+
+            // return fetch('/your/server_endpoint', {
+            //     method: 'POST',
+            //     mode: 'same-origin',
+            //     redirect: 'follow',
+            //     credentials: 'include', // Don't forget to specify this if you need cookies
+            //     headers: headers,
+            //     body: JSON.stringify({
+            //         first_name: 'John',
+            //         last_name: 'Doe'
+            //     })
+})
+
+
 
     app.get(
         '/',

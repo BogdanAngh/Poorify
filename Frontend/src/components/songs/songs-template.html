@@ -1,5 +1,5 @@
 <div>
-    <h1>Songs</h1>
+    <h1>{{ $ctrl.user.name }}'s Songs</h1>
     <button class="btn btn-success play-button">PLAY</button>
-    <div ui-grid="$ctrl.gridOptions"></div>
+    <div ui-grid="{data: $ctrl.gridOptions.data }"></div>
 </div>
