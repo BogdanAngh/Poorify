@@ -7,12 +7,13 @@ from tqdm import tqdm
 #in-house imports
 from models.model import MyModel
 from visualizer import plot_loss
+from emotionClasification import Emotion, findEmotion
 
 class Trainer():
     def __init__(self, model, vocab, train_generator, 
                  val_generator, epochs=10, batch_size=32, 
                  max_grad_norm=5.0, lr=0.001, loss = 'mse',
-                 optim='adam', train_verbose=10, val_verbose=10):
+                 optim='adam', train_verbose=10, val_verbose=5):
         
         self.model = model
         self.epochs = epochs
@@ -46,7 +47,7 @@ class Trainer():
         #use a 0s tensor as starting hidden state
         prev_hidden = torch.zeros(self.batch_size, self.model.rnn_size)
         for idx, (sample, label) in enumerate(self.train_generator):
-            
+
             if sample.shape[0] < self.batch_size:
                 continue
 
@@ -71,8 +72,8 @@ class Trainer():
             hidden_state.detach_()
             prev_hidden = hidden_state
 
-            if idx % self.train_verbose:
-                print('Epoch {} - train loss : {}'.format(epoch, batch_loss.item()))
+            if idx % self.train_verbose == 0:
+                print('Epoch {} - batch {} / {} -  train loss : {}'.format(epoch, idx, self.train_generator_size, batch_loss.item()))
         
         return epoch_loss / self.train_generator_size
         
@@ -95,8 +96,16 @@ class Trainer():
 
                 prev_hidden = hidden_state
 
-                if idx % self.val_verbose:
-                    print('Epoch {} - validation loss : {}'.format(epoch, batch_loss.item()))
+                predicted_emotions = [findEmotion(l[0], l[1]) for l in logits]
+                label_emotions = [findEmotion(l[0], l[1]) for l in label]
+
+                #will result a vector of 0s and 1s(True/False)
+                #summing them will get us the number of correct answers
+                acc = torch.sum(torch.tensor([predict == label for predict, label in zip(predicted_emotions, label_emotions)]))
+
+                if idx % self.val_verbose == 0:
+                    print('Epoch {} - batch {} / {} - validation loss : {} - accuracy : {}'.format(epoch, idx, self.val_generator_size, \
+                                                                                                   batch_loss.item(), acc.item() / self.batch_size))
             
             return epoch_loss / self.val_generator_size
 

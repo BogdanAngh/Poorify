@@ -118,7 +118,7 @@ def load_data(path, CONFIG=None):
         train_size, len(train_data_loader), CONFIG['batch_size']))
 
     #build the validation data loader
-    validation_dataset = MyDataset(train_samples, train_labels)
+    validation_dataset = MyDataset(validation_samples, validation_labels)
     validation_data_loader = torch.utils.data.DataLoader(validation_dataset, 
                                               batch_size=CONFIG['batch_size'], 
                                               shuffle=CONFIG['shuffle'], 

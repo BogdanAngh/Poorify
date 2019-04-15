@@ -23,12 +23,13 @@ class MyModel(nn.Module):
                                 out_features = self.output_size)
         logging.info('Linear layer created : {}'.format(self.logits))
 
-        self.logits_activation = nn.tanh()
+        self.logits_activation = nn.Tanh()
 
         logging.info('MyModel created!')
 
+    #multiply the result by 2 so we get results in the range (-3, 3)
     def get_logits(self, hidden_states, temperature=1.0):
-        return self.logits_activation(self.logits(hidden_states) / temperature)
+        return self.logits_activation(self.logits(hidden_states) / temperature) * 3
     
     def forward(self, x, hidden_start=None):
 
