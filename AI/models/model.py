@@ -15,7 +15,7 @@ class MyModel(nn.Module):
                                       embedding_dim  = self.embedding_size)
         logging.info('Embedding layer created : {}'.format(self.embedding))
 
-        self.rnn = nn.GRUCell(input_size  = 127,
+        self.rnn = nn.GRUCell(input_size  = self.embedding_size,
                               hidden_size = self.rnn_size)
         logging.info('Recurrent layer created : {}'.format(self.rnn))
 

@@ -51,10 +51,6 @@ class Trainer():
         t = time.time()
         for idx, (sample, label) in enumerate(self.train_generator):
             
-            if idx == 25:
-                print(time.time() - t)
-                break
-
             if sample.shape[0] < self.batch_size:
                 continue
 
@@ -81,9 +77,6 @@ class Trainer():
             #use generated hidden state as the next input hidden states
             hidden_state.detach_()
             prev_hidden = hidden_state
-
-            if batch_loss.item() < 0.7:
-                break
 
             if idx % self.train_verbose == 0:
                 print('Epoch {} - batch {} / {} -  train loss : {}'.format(epoch, idx, self.train_generator_size, batch_loss.item()))
