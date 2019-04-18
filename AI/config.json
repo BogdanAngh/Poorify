@@ -9,12 +9,12 @@
     "max_grad_norm" : 5.0,
     "enable_log" : true, 
     "max_len" : 10,
-    "train_verbose" : 10,
+    "train_verbose" : 1,
     "validation_verbose" : 10,
     "shuffle" : true,
     "num_workers" : 4,
     "optimizer" : "adam",
     "loss" : "mse",
-    "use_cuda" : false,
+    "use_cuda" : true,
     "save_model" : true
 }

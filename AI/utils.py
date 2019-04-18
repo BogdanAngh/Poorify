@@ -90,18 +90,18 @@ def load_data(path, CONFIG=None):
     #transform the dataframe into (sample, label) pairs
     #for the moment samples is a numpy array
     samples = data['lyrics'].values
-    valence = torch.tensor(data['valence'].values, dtype=torch.float32).to(constants.DEVICE)
-    arousal = torch.tensor(data['arousal'].values, dtype=torch.float32).to(constants.DEVICE)
+    valence = torch.tensor(data['valence'].values, dtype=torch.float32)
+    arousal = torch.tensor(data['arousal'].values, dtype=torch.float32)
 
     #build the labels tensor : (valence, arousal) x input_size
-    labels = torch.t(torch.stack((valence, arousal), 0)).view(-1, 2).to(constants.DEVICE)
+    labels = torch.t(torch.stack((valence, arousal), 0)).view(-1, 2)
 
     #build the vocabulary
     vocab = Vocabulary(''.join(str(e) for e in samples))
     logging.info('Vocab size : {}'.format(vocab.size()))
 
     #transform the samples into tensors and pad them to the maximum length
-    samples = pad_sequence([text_to_tensor(e, vocab) for e in samples], batch_first=True).to(constants.DEVICE)
+    samples = pad_sequence([text_to_tensor(e, vocab) for e in samples], batch_first=True)
 
     train_size = int(samples.shape[0] * CONFIG['train_val_cutoff'])
     train_samples, validation_samples = samples[:train_size], samples[train_size:]

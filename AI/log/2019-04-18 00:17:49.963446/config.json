@@ -1,0 +1,20 @@
+{
+    "learning_rate" : 0.001,
+    "embedding_size" : 256,
+    "rnn_size" : 512,
+    "output_size" : 2,
+    "epochs" : 5,
+    "batch_size" : 64,
+    "train_val_cutoff" : 0.8,
+    "max_grad_norm" : 5.0,
+    "enable_log" : true, 
+    "max_len" : 10,
+    "train_verbose" : 1,
+    "validation_verbose" : 10,
+    "shuffle" : true,
+    "num_workers" : 4,
+    "optimizer" : "adam",
+    "loss" : "mse",
+    "use_cuda" : true,
+    "save_model" : true
+}

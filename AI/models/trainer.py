@@ -3,11 +3,13 @@ import torch
 from torch.optim import Adam, SGD
 import logging
 from tqdm import tqdm
+import time
 
 #in-house imports
 from models.model import MyModel
 from visualizer import plot_loss
 from emotionClasification import Emotion, findEmotion
+import constants
 
 class Trainer():
     def __init__(self, model, vocab, train_generator, 
@@ -45,11 +47,19 @@ class Trainer():
             
         epoch_loss = 0.0
         #use a 0s tensor as starting hidden state
-        prev_hidden = torch.zeros(self.batch_size, self.model.rnn_size)
+        prev_hidden = torch.zeros(self.batch_size, self.model.rnn_size).to(constants.DEVICE)
+        t = time.time()
         for idx, (sample, label) in enumerate(self.train_generator):
+            
+            if idx == 25:
+                print(time.time() - t)
+                break
 
             if sample.shape[0] < self.batch_size:
                 continue
+
+            sample = sample.to(constants.DEVICE)
+            label = label.to(constants.DEVICE)
 
             #reset the gradients
             self.optimizer.zero_grad()
@@ -72,6 +82,9 @@ class Trainer():
             hidden_state.detach_()
             prev_hidden = hidden_state
 
+            if batch_loss.item() < 0.7:
+                break
+
             if idx % self.train_verbose == 0:
                 print('Epoch {} - batch {} / {} -  train loss : {}'.format(epoch, idx, self.train_generator_size, batch_loss.item()))
         
@@ -82,12 +95,15 @@ class Trainer():
         #validation epoch won't do any updates
         with torch.no_grad():
             epoch_loss = 0.0
-            prev_hidden = torch.zeros(self.batch_size, self.model.rnn_size)
+            prev_hidden = torch.zeros(self.batch_size, self.model.rnn_size).to(constants.DEVICE)
 
             for idx, (sample, label) in enumerate(self.val_generator):
                 
                 if sample.shape[0] < self.batch_size:
                     continue
+
+                sample = sample.to(constants.DEVICE)
+                label = label.to(constants.DEVICE)
 
                 hidden_state = self.model(sample, prev_hidden)
                 logits = self.model.get_logits(hidden_state)

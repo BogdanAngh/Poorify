@@ -34,7 +34,8 @@ def main():
     #in the dictionary : 0 - padding character
     model = MyModel(vocab_size=vocab.size()+1, embedding_size=CONFIG['embedding_size'], 
                     rnn_size=CONFIG['rnn_size'], output_size=CONFIG['output_size'])
-    
+    model = model.to(constants.DEVICE)
+
     trainer = Trainer(model=model, vocab=vocab, train_generator=train_generator,
                       val_generator=validation_generator, epochs=CONFIG['epochs'],
                       batch_size=CONFIG['batch_size'], max_grad_norm=CONFIG['max_grad_norm'],
