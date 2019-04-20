@@ -3,6 +3,7 @@ import re
 import os
 import errno
 import json
+import string
 import datetime
 import pandas as pd
 import numpy as np
@@ -63,16 +64,32 @@ def get_lyrics(initial_path, result_path):
 def text_to_tensor(text, vocab):
     """
         Gets a text and converts it to a tensor of indexes found in the vocabulary
-        'Example' => [10, 15, 20, 2, 50, 45, 44]
+        'This is an example' => [10, 15, 20, 2]
     """ 
-    return torch.tensor([vocab.char_to_idx[e] for e in text])
+    return torch.tensor([vocab.word_to_idx[e] for e in text])
 
 def tensor_to_text(x, vocab):
     """
         Gets a tensor of indexes and returns the corresponding text using the map from the given vocabulary
-        [10, 15, 20, 2, 50, 45, 44] => 'Example'
+        [10, 15, 20, 2] => 'This is an example'
     """
-    return ''.join(vocab.idx_to_chr[e.item()] for e in x)
+    return ''.join(vocab.idx_to_word[e.item()] for e in x)
+
+def preprocess(word):
+    
+    #use only lower cases
+    word = word.lower()
+
+    #remove numbers
+    word = re.sub(r'\d+', '', word)
+    
+    #remove punctuation
+    word = word.translate(str.maketrans('', '', string.punctuation))
+
+    #remove unwanted white spaces
+    word = word.strip()
+
+    return word
 
 def load_data(path, CONFIG=None):
 
@@ -89,7 +106,7 @@ def load_data(path, CONFIG=None):
 
     #transform the dataframe into (sample, label) pairs
     #for the moment samples is a numpy array
-    samples = data['lyrics'].values
+    samples = [preprocess(e) for e in data['lyrics'].values]
     valence = torch.tensor(data['valence'].values, dtype=torch.float32)
     arousal = torch.tensor(data['arousal'].values, dtype=torch.float32)
 
@@ -97,11 +114,11 @@ def load_data(path, CONFIG=None):
     labels = torch.t(torch.stack((valence, arousal), 0)).view(-1, 2)
 
     #build the vocabulary
-    vocab = Vocabulary(''.join(str(e) for e in samples))
+    vocab = Vocabulary(' '.join(preprocess(e) for e in samples))
     logging.info('Vocab size : {}'.format(vocab.size()))
 
     #transform the samples into tensors and pad them to the maximum length
-    samples = pad_sequence([text_to_tensor(e, vocab) for e in samples], batch_first=True)
+    samples = pad_sequence([text_to_tensor(e.split(), vocab) for e in samples], batch_first=True)
 
     train_size = int(samples.shape[0] * CONFIG['train_val_cutoff'])
     train_samples, validation_samples = samples[:train_size], samples[train_size:]

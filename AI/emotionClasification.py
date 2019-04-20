@@ -2,6 +2,10 @@
 from enum import Enum
 import math
 
+emotion_map = {'PLEASED' : 1, 'HAPPY' : 2, 'EXCITED' : 3, 'ANNOYING' : 4, 'ANGRY' : 5,
+             'NERVOUS' : 6, 'SAD' : 7, 'BORED' : 8, 'SLEEPY' : 9,
+             'CALM' : 10, 'PACEFUL' : 11, 'RELAXED' : 12}
+
 class Emotion(Enum):
   PLEASED = 1
   HAPPY = 2

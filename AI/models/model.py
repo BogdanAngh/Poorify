@@ -2,48 +2,73 @@ import torch.nn as nn
 import torch
 import logging
 
+#in-house imports
+from layers.prenet import Prenet
+from layers.convolution import Convolution
+from layers.postnet import Postnet
+from layers.recurrence import Recurrence
+
 class MyModel(nn.Module):
-    def __init__(self, vocab_size, embedding_size, rnn_size, output_size):
+    def __init__(self, vocab_size, embedding_size, output_size,
+                 max_len, batch_size=64, out_channels=100, kernel_size=5, 
+                 hidden_size=256):
         super().__init__()
 
+        # EMBEDDING PARAMETERS
         self.vocab_size = vocab_size
         self.embedding_size = embedding_size
-        self.rnn_size = rnn_size
+
+        # CONVOLUTION PARAMETERS
+        self.kernel_size = kernel_size
+        self.max_len = max_len
+        self.out_channels = out_channels
+
+        # RECURRENCE PARAMETERS 
+        self.hidden_size = hidden_size
+        self.batch_size = batch_size
+
+        # POSTNET PARAMETERS
         self.output_size = output_size
+
 
         self.embedding = nn.Embedding(num_embeddings = self.vocab_size,
                                       embedding_dim  = self.embedding_size)
         logging.info('Embedding layer created : {}'.format(self.embedding))
+        
+        self.prenet = Prenet()
+        
+        self.convolution = Convolution(in_channels = self.max_len, out_channels = self.out_channels,
+                                       kernel_size = self.kernel_size, max_len = self.max_len)
+        logging.info('Convolutional layer created : {}'.format(self.convolution))
 
-        self.rnn = nn.GRUCell(input_size  = self.embedding_size,
-                              hidden_size = self.rnn_size)
-        logging.info('Recurrent layer created : {}'.format(self.rnn))
+        # we apply pooling on each output channels of the convolutional layer 
+        # so each channels gets reducted to a few features depending on the pooling kernel size
+        feature_size = self.max_len // (self.max_len - self.kernel_size + 1)
+        #self.recurrence_input = self.out_channels * feature_size
+        self.recurrence_input = self.embedding_size
+        self.recurrence = Recurrence(input_size = self.recurrence_input, hidden_size = self.hidden_size)
+        logging.info('Recurrent layer created : {}'.format(self.recurrence))
 
-        self.logits = nn.Linear(in_features  = self.rnn_size,
-                                out_features = self.output_size)
-        logging.info('Linear layer created : {}'.format(self.logits))
-
-        self.logits_activation = nn.Tanh()
+        self.postnet = Postnet(in_size = self.hidden_size * self.out_channels * 3, out_size = self.output_size)
+        logging.info('Postnet layer created : {}'.format(self.postnet))
 
         logging.info('MyModel created!')
 
-    #multiply the result by 2 so we get results in the range (-3, 3)
-    def get_logits(self, hidden_states, temperature=1.0):
-        return self.logits_activation(self.logits(hidden_states) / temperature) * 3
-    
-    def forward(self, x, hidden_start=None):
+    def forward(self, x, is_training=True):
 
-        in_len = x.shape[0]
-
-        #returns a batch_size x in_len x embedding_size
+        # in  = batch_size x max_len 
+        # out = batch_size x max_len x embedding_size
         x = self.embedding(x)
 
-        #use hidden_start as the first hidden input(usually tensor of 0s)
-        prev_hidden = hidden_start
-        for t in range(in_len):
-            #feed the gru cell with the input for the t-th time step
-            hidden_state = self.rnn(x[:, t, :], prev_hidden)
-            #use the generated hidden state for the next time step
-            prev_hidden = hidden_state
+        #x = self.prenet(x)
         
-        return hidden_state
+        # out = batch_size x out_channels
+        x = self.convolution(x)
+
+        # out = batch_size x hidden_size
+        x = self.recurrence(x)
+
+        # out = batch_size x output_size
+        x = self.postnet(x, is_training)
+    
+        return x.squeeze(1)

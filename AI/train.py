@@ -2,6 +2,9 @@ import torch
 import logging
 from tqdm import tqdm
 import time
+import os
+
+os.chdir('/home/andrei/Desktop/Poorify/AI')
 
 #in-house imports
 from models.model import MyModel
@@ -10,6 +13,8 @@ from utils import load_config, load_data, load_logging, save_model
 import constants
 
 def main():
+
+    torch.cuda.empty_cache()
 
     #load logging
     if constants.ENABLE_LOGGING == True:
@@ -33,16 +38,20 @@ def main():
     #use incremented vocabulary size because we have an extra character which isn't
     #in the dictionary : 0 - padding character
     model = MyModel(vocab_size=vocab.size()+1, embedding_size=CONFIG['embedding_size'], 
-                    rnn_size=CONFIG['rnn_size'], output_size=CONFIG['output_size'])
+                    output_size=CONFIG['output_size'], max_len=CONFIG['max_len'], 
+                    batch_size=CONFIG['batch_size'])
     model = model.to(constants.DEVICE)
 
     trainer = Trainer(model=model, vocab=vocab, train_generator=train_generator,
                       val_generator=validation_generator, epochs=CONFIG['epochs'],
                       batch_size=CONFIG['batch_size'], max_grad_norm=CONFIG['max_grad_norm'],
-                      lr=CONFIG['learning_rate'], loss=CONFIG['loss'], optim=CONFIG['optimizer'],
-                      train_verbose=CONFIG['train_verbose'], val_verbose=CONFIG['validation_verbose'])
+                      lr=CONFIG['learning_rate'], loss=CONFIG['loss'], l2_norm=CONFIG['l2_norm'],
+                      optim=CONFIG['optimizer'], train_verbose=CONFIG['train_verbose'], 
+                      val_verbose=CONFIG['validation_verbose'])
     
+    t = time.time()
     trainer.train()
+    print(time.time() - t)
 
     if CONFIG['save_model'] == True:
         save_model(model)
