@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from enum import Enum
+from enum import IntEnum
 import math
 
-class Emotion(Enum):
+class Emotion(IntEnum):
   PLEASED = 1
   HAPPY = 2
   EXCITED = 3
@@ -58,4 +58,4 @@ def findEmotion(valence, arousal):
     elif(ratio >= lim2):
       emotie += 2
 
-    return Emotion(emotie)
+    return Emotion(findQuadrant(auxValence, auxArousal))

@@ -15,22 +15,23 @@ class MyModel(nn.Module):
                                       embedding_dim  = self.embedding_size)
         logging.info('Embedding layer created : {}'.format(self.embedding))
 
-        self.rnn = nn.GRUCell(input_size  = self.embedding_size,
-                              hidden_size = self.rnn_size)
+        self.rnn = nn.LSTM(self.embedding_size,
+                          self.rnn_size,
+                          1)
         logging.info('Recurrent layer created : {}'.format(self.rnn))
 
         self.logits = nn.Linear(in_features  = self.rnn_size,
                                 out_features = self.output_size)
         logging.info('Linear layer created : {}'.format(self.logits))
 
-        self.logits_activation = nn.Tanh()
+        self.logits_activation = nn.LeakyReLU(1)
 
         logging.info('MyModel created!')
 
     #multiply the result by 2 so we get results in the range (-3, 3)
     def get_logits(self, hidden_states, temperature=1.0):
-        return self.logits_activation(self.logits(hidden_states) / temperature) * 3
-    
+        return self.logits_activation(self.logits(hidden_states) / temperature)
+
     def forward(self, x, hidden_start=None):
 
         in_len = x.shape[0]
@@ -42,8 +43,9 @@ class MyModel(nn.Module):
         prev_hidden = hidden_start
         for t in range(in_len):
             #feed the gru cell with the input for the t-th time step
-            hidden_state = self.rnn(x[:, t, :], prev_hidden)
+            out, hidden_state = self.rnn(x[t, :, :], prev_hidden)
             #use the generated hidden state for the next time step
             prev_hidden = hidden_state
-        
-        return hidden_state
+            print(t)
+
+        return out
