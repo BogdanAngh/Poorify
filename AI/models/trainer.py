@@ -49,7 +49,7 @@ class Trainer():
         epoch_loss = 0.0
         #use a 0s tensor as starting hidden state
         t = time.time()
-        prev_hidden = (torch.zeros(1, 1, self.model.rnn_size), torch.zeros(1, 1, self.model.rnn_size))
+        prev_hidden = (torch.zeros(1, 1, self.model.rnn_size).to(constants.DEVICE), torch.zeros(1, 1, self.model.rnn_size).to(constants.DEVICE))
         for idx, (sample, label) in enumerate(self.train_generator):
 
 
@@ -67,11 +67,11 @@ class Trainer():
             self.optimizer.zero_grad()
             print(sample.size())
 
-            rnn_out = self.model(sample.unsqueeze(2), prev_hidden)
+            (hidden_state, rnn_out) = self.model(sample.unsqueeze(2), prev_hidden)
 
             print('rnn_out gata')
 
-            batch_loss = self.loss_fn(rnn_out.squeeze(), label.long())
+            batch_loss = self.loss_fn(rnn_out.squeeze(), torch.max(label.int(), 1)[1])
             print('batch_loss gata')
 
             epoch_loss += batch_loss.item()
@@ -88,8 +88,9 @@ class Trainer():
             print('optimizer gata')
 
             #use generated hidden state as the next input hidden states
-            hidden_state.detach_()
-            prev_hidden = hidden_state
+            hidden_state0 = hidden_state[0].detach_()
+            hidden_state1 = hidden_state[1].detach_()
+            prev_hidden = (hidden_state0, hidden_state1)
 
             if idx % self.train_verbose == 0:
                 print('Epoch {} - batch {} / {} -  train loss : {}'.format(epoch, idx, self.train_generator_size, batch_loss.item()))

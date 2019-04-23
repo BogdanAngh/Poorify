@@ -46,6 +46,5 @@ class MyModel(nn.Module):
             out, hidden_state = self.rnn(x[t, :, :], prev_hidden)
             #use the generated hidden state for the next time step
             prev_hidden = hidden_state
-            print(t)
 
-        return out
+        return (hidden_state, out)
