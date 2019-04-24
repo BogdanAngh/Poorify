@@ -1,8 +1,8 @@
 {
     "learning_rate" : 0.001,
     "embedding_size" : 256,
-    "rnn_size" : 64,
-    "output_size" : 4,
+    "rnn_size" : 8,
+    "output_size" : 2,
     "epochs" : 20,
     "batch_size" : 62,
     "train_val_cutoff" : 0.8,

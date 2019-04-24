@@ -112,7 +112,7 @@ def load_data(path, CONFIG=None):
     #transform the samples into tensors and pad them to the maximum length
     samples = pad_sequence([text_to_tensor(e, vocab) for e in samples], batch_first=True)
 
-    samples = samples[:,:50]
+    samples = samples[:,:120]
 
     print(samples.size())
 
