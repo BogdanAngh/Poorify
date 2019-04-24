@@ -49,7 +49,7 @@ class Trainer():
         epoch_loss = 0.0
         #use a 0s tensor as starting hidden state
         t = time.time()
-        prev_hidden = (torch.zeros(1, 1, self.model.rnn_size).to(constants.DEVICE), torch.zeros(1, 1, self.model.rnn_size).to(constants.DEVICE))
+        prev_hidden = (torch.zeros(2, 1, self.model.rnn_size).to(constants.DEVICE), torch.zeros(2, 1, self.model.rnn_size).to(constants.DEVICE))
         for idx, (sample, label) in enumerate(self.train_generator):
 
 
@@ -102,7 +102,7 @@ class Trainer():
         #validation epoch won't do any updates
         with torch.no_grad():
             epoch_loss = 0.0
-            prev_hidden = torch.zeros(self.batch_size, self.model.rnn_size).to(constants.DEVICE)
+            prev_hidden = (torch.zeros(2, 1, self.model.rnn_size).to(constants.DEVICE), torch.zeros(2, 1, self.model.rnn_size).to(constants.DEVICE))
 
             for idx, (sample, label) in enumerate(self.val_generator):
 
@@ -111,15 +111,16 @@ class Trainer():
 
                 sample = sample.to(constants.DEVICE)
                 label = label.to(constants.DEVICE)
+                sample = sample.transpose(1,0)
 
-                hidden_state = self.model(sample, prev_hidden)
-                logits = self.model.get_logits(hidden_state)
-                batch_loss = self.loss_fn(logits, label.long())
+                (hidden_state, rnn_out) = self.model(sample.unsqueeze(2), prev_hidden)
+                batch_loss = self.loss_fn(rnn_out.squeeze(), torch.max(label.int(), 1)[1])
                 epoch_loss += batch_loss.item()
-
-                prev_hidden = hidden_state
+                hidden_state0 = hidden_state[0].detach_()
+                hidden_state1 = hidden_state[1].detach_()
+                prev_hidden = (hidden_state0, hidden_state1)
                 print(logits.size())
-                predicted_emotions = [int(torch.max(l,0)[1].item()) for l in logits]
+                predicted_emotions = [int(torch.max(l,0)[1].item()) for l in rnn_out]
                 label_emotions = label.int()
 
                 #will result a vector of 0s and 1s(True/False)

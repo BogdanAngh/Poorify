@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 import logging
 import torch
+import emotionClasification as ec
 
 from shutil import copyfile
 from torch.nn.utils.rnn import pad_sequence
@@ -26,7 +27,7 @@ def api_result(status):
     return 'Fail'
 
 def get_lyrics(initial_path, result_path):
-    
+
     dataset = pd.read_csv(initial_path)
     dataset['lyrics'] = '-'
     lyrics_threeshold = 4
@@ -64,7 +65,7 @@ def text_to_tensor(text, vocab):
     """
         Gets a text and converts it to a tensor of indexes found in the vocabulary
         'Example' => [10, 15, 20, 2, 50, 45, 44]
-    """ 
+    """
     return torch.tensor([vocab.char_to_idx[e] for e in text])
 
 def tensor_to_text(x, vocab):
@@ -93,8 +94,16 @@ def load_data(path, CONFIG=None):
     valence = torch.tensor(data['valence'].values, dtype=torch.float32)
     arousal = torch.tensor(data['arousal'].values, dtype=torch.float32)
 
-    #build the labels tensor : (valence, arousal) x input_size
-    labels = torch.t(torch.stack((valence, arousal), 0)).view(-1, 2)
+    labels = torch.zeros(valence.size(0))
+    labelsprob = torch.zeros(4)
+
+    for i in range(valence.size(0) - 1):
+        labels[i] = int(ec.findEmotion(valence[i],arousal[i])) - 1
+        labelsprob[labels[i].long()] = labelsprob[labels[i].long()] + 1
+
+    labelsprob = labelsprob * 100 / (valence.size(0) - 1)
+
+
 
     #build the vocabulary
     vocab = Vocabulary(''.join(str(e) for e in samples))
@@ -103,15 +112,21 @@ def load_data(path, CONFIG=None):
     #transform the samples into tensors and pad them to the maximum length
     samples = pad_sequence([text_to_tensor(e, vocab) for e in samples], batch_first=True)
 
+    samples = samples[:,:50]
+
+    print(samples.size())
+
     train_size = int(samples.shape[0] * CONFIG['train_val_cutoff'])
     train_samples, validation_samples = samples[:train_size], samples[train_size:]
     train_labels, validation_labels = labels[:train_size], labels[train_size:]
 
+    print(train_samples.size())
+
     #build the training data loader
     train_dataset = MyDataset(train_samples, train_labels)
-    train_data_loader = torch.utils.data.DataLoader(train_dataset, 
-                                              batch_size=CONFIG['batch_size'], 
-                                              shuffle=CONFIG['shuffle'], 
+    train_data_loader = torch.utils.data.DataLoader(train_dataset,
+                                              batch_size=CONFIG['batch_size'],
+                                              shuffle=CONFIG['shuffle'],
                                               num_workers=CONFIG['num_workers'])
 
     logging.info('Created training data loader having {} samples and {} batches of size {}'.format(
@@ -119,9 +134,9 @@ def load_data(path, CONFIG=None):
 
     #build the validation data loader
     validation_dataset = MyDataset(validation_samples, validation_labels)
-    validation_data_loader = torch.utils.data.DataLoader(validation_dataset, 
-                                              batch_size=CONFIG['batch_size'], 
-                                              shuffle=CONFIG['shuffle'], 
+    validation_data_loader = torch.utils.data.DataLoader(validation_dataset,
+                                              batch_size=CONFIG['batch_size'],
+                                              shuffle=CONFIG['shuffle'],
                                               num_workers=CONFIG['num_workers'])
 
     logging.info('Created validation data loader having {} samples and {} batches of size {}'.format(
@@ -148,7 +163,7 @@ def load_logging():
 
     #change the logging format
     logger = logging.getLogger()
-    logging.basicConfig(format="[%(asctime)s | %(levelname)s %(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s", 
+    logging.basicConfig(format="[%(asctime)s | %(levelname)s %(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s",
                         filename='app.log', filemode='a', datefmt='%d-%b-%y %H:%M:%S')
 
     #log any kind of information
@@ -175,7 +190,7 @@ def save_model(model):
 
         #create the directory which holds the model
         logging.info('Creating model s directory {}'.format(log_path))
-        os.mkdir(log_path)  
+        os.mkdir(log_path)
     except FileExistsError:
         logging.warning('Model s directory already exists!')
         pass

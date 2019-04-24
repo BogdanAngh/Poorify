@@ -27,12 +27,14 @@ def main():
     else:
         constants.DEVICE = 'cpu'
 
+    print(constants.DEVICE)
+    print(torch.cuda.is_available())
     #get the data generators
     vocab, train_generator, validation_generator = load_data(constants.DATASET_PATH, CONFIG)
 
     #use incremented vocabulary size because we have an extra character which isn't
     #in the dictionary : 0 - padding character
-    model = MyModel(vocab_size=vocab.size()+1, embedding_size=CONFIG['embedding_size'], 
+    model = MyModel(vocab_size=vocab.size()+1, embedding_size=CONFIG['embedding_size'],
                     rnn_size=CONFIG['rnn_size'], output_size=CONFIG['output_size'])
     model = model.to(constants.DEVICE)
 
@@ -41,7 +43,7 @@ def main():
                       batch_size=CONFIG['batch_size'], max_grad_norm=CONFIG['max_grad_norm'],
                       lr=CONFIG['learning_rate'], loss=CONFIG['loss'], optim=CONFIG['optimizer'],
                       train_verbose=CONFIG['train_verbose'], val_verbose=CONFIG['validation_verbose'])
-    
+
     trainer.train()
 
     if CONFIG['save_model'] == True:
