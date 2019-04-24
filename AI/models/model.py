@@ -17,7 +17,7 @@ class MyModel(nn.Module):
 
         self.rnn = nn.LSTM(self.embedding_size,
                           self.rnn_size,
-                          2)
+                          4)
         logging.info('Recurrent layer created : {}'.format(self.rnn))
 
         self.logits = nn.Linear(in_features  = self.rnn_size,

@@ -49,7 +49,7 @@ class Trainer():
         epoch_loss = 0.0
         #use a 0s tensor as starting hidden state
         t = time.time()
-        prev_hidden = (torch.zeros(2, 1, self.model.rnn_size).to(constants.DEVICE), torch.zeros(2, 1, self.model.rnn_size).to(constants.DEVICE))
+        prev_hidden = (torch.zeros(4, 1, self.model.rnn_size).to(constants.DEVICE), torch.zeros(4, 1, self.model.rnn_size).to(constants.DEVICE))
         for idx, (sample, label) in enumerate(self.train_generator):
 
 
@@ -71,7 +71,7 @@ class Trainer():
 
             print('rnn_out gata')
 
-            batch_loss = self.loss_fn(rnn_out.squeeze(), torch.max(label.int(), 1)[1])
+            batch_loss = self.loss_fn(rnn_out.squeeze(), label.long())
             print('batch_loss gata')
 
             epoch_loss += batch_loss.item()
@@ -92,8 +92,11 @@ class Trainer():
             hidden_state1 = hidden_state[1].detach_()
             prev_hidden = (hidden_state0, hidden_state1)
 
+            #print(rnn_out.squeeze())
+
             if idx % self.train_verbose == 0:
                 print('Epoch {} - batch {} / {} -  train loss : {}'.format(epoch, idx, self.train_generator_size, batch_loss.item()))
+                self.lr = self.lr * 1.07
 
         return epoch_loss / self.train_generator_size
 
@@ -102,7 +105,7 @@ class Trainer():
         #validation epoch won't do any updates
         with torch.no_grad():
             epoch_loss = 0.0
-            prev_hidden = (torch.zeros(2, 1, self.model.rnn_size).to(constants.DEVICE), torch.zeros(2, 1, self.model.rnn_size).to(constants.DEVICE))
+            prev_hidden = (torch.zeros(4, 1, self.model.rnn_size).to(constants.DEVICE), torch.zeros(4, 1, self.model.rnn_size).to(constants.DEVICE))
 
             for idx, (sample, label) in enumerate(self.val_generator):
 
@@ -114,15 +117,13 @@ class Trainer():
                 sample = sample.transpose(1,0)
 
                 (hidden_state, rnn_out) = self.model(sample.unsqueeze(2), prev_hidden)
-                batch_loss = self.loss_fn(rnn_out.squeeze(), torch.max(label.int(), 1)[1])
+                batch_loss = self.loss_fn(rnn_out.squeeze(), label.long())
                 epoch_loss += batch_loss.item()
                 hidden_state0 = hidden_state[0].detach_()
                 hidden_state1 = hidden_state[1].detach_()
                 prev_hidden = (hidden_state0, hidden_state1)
-                print(logits.size())
-                predicted_emotions = [int(torch.max(l,0)[1].item()) for l in rnn_out]
-                label_emotions = label.int()
-
+                predicted_emotions = [int(torch.max(l,0)[0].item()) for l in rnn_out.squeeze()]
+                label_emotions = [int(torch.max(l,0)[0].item()) for l in label]
                 #will result a vector of 0s and 1s(True/False)
                 #summing them will get us the number of correct answers
                 acc = torch.sum(torch.tensor([predict == label for predict, label in zip(predicted_emotions, label_emotions)]))
