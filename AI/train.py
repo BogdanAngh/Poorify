@@ -2,6 +2,9 @@ import torch
 import logging
 from tqdm import tqdm
 import time
+import os
+
+os.chdir('/home/andrei/Desktop/Poorify/AI')
 
 #in-house imports
 from models.model import MyModel
@@ -10,6 +13,8 @@ from utils import load_config, load_data, load_logging, save_model
 import constants
 
 def main():
+
+    torch.cuda.empty_cache()
 
     #load logging
     if constants.ENABLE_LOGGING == True:
@@ -33,7 +38,8 @@ def main():
     #use incremented vocabulary size because we have an extra character which isn't
     #in the dictionary : 0 - padding character
     model = MyModel(vocab_size=vocab.size()+1, embedding_size=CONFIG['embedding_size'], 
-                    rnn_size=CONFIG['rnn_size'], output_size=CONFIG['output_size'])
+                    output_size=CONFIG['output_size'], batch_size=CONFIG['batch_size'],
+                    max_len=CONFIG['max_len'], hidden_size=CONFIG['rnn_size'],)
     model = model.to(constants.DEVICE)
 
     trainer = Trainer(model=model, vocab=vocab, train_generator=train_generator,

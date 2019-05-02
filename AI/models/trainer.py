@@ -1,4 +1,5 @@
 import torch.nn as nn
+import torch.nn.functional as F
 import torch
 from torch.optim import Adam, SGD
 import logging
@@ -40,6 +41,8 @@ class Trainer():
 
         if loss == 'mse':
             self.loss_fn = nn.MSELoss()
+        elif loss == 'cross-entropy':
+            self.loss_fn = nn.CrossEntropyLoss()
 
         logging.info('Trainer created!')
 
@@ -47,7 +50,6 @@ class Trainer():
             
         epoch_loss = 0.0
         #use a 0s tensor as starting hidden state
-        prev_hidden = torch.zeros(self.batch_size, self.model.rnn_size).to(constants.DEVICE)
         t = time.time()
         for idx, (sample, label) in enumerate(self.train_generator):
             
@@ -60,9 +62,8 @@ class Trainer():
             #reset the gradients
             self.optimizer.zero_grad()
 
-            hidden_state = self.model(sample, prev_hidden)
-            logits = self.model.get_logits(hidden_state)
-            batch_loss = self.loss_fn(logits, label)
+            result = self.model(sample)
+            batch_loss = self.loss_fn(result, label)
             
             epoch_loss += batch_loss.item()
 
@@ -74,21 +75,20 @@ class Trainer():
             #update the parameters
             self.optimizer.step()
 
-            #use generated hidden state as the next input hidden states
-            hidden_state.detach_()
-            prev_hidden = hidden_state
+            predicted = torch.argmax(F.softmax(result, dim=1), dim=1)
+            acc = torch.sum(predicted == label)
 
             if idx % self.train_verbose == 0:
-                print('Epoch {} - batch {} / {} -  train loss : {}'.format(epoch, idx, self.train_generator_size, batch_loss.item()))
+                print('Epoch {} - batch {} / {} -  train loss : {} - acc : {}'.format(epoch, idx, self.train_generator_size, 
+                                                                                      batch_loss.item(), acc.item() / self.batch_size))
         
         return epoch_loss / self.train_generator_size
         
-    def val_epoch(self, epoch, hidden_start=None):
+    def val_epoch(self, epoch):
         
         #validation epoch won't do any updates
         with torch.no_grad():
             epoch_loss = 0.0
-            prev_hidden = torch.zeros(self.batch_size, self.model.rnn_size).to(constants.DEVICE)
 
             for idx, (sample, label) in enumerate(self.val_generator):
                 
@@ -98,19 +98,12 @@ class Trainer():
                 sample = sample.to(constants.DEVICE)
                 label = label.to(constants.DEVICE)
 
-                hidden_state = self.model(sample, prev_hidden)
-                logits = self.model.get_logits(hidden_state)
-                batch_loss = self.loss_fn(logits, label)
+                result = self.model(sample)
+                batch_loss = self.loss_fn(result, label)
                 epoch_loss += batch_loss.item()
 
-                prev_hidden = hidden_state
-
-                predicted_emotions = [findEmotion(l[0], l[1]) for l in logits]
-                label_emotions = [findEmotion(l[0], l[1]) for l in label]
-
-                #will result a vector of 0s and 1s(True/False)
-                #summing them will get us the number of correct answers
-                acc = torch.sum(torch.tensor([predict == label for predict, label in zip(predicted_emotions, label_emotions)]))
+                predicted = torch.tensor(torch.argmax(F.softmax(result, dim=1), dim=1))
+                acc = torch.sum(predicted == label)
 
                 if idx % self.val_verbose == 0:
                     print('Epoch {} - batch {} / {} - validation loss : {} - accuracy : {}'.format(epoch, idx, self.val_generator_size, \
@@ -124,10 +117,9 @@ class Trainer():
 
         train_loss = []
         val_loss = []
-        hidden_start = torch.zeros(self.batch_size, self.model.rnn_size)
         for e in tqdm(range(self.epochs), ascii=True, desc='Epochs'):
             t_loss = self.train_epoch(e)
-            v_loss = self.val_epoch(e, hidden_start)
+            v_loss = self.val_epoch(e)
 
             #keep the losses from each epoch
             train_loss.append(t_loss)

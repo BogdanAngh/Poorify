@@ -3,30 +3,22 @@ from enum import Enum
 import math
 
 class Emotion(Enum):
-  PLEASED = 1
-  HAPPY = 2
-  EXCITED = 3
-  ANNOYING = 4
-  ANGRY = 5
-  NERVOUS = 6
-  SAD = 7
-  BORED = 8
-  SLEEPY = 9
-  CALM = 10
-  PACEFUL = 11
-  RELAXED = 12
+  HAPPY = 0,
+  ANGRY = 1,
+  SAD   = 2,
+  CALM  = 3
 
 def findQuadrant(valence, arousal):
   if(valence == 0 and arousal == 0):
-    return 0
+    return -1
   elif(valence >= 0 and arousal >= 0):
-    return 1
+    return 0
   elif(valence < 0 and arousal >= 0):
-    return 2
+    return 1
   elif(valence < 0 and arousal < 0):
-    return 3
+    return 2
   elif(valence >= 0 and arousal < 0):
-    return 4
+    return 3
 
 def findEmotion(valence, arousal):
     quadrant = findQuadrant(valence, arousal)
