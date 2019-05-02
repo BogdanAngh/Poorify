@@ -609,3 +609,3291 @@
 [15-apr-19 11:49:24 | INFO utils.py:188 -           save_model() ] Saving the model s config at log/2019-04-15 11:49:24.186067/config.json
 [15-apr-19 11:49:24 | INFO train.py:52 -             <module>() ] Training ended!
 
+[01-May-19 21:09:01 | INFO utils.py:159 -         load_logging() ] Logger loaded
+[01-May-19 21:09:01 | INFO utils.py:145 -          load_config() ] Config loaded!
+[01-May-19 21:09:01 | INFO utils.py:88 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:09:20 | INFO utils.py:160 -         load_logging() ] Logger loaded
+[01-May-19 21:09:20 | INFO utils.py:146 -          load_config() ] Config loaded!
+[01-May-19 21:09:20 | INFO utils.py:89 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:09:20 | INFO utils.py:102 -            load_data() ] Vocab size : 25453
+[01-May-19 21:11:29 | INFO utils.py:176 -         load_logging() ] Logger loaded
+[01-May-19 21:11:29 | INFO utils.py:162 -          load_config() ] Config loaded!
+[01-May-19 21:11:29 | INFO utils.py:105 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:11:44 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:11:44 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:11:44 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:11:45 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:11:45 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 127 batches of size 64
+[01-May-19 21:11:45 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 32 batches of size 64
+[01-May-19 21:13:14 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:13:14 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:13:14 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:13:15 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:13:15 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 127 batches of size 64
+[01-May-19 21:13:15 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 32 batches of size 64
+[01-May-19 21:14:11 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:14:11 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:14:11 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:14:12 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:14:12 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 127 batches of size 64
+[01-May-19 21:14:12 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 32 batches of size 64
+[01-May-19 21:14:12 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 21:14:12 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 21:14:12 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(256, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 21:14:12 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=76800, out_features=4, bias=True)
+)
+[01-May-19 21:14:12 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 21:14:23 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 21:14:23 | INFO trainer.py:116 -                train() ] Starting the training...
+[01-May-19 21:14:57 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:14:57 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:14:57 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:14:58 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:14:58 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 127 batches of size 64
+[01-May-19 21:14:58 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 32 batches of size 64
+[01-May-19 21:14:58 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 21:14:58 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 21:14:58 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(256, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 21:14:58 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=76800, out_features=4, bias=True)
+)
+[01-May-19 21:14:58 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 21:15:00 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 21:15:00 | INFO trainer.py:116 -                train() ] Starting the training...
+[01-May-19 21:16:43 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:16:43 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:16:43 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:16:44 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:16:44 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 127 batches of size 64
+[01-May-19 21:16:44 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 32 batches of size 64
+[01-May-19 21:16:44 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 21:16:44 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 21:16:44 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(256, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 21:16:44 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=76800, out_features=4, bias=True)
+)
+[01-May-19 21:16:44 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 21:16:46 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 21:16:46 | INFO trainer.py:116 -                train() ] Starting the training...
+[01-May-19 21:19:08 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:19:08 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:19:08 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:19:44 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:19:44 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:19:44 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:19:45 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:19:45 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 127 batches of size 64
+[01-May-19 21:19:45 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 32 batches of size 64
+[01-May-19 21:19:45 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 21:19:45 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 21:19:46 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 21:19:46 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=76800, out_features=4, bias=True)
+)
+[01-May-19 21:19:46 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 21:19:48 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 21:19:48 | INFO trainer.py:116 -                train() ] Starting the training...
+[01-May-19 21:21:11 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:21:11 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:21:11 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:21:12 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:21:12 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 127 batches of size 64
+[01-May-19 21:21:12 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 32 batches of size 64
+[01-May-19 21:21:12 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 21:21:12 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 21:21:13 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 21:21:13 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=76800, out_features=4, bias=True)
+)
+[01-May-19 21:21:13 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 21:21:15 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 21:21:15 | INFO trainer.py:116 -                train() ] Starting the training...
+[01-May-19 21:22:13 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:22:13 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:22:13 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:22:14 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:22:14 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 127 batches of size 64
+[01-May-19 21:22:14 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 32 batches of size 64
+[01-May-19 21:22:14 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 21:22:14 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 21:22:15 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 21:22:15 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=256, out_features=4, bias=True)
+)
+[01-May-19 21:22:15 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 21:22:17 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 21:22:17 | INFO trainer.py:116 -                train() ] Starting the training...
+[01-May-19 21:23:11 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:23:11 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:23:11 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:23:12 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:23:12 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[01-May-19 21:23:12 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[01-May-19 21:23:12 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 21:23:12 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 21:23:13 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 21:23:13 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=256, out_features=4, bias=True)
+)
+[01-May-19 21:23:13 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 21:23:15 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 21:23:15 | INFO trainer.py:116 -                train() ] Starting the training...
+[01-May-19 21:23:55 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:23:55 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:23:55 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:23:55 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:23:56 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[01-May-19 21:23:56 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[01-May-19 21:23:56 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 21:23:56 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 21:23:56 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 21:23:56 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=256, out_features=4, bias=True)
+)
+[01-May-19 21:23:56 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 21:23:59 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 21:23:59 | INFO trainer.py:116 -                train() ] Starting the training...
+[01-May-19 21:46:28 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 21:46:28 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 21:46:28 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 21:46:29 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 21:46:29 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[01-May-19 21:46:29 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[01-May-19 21:46:29 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 21:46:29 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 21:46:30 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 21:46:30 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=256, out_features=4, bias=True)
+)
+[01-May-19 21:46:30 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 21:46:33 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 21:46:33 | INFO trainer.py:116 -                train() ] Starting the training...
+[01-May-19 22:05:42 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[01-May-19 22:05:42 | INFO utils.py:163 -          load_config() ] Config loaded!
+[01-May-19 22:05:42 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[01-May-19 22:05:43 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[01-May-19 22:05:43 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[01-May-19 22:05:43 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[01-May-19 22:05:43 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[01-May-19 22:05:43 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[01-May-19 22:05:44 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, num_layers=4, batch_first=True)
+)
+[01-May-19 22:05:44 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=256, out_features=4, bias=True)
+)
+[01-May-19 22:05:44 | INFO model.py:55 -             __init__() ] MyModel created!
+[01-May-19 22:05:46 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[01-May-19 22:05:46 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 09:50:35 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 09:50:35 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 09:50:36 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 09:50:38 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 09:50:38 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 09:50:38 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 09:50:38 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[02-May-19 09:50:38 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 09:50:39 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, num_layers=4, batch_first=True)
+)
+[02-May-19 09:50:39 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=256, out_features=4, bias=True)
+)
+[02-May-19 09:50:39 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 09:50:51 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 09:50:51 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 09:51:30 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 09:51:30 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 09:51:30 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 09:51:30 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 09:51:31 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 09:51:31 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 09:51:31 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[02-May-19 09:51:31 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 09:51:31 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, num_layers=4, batch_first=True)
+)
+[02-May-19 09:51:31 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=256, out_features=4, bias=True)
+)
+[02-May-19 09:51:31 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 09:51:34 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 09:51:34 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 10:07:04 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:07:04 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:07:04 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:07:05 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:07:05 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:07:05 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:07:05 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 256)
+[02-May-19 10:07:05 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:07:06 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(76800, 256, batch_first=True)
+)
+[02-May-19 10:07:06 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=256, out_features=4, bias=True)
+)
+[02-May-19 10:07:06 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 10:07:08 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 10:07:08 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 10:10:02 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:10:02 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:10:02 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:10:03 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:10:03 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:10:03 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:10:41 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:10:41 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:10:41 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:10:42 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:10:42 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:10:42 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:11:01 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:11:01 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:11:01 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:11:02 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:11:02 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:11:02 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:11:25 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:11:25 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:11:25 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:11:26 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:11:26 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:11:26 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:11:56 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:11:56 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:11:57 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:11:58 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:11:58 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:11:58 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:12:02 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:12:25 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:12:25 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:12:25 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:12:25 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:12:26 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:12:26 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:12:26 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:15:21 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:15:46 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:15:46 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:15:46 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:15:46 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:15:47 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:15:47 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:15:47 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:22:33 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:23:20 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 10:23:25 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 10:23:25 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 10:23:29 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 10:23:29 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 10:28:23 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:28:23 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:28:23 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:28:24 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:28:24 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:28:24 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:28:24 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:28:39 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:28:41 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 10:28:41 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 10:28:41 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 10:28:43 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 10:28:43 | INFO trainer.py:118 -                train() ] Starting the training...
+[02-May-19 10:30:04 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:30:04 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:30:04 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:30:04 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:30:04 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:30:04 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:30:04 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:30:19 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:30:25 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 10:30:25 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 10:30:25 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 10:30:27 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 10:30:27 | INFO trainer.py:118 -                train() ] Starting the training...
+[02-May-19 10:32:40 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:32:40 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:32:40 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:32:40 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:32:40 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:32:40 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:32:40 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:32:40 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:32:41 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 10:32:41 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 10:32:41 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 10:32:43 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 10:32:43 | INFO trainer.py:117 -                train() ] Starting the training...
+[02-May-19 10:33:43 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:33:43 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:33:43 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:33:44 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:33:44 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:33:44 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:33:44 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:33:44 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:33:44 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 10:33:44 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 10:33:44 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 10:33:47 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 10:33:47 | INFO trainer.py:117 -                train() ] Starting the training...
+[02-May-19 10:34:33 | WARNING train.py:62 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 10:36:42 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:36:42 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:36:42 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:36:42 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:36:42 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:36:42 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:36:43 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:36:43 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:36:43 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 10:36:43 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 10:36:43 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 10:36:45 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 10:36:45 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 10:38:15 | WARNING train.py:62 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 10:38:18 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:38:18 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:38:18 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:38:19 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:38:19 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:38:19 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:38:19 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:38:19 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:38:19 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 10:38:19 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 10:38:19 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 10:38:21 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 10:38:21 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-mai-19 10:43:25 | INFO utils.py:184 -           save_model() ] Creating log directory log/
+[02-mai-19 10:43:25 | WARNING utils.py:188 -           save_model() ] Log directory already exists!
+[02-mai-19 10:43:25 | INFO utils.py:197 -           save_model() ] Creating model s directory log/2019-05-02 10:43:25.550047
+[02-mai-19 10:43:25 | INFO utils.py:204 -           save_model() ] Saving the model at log/2019-05-02 10:43:25.550047/my_model.pth
+[02-mai-19 10:43:25 | INFO utils.py:208 -           save_model() ] Saving the model s config at log/2019-05-02 10:43:25.550047/config.json
+[02-mai-19 10:43:25 | INFO train.py:59 -             <module>() ] Training ended!
+
+[02-May-19 10:44:11 | INFO utils.py:177 -         load_logging() ] Logger loaded
+[02-May-19 10:44:11 | INFO utils.py:163 -          load_config() ] Config loaded!
+[02-May-19 10:44:11 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 10:44:11 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 10:44:11 | INFO utils.py:138 -            load_data() ] Created training data loader having 8122 samples and 254 batches of size 32
+[02-May-19 10:44:11 | INFO utils.py:148 -            load_data() ] Created validation data loader having 2031 samples and 64 batches of size 32
+[02-May-19 10:44:11 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 10:44:11 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 10:44:12 | INFO model.py:50 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 10:44:12 | INFO model.py:53 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 10:44:12 | INFO model.py:55 -             __init__() ] MyModel created!
+[02-May-19 10:44:14 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 10:44:14 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-mai-19 10:49:26 | INFO utils.py:184 -           save_model() ] Creating log directory log/
+[02-mai-19 10:49:26 | WARNING utils.py:188 -           save_model() ] Log directory already exists!
+[02-mai-19 10:49:26 | INFO utils.py:197 -           save_model() ] Creating model s directory log/2019-05-02 10:49:26.480594
+[02-mai-19 10:49:26 | INFO utils.py:204 -           save_model() ] Saving the model at log/2019-05-02 10:49:26.480594/my_model.pth
+[02-mai-19 10:49:26 | INFO utils.py:208 -           save_model() ] Saving the model s config at log/2019-05-02 10:49:26.480594/config.json
+[02-mai-19 10:49:26 | INFO train.py:59 -             <module>() ] Training ended!
+
+[02-May-19 11:28:05 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:28:05 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:28:06 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:28:06 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:28:06 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 11:28:06 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 11:28:18 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:28:18 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:28:18 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:28:18 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:28:18 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 11:28:18 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 11:28:18 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:28:41 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:28:41 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:28:41 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:28:41 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:28:41 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 11:28:41 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 11:28:41 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:28:52 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:28:52 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:28:52 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:28:52 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:28:52 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 11:28:52 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 11:28:52 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:28:52 | INFO model.py:41 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 11:29:09 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:29:09 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:29:09 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:29:10 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:29:10 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 11:29:10 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 11:29:10 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:29:10 | INFO model.py:41 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 11:29:10 | INFO model.py:47 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 11:29:10 | INFO model.py:50 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 11:29:10 | INFO model.py:52 -             __init__() ] MyModel created!
+[02-May-19 11:29:13 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 11:29:13 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 11:29:24 | WARNING train.py:66 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 11:29:59 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:29:59 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:29:59 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:30:00 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:30:00 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 11:30:00 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 11:30:00 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:30:00 | INFO model.py:41 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 11:30:00 | INFO model.py:47 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 11:30:00 | INFO model.py:50 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 11:30:00 | INFO model.py:52 -             __init__() ] MyModel created!
+[02-May-19 11:30:02 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 11:30:02 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 11:31:24 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:31:24 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:31:24 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:31:24 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:31:24 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 112 batches of size 64
+[02-May-19 11:31:24 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 32 batches of size 64
+[02-May-19 11:31:24 | INFO model.py:36 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:31:25 | INFO model.py:41 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 11:31:25 | INFO model.py:47 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 11:31:25 | INFO model.py:50 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 11:31:25 | INFO model.py:52 -             __init__() ] MyModel created!
+[02-May-19 11:31:27 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 11:31:27 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 11:32:26 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:32:26 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:32:26 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:32:26 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:32:26 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 112 batches of size 64
+[02-May-19 11:32:26 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 32 batches of size 64
+[02-May-19 11:32:26 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:32:26 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 11:32:27 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 11:32:27 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 11:32:27 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 11:32:29 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 11:32:29 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 11:34:05 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:34:05 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:34:05 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:34:06 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:34:06 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 112 batches of size 64
+[02-May-19 11:34:06 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 32 batches of size 64
+[02-May-19 11:34:06 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:34:06 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 11:34:06 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 11:34:06 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 11:34:06 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 11:34:08 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 11:34:08 | INFO trainer.py:116 -                train() ] Starting the training...
+[02-May-19 11:35:38 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:35:38 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:35:38 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:35:39 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:35:39 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 112 batches of size 64
+[02-May-19 11:35:39 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 32 batches of size 64
+[02-May-19 11:35:39 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:35:39 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 11:35:39 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 11:35:39 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 11:35:39 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 11:35:41 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 11:35:41 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 11:39:25 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:39:25 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:39:25 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:39:26 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:39:26 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 112 batches of size 64
+[02-May-19 11:39:26 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 32 batches of size 64
+[02-May-19 11:39:26 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:39:26 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 11:39:26 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 11:39:26 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 11:39:26 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 11:39:28 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 11:39:28 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 11:48:00 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 11:48:00 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 11:48:00 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 11:48:01 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 11:48:01 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 11:48:01 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 11:48:01 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 11:48:01 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 11:48:01 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 11:48:01 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 11:48:01 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 11:48:04 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 11:48:04 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 13:11:42 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 13:11:42 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 13:11:42 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 13:12:05 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 13:12:05 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 13:12:05 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 13:12:33 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 13:12:33 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 13:12:33 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 13:12:34 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 13:12:34 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 13:12:34 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 13:12:34 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 13:12:34 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 13:12:35 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 13:12:35 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=12, bias=True)
+)
+[02-May-19 13:12:35 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 13:12:37 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 13:12:37 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 13:14:15 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 13:14:15 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 13:14:15 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 13:14:15 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 13:14:16 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 13:14:16 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 13:14:16 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 13:14:16 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 13:14:16 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 13:14:16 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=12, bias=True)
+)
+[02-May-19 13:14:16 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 13:14:18 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 13:14:18 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 13:14:19 | WARNING train.py:66 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 13:14:22 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 13:14:22 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 13:14:22 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 13:14:23 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 13:14:23 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 13:14:23 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 13:14:23 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 13:14:23 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 13:14:23 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 13:14:23 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 13:14:23 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 13:14:25 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 13:14:25 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 19:58:44 | INFO utils.py:179 -         load_logging() ] Logger loaded
+[02-May-19 19:58:44 | INFO utils.py:165 -          load_config() ] Config loaded!
+[02-May-19 19:58:44 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 19:58:45 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 19:58:45 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 19:58:45 | INFO utils.py:150 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 19:58:45 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 19:58:45 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 19:58:45 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 19:58:45 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 19:58:45 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 19:58:56 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 19:58:56 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:03:38 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:03:38 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:03:38 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:03:39 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:03:39 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:03:39 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:03:39 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:03:39 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:03:39 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:03:39 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:03:39 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:03:41 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:03:41 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:04:50 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:04:50 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:04:50 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:04:51 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:04:51 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:04:51 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:04:51 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:04:51 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:04:51 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:04:51 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:04:51 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:04:53 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:04:53 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:06:37 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:06:37 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:06:37 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:06:38 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:06:38 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:06:38 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:06:38 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:06:38 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:06:38 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:06:38 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:06:38 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:06:40 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:06:40 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:08:30 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:08:30 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:08:30 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:08:31 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:08:31 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:08:31 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:08:31 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:08:31 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:08:31 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:08:31 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:08:31 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:08:33 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:08:33 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:08:41 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 20:09:02 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:09:02 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:09:02 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:09:02 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:09:02 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:09:02 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:09:02 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:09:02 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:09:02 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:09:02 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:09:02 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:09:05 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:09:05 | INFO trainer.py:123 -                train() ] Starting the training...
+[02-May-19 20:10:10 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:10:10 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:10:10 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:10:10 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:10:10 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:10:10 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:10:10 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:10:10 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:10:10 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:10:10 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:10:10 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:10:13 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:10:13 | INFO trainer.py:123 -                train() ] Starting the training...
+[02-mai-19 20:10:20 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:10:20 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:10:20.708579
+[02-mai-19 20:10:20 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:10:20.708579/my_model.pth
+[02-mai-19 20:10:20 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:10:20.708579/config.json
+[02-mai-19 20:10:20 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:14:15 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:14:15 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:14:15 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:14:16 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:14:16 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:14:16 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:14:16 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:14:16 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:14:16 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:14:16 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:14:16 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:14:18 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:14:18 | INFO trainer.py:123 -                train() ] Starting the training...
+[02-mai-19 20:14:31 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:14:31 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 20:14:31 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:14:31.987574
+[02-mai-19 20:14:31 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:14:31.987574/my_model.pth
+[02-mai-19 20:14:32 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:14:31.987574/config.json
+[02-mai-19 20:14:32 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:15:23 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:15:23 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:15:23 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:15:23 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:15:23 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:15:23 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:15:24 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:15:24 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:15:24 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:15:24 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:15:24 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:15:26 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:15:26 | INFO trainer.py:123 -                train() ] Starting the training...
+[02-mai-19 20:15:33 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:15:33 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 20:15:33 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:15:33.061839
+[02-mai-19 20:15:33 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:15:33.061839/my_model.pth
+[02-mai-19 20:15:33 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:15:33.061839/config.json
+[02-mai-19 20:15:33 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:16:27 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:16:27 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:16:27 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:16:28 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:16:28 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:16:28 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:16:28 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:16:28 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:16:28 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:16:28 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:16:28 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:16:30 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:16:30 | INFO trainer.py:123 -                train() ] Starting the training...
+[02-mai-19 20:16:37 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:16:37 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 20:16:37 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:16:37.861272
+[02-mai-19 20:16:37 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:16:37.861272/my_model.pth
+[02-mai-19 20:16:37 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:16:37.861272/config.json
+[02-mai-19 20:16:37 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:18:51 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:18:51 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:18:51 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:18:52 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:18:52 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:18:52 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:18:52 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:18:52 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:18:52 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:18:52 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:18:52 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:18:55 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:18:55 | INFO trainer.py:123 -                train() ] Starting the training...
+[02-mai-19 20:20:02 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:20:02 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 20:20:02 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:20:02.301585
+[02-mai-19 20:20:02 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:20:02.301585/my_model.pth
+[02-mai-19 20:20:02 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:20:02.301585/config.json
+[02-mai-19 20:20:02 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:20:15 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:20:15 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:20:15 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:20:15 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:20:15 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:20:15 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:20:15 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:20:15 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:20:16 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:20:16 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:20:16 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:20:18 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:20:18 | INFO trainer.py:123 -                train() ] Starting the training...
+[02-mai-19 20:20:26 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:20:26 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 20:20:26 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:20:26.604346
+[02-mai-19 20:20:26 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:20:26.604346/my_model.pth
+[02-mai-19 20:20:26 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:20:26.604346/config.json
+[02-mai-19 20:20:26 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:20:47 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:20:47 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:20:47 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:20:47 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:20:48 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:20:48 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:20:48 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:20:48 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:20:48 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:20:48 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:20:48 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:20:50 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:20:50 | INFO trainer.py:123 -                train() ] Starting the training...
+[02-mai-19 20:21:07 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:21:07 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 20:21:07 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:21:07.453724
+[02-mai-19 20:21:07 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:21:07.453724/my_model.pth
+[02-mai-19 20:21:07 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:21:07.453724/config.json
+[02-mai-19 20:21:07 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:21:32 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:21:32 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:21:32 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:21:33 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:21:33 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:21:33 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:21:33 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:21:33 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:21:33 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:21:33 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:21:33 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:21:35 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:21:35 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-mai-19 20:23:01 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:23:01 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 20:23:01 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:23:01.559629
+[02-mai-19 20:23:01 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:23:01.559629/my_model.pth
+[02-mai-19 20:23:01 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:23:01.559629/config.json
+[02-mai-19 20:23:01 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:23:28 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:23:28 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:23:28 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:23:28 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:23:28 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:23:28 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:23:28 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:23:28 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:23:28 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:23:28 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:23:28 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:23:31 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:23:31 | INFO trainer.py:121 -                train() ] Starting the training...
+[02-May-19 20:23:35 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 20:23:40 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:23:40 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:23:40 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:23:40 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:23:41 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:23:41 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:23:41 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:23:41 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:23:41 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:23:41 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:23:41 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:23:43 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:23:43 | INFO trainer.py:121 -                train() ] Starting the training...
+[02-May-19 20:23:59 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 20:24:26 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:24:26 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:24:26 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:24:27 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:24:27 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:24:27 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:24:27 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:24:27 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:24:27 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:24:27 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:24:27 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:24:29 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:24:29 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-mai-19 20:25:51 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:25:51 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 20:25:51 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:25:51.400634
+[02-mai-19 20:25:51 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:25:51.400634/my_model.pth
+[02-mai-19 20:25:51 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:25:51.400634/config.json
+[02-mai-19 20:25:51 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:25:59 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:25:59 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:25:59 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:25:59 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:25:59 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:25:59 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:25:59 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:25:59 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:26:00 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:26:00 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:26:00 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:26:02 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:26:02 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:28:23 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:28:23 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:28:23 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:28:24 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:28:24 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:28:24 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:28:24 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:28:24 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:28:24 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:28:24 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:28:24 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:28:27 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:28:27 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-mai-19 20:29:29 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 20:29:29 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 20:29:29 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 20:29:29.786675
+[02-mai-19 20:29:29 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 20:29:29.786675/my_model.pth
+[02-mai-19 20:29:29 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 20:29:29.786675/config.json
+[02-mai-19 20:29:29 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 20:29:36 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:29:36 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:29:36 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:29:36 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:29:36 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:29:36 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:29:36 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:29:36 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:29:37 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:29:37 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:29:37 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:29:39 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:29:39 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:31:27 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:31:27 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:31:27 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:31:27 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:31:27 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:31:27 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:31:27 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:31:27 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:31:27 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:31:27 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:31:27 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:31:30 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:31:30 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:31:31 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 20:31:36 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:31:36 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:31:36 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:31:36 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:31:36 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:31:36 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:31:37 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:31:37 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:31:37 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:31:37 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:31:37 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:31:39 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:31:39 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:32:10 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 20:32:16 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:32:16 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:32:16 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:32:16 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:32:16 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:32:16 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:32:16 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:32:16 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:32:17 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:32:17 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:32:17 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:32:19 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:32:19 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 20:33:37 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 20:33:37 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 20:33:37 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 20:33:38 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 20:33:38 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 20:33:38 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 20:33:38 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 20:33:38 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 20:33:38 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 20:33:38 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 20:33:38 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 20:33:40 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 20:33:40 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-mai-19 21:21:35 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 21:21:35 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 21:21:35 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 21:21:35.691378
+[02-mai-19 21:21:35 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 21:21:35.691378/my_model.pth
+[02-mai-19 21:21:35 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 21:21:35.691378/config.json
+[02-mai-19 21:21:35 | INFO train.py:63 -             <module>() ] Training ended!
+
+[02-May-19 21:29:34 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 21:29:34 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 21:29:34 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:29:34 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:29:35 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:29:35 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:29:35 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:29:35 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:29:35 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:29:35 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:29:35 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:29:37 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 21:29:37 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-mai-19 21:30:37 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 21:30:37 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 21:30:37 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 21:30:37.053483
+[02-mai-19 21:30:37 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 21:30:37.053483/my_model.pth
+[02-mai-19 21:30:37 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 21:30:37.053483/config.json
+[02-mai-19 21:30:37 | INFO train.py:63 -             <module>() ] Training ended!
+
+[02-May-19 21:31:48 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 21:31:48 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 21:31:48 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:31:48 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:31:48 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:31:48 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:31:48 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:31:48 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:31:48 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:31:48 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:31:48 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:31:51 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 21:31:51 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-mai-19 21:32:50 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 21:32:50 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 21:32:50 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 21:32:50.511764
+[02-mai-19 21:32:50 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 21:32:50.511764/my_model.pth
+[02-mai-19 21:32:50 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 21:32:50.511764/config.json
+[02-mai-19 21:32:50 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 21:35:36 | INFO utils.py:191 -         load_logging() ] Logger loaded
+[02-May-19 21:35:36 | INFO utils.py:177 -          load_config() ] Config loaded!
+[02-May-19 21:35:36 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:35:36 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:35:36 | INFO utils.py:146 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:35:36 | INFO utils.py:162 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:35:36 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:35:36 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:35:37 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:35:37 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:35:37 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:35:39 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 21:35:39 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 21:35:43 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 21:36:14 | INFO utils.py:192 -         load_logging() ] Logger loaded
+[02-May-19 21:36:14 | INFO utils.py:178 -          load_config() ] Config loaded!
+[02-May-19 21:36:14 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:36:14 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:36:14 | INFO utils.py:147 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:36:14 | INFO utils.py:163 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:36:14 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:36:14 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:36:15 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:36:15 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:36:15 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:36:17 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 21:36:31 | INFO utils.py:192 -         load_logging() ] Logger loaded
+[02-May-19 21:36:31 | INFO utils.py:178 -          load_config() ] Config loaded!
+[02-May-19 21:36:31 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:36:32 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:36:32 | INFO utils.py:147 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:36:32 | INFO utils.py:163 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:36:32 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:36:32 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:36:32 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:36:32 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:36:32 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:36:34 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 21:36:49 | INFO utils.py:191 -         load_logging() ] Logger loaded
+[02-May-19 21:36:49 | INFO utils.py:177 -          load_config() ] Config loaded!
+[02-May-19 21:36:49 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:36:50 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:36:50 | INFO utils.py:146 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:36:50 | INFO utils.py:162 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:36:50 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:36:50 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:36:50 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:36:50 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:36:50 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:36:52 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 21:36:52 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 21:36:57 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 21:39:01 | INFO utils.py:191 -         load_logging() ] Logger loaded
+[02-May-19 21:39:01 | INFO utils.py:177 -          load_config() ] Config loaded!
+[02-May-19 21:39:01 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:39:02 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:39:02 | INFO utils.py:146 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:39:02 | INFO utils.py:162 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:39:02 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:39:02 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:39:02 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:39:02 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:39:02 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:39:04 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 21:39:04 | INFO trainer.py:120 -                train() ] Starting the training...
+[02-May-19 21:39:10 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 21:40:50 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 21:40:50 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 21:40:50 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:40:51 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:40:51 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:40:51 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:40:51 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:40:51 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:40:51 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:40:51 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:40:51 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:40:53 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 21:40:53 | INFO trainer.py:124 -                train() ] Starting the training...
+[02-mai-19 21:41:54 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 21:41:54 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 21:41:54 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 21:41:54.202049
+[02-mai-19 21:41:54 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 21:41:54.202049/my_model.pth
+[02-mai-19 21:41:54 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 21:41:54.202049/config.json
+[02-mai-19 21:41:54 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 21:42:16 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 21:42:16 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 21:42:16 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:42:16 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:42:16 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:42:16 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:42:16 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:42:16 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:42:17 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:42:17 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:42:17 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:42:19 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 21:42:19 | INFO trainer.py:124 -                train() ] Starting the training...
+[02-mai-19 21:43:19 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 21:43:19 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 21:43:19 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 21:43:19.650435
+[02-mai-19 21:43:19 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 21:43:19.650435/my_model.pth
+[02-mai-19 21:43:19 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 21:43:19.650435/config.json
+[02-mai-19 21:43:19 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 21:43:55 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 21:43:55 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 21:43:55 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 21:43:55 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 21:43:55 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 21:43:55 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 21:43:55 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 21:43:55 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 21:43:55 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 21:43:55 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 21:43:55 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 21:43:58 | INFO trainer.py:47 -             __init__() ] Trainer created!
+[02-May-19 21:43:58 | INFO trainer.py:125 -                train() ] Starting the training...
+[02-mai-19 21:44:58 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 21:44:58 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 21:44:58 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 21:44:58.602095
+[02-mai-19 21:44:58 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 21:44:58.602095/my_model.pth
+[02-mai-19 21:44:58 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 21:44:58.602095/config.json
+[02-mai-19 21:44:58 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 22:04:34 | INFO utils.py:190 -         load_logging() ] Logger loaded
+[02-May-19 22:04:34 | INFO utils.py:176 -          load_config() ] Config loaded!
+[02-May-19 22:04:34 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 22:04:35 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 22:04:35 | INFO utils.py:145 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 22:04:35 | INFO utils.py:161 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 22:04:35 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 22:04:35 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 22:04:35 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 22:04:35 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 22:04:35 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 22:04:37 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 22:06:14 | INFO utils.py:190 -         load_logging() ] Logger loaded
+[02-May-19 22:06:14 | INFO utils.py:176 -          load_config() ] Config loaded!
+[02-May-19 22:06:14 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 22:06:14 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 22:06:14 | INFO utils.py:145 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 22:06:14 | INFO utils.py:161 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 22:06:14 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 22:06:14 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 22:06:15 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 22:06:15 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 22:06:15 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 22:06:17 | INFO trainer.py:49 -             __init__() ] Trainer created!
+[02-May-19 22:06:17 | INFO trainer.py:122 -                train() ] Starting the training...
+[02-May-19 22:07:27 | INFO utils.py:190 -         load_logging() ] Logger loaded
+[02-May-19 22:07:27 | INFO utils.py:176 -          load_config() ] Config loaded!
+[02-May-19 22:07:27 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 22:07:28 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 22:07:28 | INFO utils.py:145 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 22:07:28 | INFO utils.py:161 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 22:07:28 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 22:07:28 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 22:07:28 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 22:07:28 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 22:07:28 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 22:07:30 | INFO trainer.py:48 -             __init__() ] Trainer created!
+[02-May-19 22:07:30 | INFO trainer.py:121 -                train() ] Starting the training...
+[02-mai-19 22:08:31 | INFO utils.py:197 -           save_model() ] Creating log directory log/
+[02-mai-19 22:08:31 | WARNING utils.py:201 -           save_model() ] Log directory already exists!
+[02-mai-19 22:08:31 | INFO utils.py:210 -           save_model() ] Creating model s directory log/2019-05-02 22:08:31.897834
+[02-mai-19 22:08:31 | INFO utils.py:217 -           save_model() ] Saving the model at log/2019-05-02 22:08:31.897834/my_model.pth
+[02-mai-19 22:08:32 | INFO utils.py:221 -           save_model() ] Saving the model s config at log/2019-05-02 22:08:31.897834/config.json
+[02-mai-19 22:08:32 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 22:09:49 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 22:09:49 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 22:09:49 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 22:09:49 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 22:09:49 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 22:09:49 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 22:09:49 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 22:09:49 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 22:09:49 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 22:09:49 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 22:09:49 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 22:09:52 | INFO trainer.py:48 -             __init__() ] Trainer created!
+[02-May-19 22:09:52 | INFO trainer.py:126 -                train() ] Starting the training...
+[02-mai-19 22:10:54 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 22:10:54 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 22:10:54 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 22:10:54.538567
+[02-mai-19 22:10:54 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 22:10:54.538567/my_model.pth
+[02-mai-19 22:10:54 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 22:10:54.538567/config.json
+[02-mai-19 22:10:54 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 22:11:37 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 22:11:37 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 22:11:37 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 22:11:38 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 22:11:38 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 22:11:38 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 22:11:38 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 22:11:38 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 22:11:38 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 22:11:38 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 22:11:38 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 22:11:41 | INFO trainer.py:48 -             __init__() ] Trainer created!
+[02-May-19 22:11:41 | INFO trainer.py:121 -                train() ] Starting the training...
+[02-May-19 22:11:55 | WARNING train.py:65 -             <module>() ] Keyboard interrupt!
+
+[02-May-19 22:12:07 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 22:12:07 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 22:12:07 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 22:12:08 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 22:12:08 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 22:12:08 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 22:12:08 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 22:12:08 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 22:12:08 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 22:12:08 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 22:12:08 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 22:12:10 | INFO trainer.py:48 -             __init__() ] Trainer created!
+[02-May-19 22:12:10 | INFO trainer.py:121 -                train() ] Starting the training...
+[02-mai-19 22:13:11 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 22:13:11 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 22:13:11 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 22:13:11.188456
+[02-mai-19 22:13:11 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 22:13:11.188456/my_model.pth
+[02-mai-19 22:13:11 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 22:13:11.188456/config.json
+[02-mai-19 22:13:11 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 22:14:45 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 22:14:45 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 22:14:45 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 22:14:45 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 22:14:46 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 22:14:46 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 22:14:46 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 22:14:46 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 22:14:46 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 22:14:46 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 22:14:46 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 22:14:48 | INFO trainer.py:48 -             __init__() ] Trainer created!
+[02-May-19 22:14:48 | INFO trainer.py:121 -                train() ] Starting the training...
+[02-mai-19 22:15:47 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 22:15:47 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 22:15:47 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 22:15:47.492299
+[02-mai-19 22:15:47 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 22:15:47.492299/my_model.pth
+[02-mai-19 22:15:47 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 22:15:47.492299/config.json
+[02-mai-19 22:15:47 | INFO train.py:62 -             <module>() ] Training ended!
+
+[02-May-19 22:16:36 | INFO utils.py:185 -         load_logging() ] Logger loaded
+[02-May-19 22:16:36 | INFO utils.py:171 -          load_config() ] Config loaded!
+[02-May-19 22:16:36 | INFO utils.py:106 -            load_data() ] Loaded 10153 samples
+[02-May-19 22:16:36 | INFO utils.py:119 -            load_data() ] Vocab size : 11323
+[02-May-19 22:16:37 | INFO utils.py:140 -            load_data() ] Created training data loader having 7107 samples and 223 batches of size 32
+[02-May-19 22:16:37 | INFO utils.py:156 -            load_data() ] Created validation data loader having 3046 samples and 64 batches of size 32
+[02-May-19 22:16:37 | INFO model.py:37 -             __init__() ] Embedding layer created : Embedding(11324, 128)
+[02-May-19 22:16:37 | INFO model.py:42 -             __init__() ] Convolutional layer created : Convolution(
+  (conv): ModuleList(
+    (0): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 1], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(3,), stride=(1,))
+      (activation): ReLU()
+    )
+    (1): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[1, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(4,), stride=(1,))
+      (activation): ReLU()
+    )
+    (2): PaddedConvolution(
+      (padder): ConstantPad1d(padding=[2, 2], value=0)
+      (conv): Conv1d(64, 100, kernel_size=(5,), stride=(1,))
+      (activation): ReLU()
+    )
+  )
+  (pooling): Sequential(
+    (0): ConstantPad1d(padding=[0, 1], value=0)
+    (1): MaxPool1d(kernel_size=2, stride=1, padding=0, dilation=1, ceil_mode=False)
+  )
+)
+[02-May-19 22:16:37 | INFO model.py:48 -             __init__() ] Recurrent layer created : Recurrence(
+  (gru): LSTM(38400, 128, batch_first=True)
+)
+[02-May-19 22:16:37 | INFO model.py:51 -             __init__() ] Postnet layer created : Postnet(
+  (dropout): Dropout(p=0.5)
+  (linear): Linear(in_features=128, out_features=4, bias=True)
+)
+[02-May-19 22:16:37 | INFO model.py:53 -             __init__() ] MyModel created!
+[02-May-19 22:16:39 | INFO trainer.py:48 -             __init__() ] Trainer created!
+[02-May-19 22:16:39 | INFO trainer.py:126 -                train() ] Starting the training...
+[02-mai-19 22:17:38 | INFO utils.py:192 -           save_model() ] Creating log directory log/
+[02-mai-19 22:17:38 | WARNING utils.py:196 -           save_model() ] Log directory already exists!
+[02-mai-19 22:17:38 | INFO utils.py:205 -           save_model() ] Creating model s directory log/2019-05-02 22:17:38.164843
+[02-mai-19 22:17:38 | INFO utils.py:212 -           save_model() ] Saving the model at log/2019-05-02 22:17:38.164843/my_model.pth
+[02-mai-19 22:17:38 | INFO utils.py:216 -           save_model() ] Saving the model s config at log/2019-05-02 22:17:38.164843/config.json
+[02-mai-19 22:17:38 | INFO train.py:62 -             <module>() ] Training ended!
+

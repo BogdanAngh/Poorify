@@ -9,7 +9,7 @@ import time
 #in-house imports
 from models.model import MyModel
 from visualizer import plot_loss
-from emotionClasification import Emotion, findEmotion
+from emotionClasification import findEmotion
 import constants
 
 class Trainer():
@@ -42,7 +42,8 @@ class Trainer():
         if loss == 'mse':
             self.loss_fn = nn.MSELoss()
         elif loss == 'cross-entropy':
-            self.loss_fn = nn.CrossEntropyLoss()
+            weights = torch.tensor([0.005, 0.1, 0.005, 0.1])
+            self.loss_fn = nn.CrossEntropyLoss(weight=weights.cuda())
 
         logging.info('Trainer created!')
 
@@ -75,7 +76,7 @@ class Trainer():
             #update the parameters
             self.optimizer.step()
 
-            predicted = torch.argmax(F.softmax(result, dim=1), dim=1)
+            predicted = torch.argmax(F.softmax(result, dim=1), dim=1)   
             acc = torch.sum(predicted == label)
 
             if idx % self.train_verbose == 0:
@@ -102,8 +103,12 @@ class Trainer():
                 batch_loss = self.loss_fn(result, label)
                 epoch_loss += batch_loss.item()
 
-                predicted = torch.tensor(torch.argmax(F.softmax(result, dim=1), dim=1))
+                predicted = torch.argmax(F.softmax(result, dim=1), dim=1)
                 acc = torch.sum(predicted == label)
+
+                del sample
+                del label
+                del result
 
                 if idx % self.val_verbose == 0:
                     print('Epoch {} - batch {} / {} - validation loss : {} - accuracy : {}'.format(epoch, idx, self.val_generator_size, \
@@ -120,12 +125,13 @@ class Trainer():
         for e in tqdm(range(self.epochs), ascii=True, desc='Epochs'):
             t_loss = self.train_epoch(e)
             v_loss = self.val_epoch(e)
-
+            
             #keep the losses from each epoch
             train_loss.append(t_loss)
             val_loss.append(v_loss)
 
         plot_loss(train_loss, val_loss)
 
+        return self.model
 
             

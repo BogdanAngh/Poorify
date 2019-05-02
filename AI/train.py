@@ -33,7 +33,7 @@ def main():
         constants.DEVICE = 'cpu'
 
     #get the data generators
-    vocab, train_generator, validation_generator = load_data(constants.DATASET_PATH, CONFIG)
+    vocab, train_generator, validation_generator, test_generator = load_data(constants.DATASET_PATH, CONFIG)
 
     #use incremented vocabulary size because we have an extra character which isn't
     #in the dictionary : 0 - padding character
@@ -48,7 +48,10 @@ def main():
                       lr=CONFIG['learning_rate'], loss=CONFIG['loss'], optim=CONFIG['optimizer'],
                       train_verbose=CONFIG['train_verbose'], val_verbose=CONFIG['validation_verbose'])
     
-    trainer.train()
+    model = trainer.train()
+
+    #test the model
+    model.predict(test_generator)
 
     if CONFIG['save_model'] == True:
         save_model(model)

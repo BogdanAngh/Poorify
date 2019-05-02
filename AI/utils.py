@@ -124,8 +124,10 @@ def load_data(path, CONFIG=None):
     samples = samples[:, :CONFIG['max_len']]
 
     train_size = int(samples.shape[0] * CONFIG['train_val_cutoff'])
-    train_samples, validation_samples = samples[:train_size], samples[train_size:]
-    train_labels, validation_labels = labels[:train_size], labels[train_size:]
+    validation_size = int(samples.shape[0] * CONFIG['validation_val_cutoff'])
+    train_samples, validation_samples = samples[:train_size], samples[train_size:(train_size + validation_size)]
+    train_labels, validation_labels = labels[:train_size], labels[train_size:(train_size + validation_size)]
+    test_samples, test_labels = samples[(train_size + validation_size):], labels[(train_size + validation_size):]
 
     #build the training data loader
     train_dataset = MyDataset(train_samples, train_labels)
@@ -144,10 +146,16 @@ def load_data(path, CONFIG=None):
                                               shuffle=CONFIG['shuffle'], 
                                               num_workers=CONFIG['num_workers'])
 
+    test_dataset = MyDataset(test_samples, test_labels)
+    test_data_loader = torch.utils.data.DataLoader(test_dataset, 
+                                              batch_size=CONFIG['batch_size'], 
+                                              shuffle=CONFIG['shuffle'], 
+                                              num_workers=CONFIG['num_workers'])
+
     logging.info('Created validation data loader having {} samples and {} batches of size {}'.format(
         samples.shape[0] - train_size, len(validation_data_loader), CONFIG['batch_size']))
 
-    return vocab, train_data_loader, validation_data_loader
+    return vocab, train_data_loader, validation_data_loader, test_data_loader
 
 def load_config(config_path):
 
@@ -207,3 +215,11 @@ def save_model(model):
     #copy the used config
     logging.info('Saving the model s config at {}'.format(log_path + '/config.json'))
     copyfile('config.json', log_path + '/config.json')
+
+def confusion_matrix(predicted, label, no_of_classes):
+
+    conf_matrix = torch.zeros(no_of_classes, no_of_classes)
+    for p, l in zip(predicted, label):
+        conf_matrix[p, l] += 1
+
+    return conf_matrix

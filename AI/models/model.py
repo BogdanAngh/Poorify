@@ -1,4 +1,5 @@
 import torch.nn as nn
+import torch.nn.functional as F
 import torch
 import logging
 
@@ -7,11 +8,12 @@ from layers.prenet import Prenet
 from layers.convolution import Convolution
 from layers.postnet import Postnet
 from layers.recurrence import Recurrence
+from utils import confusion_matrix
+from visualizer import plot_confusion_matrix
 
 class MyModel(nn.Module):
-    def __init__(self, vocab_size, embedding_size, output_size,
-                 max_len, batch_size=64, out_channels=100, kernel_size=5, 
-                 hidden_size=256):
+    def __init__(self, vocab_size, embedding_size, output_size, max_len, 
+                 batch_size=64, out_channels=100, hidden_size=256):
         super().__init__()
 
         # EMBEDDING PARAMETERS
@@ -19,7 +21,6 @@ class MyModel(nn.Module):
         self.embedding_size = embedding_size
 
         # CONVOLUTION PARAMETERS
-        self.kernel_size = kernel_size
         self.max_len = max_len
         self.out_channels = out_channels
 
@@ -37,19 +38,16 @@ class MyModel(nn.Module):
         
         #self.prenet = Prenet()
         
-        self.convolution = Convolution(in_channels = self.max_len, out_channels = self.out_channels,
-                                       kernel_size = self.kernel_size, max_len = self.max_len)
+        self.convolution = Convolution(in_channels = self.max_len, out_channels = self.out_channels, max_len = self.max_len)
         logging.info('Convolutional layer created : {}'.format(self.convolution))
 
         # we apply pooling on each output channels of the convolutional layer 
         # so each channels gets reducted to a few features depending on the pooling kernel size
-        feature_size = self.max_len // (self.max_len - self.kernel_size + 1)
-        #self.recurrence_input = self.out_channels * feature_size
         self.recurrence_input = self.embedding_size * 300
         self.recurrence = Recurrence(input_size = self.recurrence_input, hidden_size = self.hidden_size)
         logging.info('Recurrent layer created : {}'.format(self.recurrence))
 
-        self.postnet = Postnet(in_size = self.hidden_size, out_size = self.output_size)
+        self.postnet = Postnet(in_size = self.hidden_size, out_size = self.output_size, dropout_rate=0.5)
         logging.info('Postnet layer created : {}'.format(self.postnet))
 
         logging.info('MyModel created!')
@@ -73,3 +71,15 @@ class MyModel(nn.Module):
         x = self.postnet(x, is_training)
     
         return x.squeeze(1)
+
+    def predict(self, test_generator):
+
+        conf_matrix = torch.zeros(self.output_size, self.output_size)
+
+        for sample, label in test_generator:
+            predicted = torch.argmax(F.softmax(self.forward(sample.cuda(), is_training=False), dim=1), dim=1)
+            cm = confusion_matrix(predicted, label, self.output_size)
+            conf_matrix += cm
+        
+        label_names = ['Happy', 'Angry', 'Sad', 'Calm']
+        plot_confusion_matrix(conf_matrix.numpy(), label_names)

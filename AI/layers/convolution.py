@@ -5,12 +5,11 @@ import torch.nn as nn
 from layers.paddedconv import PaddedConvolution
 
 class Convolution(nn.Module):
-    def __init__(self, in_channels, out_channels, kernel_size, max_len):
+    def __init__(self, in_channels, out_channels, max_len):
         super().__init__()
 
         self.in_channels = in_channels
         self.out_channels = out_channels
-        self.kernel_size = kernel_size
         self.max_len = max_len
 
         self.conv = nn.ModuleList([
