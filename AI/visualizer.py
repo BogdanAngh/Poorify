@@ -27,7 +27,7 @@ def plot_confusion_matrix(cm, labels, figsize=(10,10)):
       figsize:   the size of the figure plotted.
     """
 
-    cm_sum = np.sum(cm, axis=1, keepdims=True) + 1
+    cm_sum = np.sum(cm, axis=1, keepdims=True)
     cm_perc = cm / cm_sum.astype(float) * 100
     annot = np.empty_like(cm).astype(str)
     nrows, ncols = cm.shape
@@ -46,6 +46,6 @@ def plot_confusion_matrix(cm, labels, figsize=(10,10)):
     cm.index.name = 'Actual'
     cm.columns.name = 'Predicted'
     fig, ax = plt.subplots(figsize=figsize)
-    sns.heatmap(cm, annot=cm, fmt='', ax=ax)
+    sns.heatmap(cm, annot=annot, fmt='', ax=ax)
     plt.show()
     #plt.savefig(filename)

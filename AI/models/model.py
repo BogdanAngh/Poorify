@@ -43,11 +43,11 @@ class MyModel(nn.Module):
 
         # we apply pooling on each output channels of the convolutional layer 
         # so each channels gets reducted to a few features depending on the pooling kernel size
-        self.recurrence_input = self.embedding_size * 300
-        self.recurrence = Recurrence(input_size = self.recurrence_input, hidden_size = self.hidden_size)
-        logging.info('Recurrent layer created : {}'.format(self.recurrence))
+        #self.recurrence_input = self.embedding_size
+        #self.recurrence = Recurrence(input_size = self.recurrence_input, hidden_size = self.hidden_size)
+        #logging.info('Recurrent layer created : {}'.format(self.recurrence))
 
-        self.postnet = Postnet(in_size = self.hidden_size, out_size = self.output_size, dropout_rate=0.5)
+        self.postnet = Postnet(in_size = self.out_channels*3*self.embedding_size//2, out_size = self.output_size, dropout_rate=0.2)
         logging.info('Postnet layer created : {}'.format(self.postnet))
 
         logging.info('MyModel created!')
@@ -58,14 +58,16 @@ class MyModel(nn.Module):
         # out = batch_size x max_len x embedding_size
         x = self.embedding(x)
 
+        #x = x.view(32*128,-1)
         #x = self.prenet(x)
-        
+        #x = x.view(32, 128, -1)
+
         # out = batch_size x out_channels
         x = self.convolution(x)
 
         # out = batch_size x hidden_size
         x = x.view(x.shape[0], 1, -1)
-        x = self.recurrence(x)
+        #x = self.recurrence(x)
 
         # out = batch_size x output_size
         x = self.postnet(x, is_training)

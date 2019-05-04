@@ -35,14 +35,14 @@ class Trainer():
         self.val_verbose = val_verbose
 
         if optim == 'adam':
-            self.optimizer = Adam(self.model.parameters(), lr = self.lr)
+            self.optimizer = Adam(self.model.parameters(), lr = self.lr, weight_decay=0.0001)
         elif optim == 'SGD':
-            self.optimizer = SGD(self.model.parameters(), lr = self.lr)
+            self.optimizer = SGD(self.model.parameters(), lr = self.lr, weight_decay=0.0001)
 
         if loss == 'mse':
             self.loss_fn = nn.MSELoss()
         elif loss == 'cross-entropy':
-            weights = torch.tensor([0.005, 0.1, 0.005, 0.1])
+            weights = torch.tensor([1/3215, 1/194, 1/2956, 1/1851])
             self.loss_fn = nn.CrossEntropyLoss(weight=weights.cuda())
 
         logging.info('Trainer created!')

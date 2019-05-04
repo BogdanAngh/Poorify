@@ -14,7 +14,7 @@ class Postnet(nn.Module):
         self.activation = None
 
     def forward(self, x, is_training=True):
-        
+
         #don t use dropout in validation phase
         if is_training == False:
             self.dropout.p = 0.0

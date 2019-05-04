@@ -8,8 +8,8 @@ class Recurrence(nn.Module):
         self.input_size = input_size
         self.hidden_size = hidden_size
 
-        self.gru = nn.LSTM(input_size = self.input_size, hidden_size = self.hidden_size,
-                          num_layers = 1, batch_first = True, bidirectional = False)
+        self.gru = nn.GRU(input_size = self.input_size, hidden_size = self.hidden_size,
+                          num_layers = 4, batch_first = True, bidirectional = False)
 
     def forward(self, x):
 

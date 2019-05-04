@@ -8,7 +8,8 @@ class PaddedConvolution(nn.Module):
         self.padding = padding
         self.padder = nn.ConstantPad1d(self.padding, 0)
         self.conv = nn.Conv1d(in_channels, out_channels, kernel_size, stride)
-        self.activation = nn.ReLU()
+        self.bn = nn.BatchNorm1d(out_channels, momentum=0.1, eps=1e-3)
+        self.activation = nn.Tanh()
 
     def forward(self, x):
         x = self.padder(x)

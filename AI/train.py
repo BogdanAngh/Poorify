@@ -33,7 +33,7 @@ def main():
         constants.DEVICE = 'cpu'
 
     #get the data generators
-    vocab, train_generator, validation_generator, test_generator = load_data(constants.DATASET_PATH, CONFIG)
+    vocab, train_generator, validation_generator, test_generator = load_data(CONFIG)
 
     #use incremented vocabulary size because we have an extra character which isn't
     #in the dictionary : 0 - padding character

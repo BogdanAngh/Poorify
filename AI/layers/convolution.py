@@ -19,12 +19,12 @@ class Convolution(nn.Module):
                 k,
                 stride=1,
                 padding=[(k - 1) // 2, k // 2],
-            ) for k in range(3, 6)
+            ) for k in range(2, 5)
         ])
 
         self.pooling = nn.Sequential(
             nn.ConstantPad1d([0, 1], 0),
-            nn.MaxPool1d(kernel_size=2, stride=1, padding=0)
+            nn.MaxPool1d(kernel_size=2, stride=2, padding=0)
         )
 
         #self.conv = nn.Conv1d(in_channels = self.in_channels, out_channels = self.out_channels,
