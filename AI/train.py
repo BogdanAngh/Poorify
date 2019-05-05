@@ -39,7 +39,7 @@ def main():
     #in the dictionary : 0 - padding character
     model = MyModel(vocab_size=vocab.size()+1, embedding_size=CONFIG['embedding_size'], 
                     output_size=CONFIG['output_size'], batch_size=CONFIG['batch_size'],
-                    max_len=CONFIG['max_len'], hidden_size=CONFIG['rnn_size'],)
+                    max_len=CONFIG['max_len'], vocab=vocab)
     model = model.to(constants.DEVICE)
 
     trainer = Trainer(model=model, vocab=vocab, train_generator=train_generator,

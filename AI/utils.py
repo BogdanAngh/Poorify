@@ -22,6 +22,8 @@ from vocabulary import Vocabulary
 from emotionClasification import findQuadrant
 import constants
 
+idx_to_emotion = dict({0: 'joy', 1 : 'sadness', 2 : 'anger', 3 : 'fear', 4 : 'love', 5 : 'surprise'})
+
 def api_result(status):
     if status == True:
         return 'Succes'
@@ -109,46 +111,33 @@ def build_loader(sample, label, name, CONFIG):
 
     return data_loader
 
-def load_train_val(train_path, val_path, CONFIG):
+def find_emotion(e):
+    if e == 'joy':
+        return 0
+    elif e == 'sadness':
+        return 1
+    elif e == 'anger':
+        return 2
+    elif e == 'fear':
+        return 3
+    elif e == 'love':
+        return 4
+    elif e == 'surprise':
+        return 5
 
-    train_data = pd.read_csv(train_path)
-    val_data = pd.read_csv(val_path)
+    return -1
 
-    #delete useless columns
-    train_data.drop('artist_name', 1)
-    train_data.drop('track_name', 1)
-    val_data.drop('artist_name', 1)
-    val_data.drop('track_name', 1)
-
-    #TRAIN_DATA : delete samples without lyrics
-    train_data = train_data[train_data['lyrics'] != '-']
-    logging.info('Loaded {} samples from {}'.format(train_data.shape[0], train_path))
-
-    #VALIDATION_DATA : delete samples without lyrics
-    val_data = val_data[val_data['lyrics'] != '-']
-    logging.info('Loaded {} samples from {}'.format(val_data.shape[0], val_path))
+def load_train_val(train_samples, train_labels, val_samples, val_labels, CONFIG):
 
     #TRAIN_DATA : build the samples & labels array
-    train_samples = [preprocess(e) for e in train_data['lyrics'].values]
-    valence = torch.tensor(train_data['valence'].values, dtype=torch.float32)
-    arousal = torch.tensor(train_data['arousal'].values, dtype=torch.float32)
-
-    #TRAIN_DATA : build the labels tensor
-    train_labels = torch.tensor([findQuadrant(l[0], l[1]) for l in zip(valence, arousal)])
-
-    print(torch.sum(train_labels == 0))
-    print(torch.sum(train_labels == 1))
-    print(torch.sum(train_labels == 2))
-    print(torch.sum(train_labels == 3))
-
+    train_samples = [preprocess(e) for e in train_samples.values]
+    train_labels = torch.tensor([find_emotion(e) for e in train_labels])
+    print('Train samples preprocessed!')
 
     #VALIDATION_DATA : build the samples & labels array
-    val_samples = [preprocess(e) for e in val_data['lyrics'].values]
-    valence = torch.tensor(val_data['valence'].values, dtype=torch.float32)
-    arousal = torch.tensor(val_data['arousal'].values, dtype=torch.float32)
-
-    #VALIDATION_DATA : build the labels tensor
-    val_labels = torch.tensor([findQuadrant(l[0], l[1]) for l in zip(valence, arousal)])
+    val_samples = [preprocess(e) for e in val_samples.values]
+    val_labels = torch.tensor([find_emotion(e) for e in val_labels])
+    print('Validation samples preprocessed!')
 
     #build the vocabulary
     samples = train_samples + val_samples
@@ -156,60 +145,85 @@ def load_train_val(train_path, val_path, CONFIG):
     vocab.add_unkw()
 
     #TRAIN_DATA : transform the samples into tensors and pad them to the maximum length
-    train_samples = pad_sequence([text_to_tensor(e.split(), vocab) for e in train_samples], batch_first=True)
+    train_samples = [text_to_tensor(e.split(), vocab) for e in train_samples]
+    #add a list of 0s to pad the others to max_len
+    train_samples.append(torch.zeros(CONFIG['max_len']))
+    train_samples = pad_sequence(train_samples, batch_first=True)
+    print('Train samples padded!')
     #TRAIN_DATA : set the maximum length of an input to max_len
     train_samples = train_samples[:, :CONFIG['max_len']]
+
+    #remove the added element
+    train_samples = train_samples[:train_samples.shape[0]-1]
 
     #TRAIN_DATA : build the training data loader
     train_data_loader = build_loader(train_samples, train_labels, 'train data', CONFIG)
 
     #VALIDATION_DATA : transform the samples into tensors and pad them to the maximum length
-    val_samples = pad_sequence([text_to_tensor(e.split(), vocab) for e in val_samples], batch_first=True)
+    val_samples = [text_to_tensor(e.split(), vocab) for e in val_samples]
+    val_samples.append(torch.zeros(CONFIG['max_len']))
+    val_samples = pad_sequence(val_samples, batch_first=True)
+    print('Validation samples padded!')
     #VALIDATION_DATA : set the maximum length of an input to max_len
     val_samples = val_samples[:, :CONFIG['max_len']]
+
+    val_samples = val_samples[:val_samples.shape[0]-1]
 
     #VALIDATION_DATA : build the training data loader
     val_data_loader = build_loader(val_samples, val_labels, 'validation data', CONFIG)
 
     return vocab, train_data_loader, val_data_loader
 
-def load_test(path, vocab, CONFIG):
-
-    data = pd.read_csv(path)
-
-    #delete useless columns
-    data.drop('artist_name', 1)
-    data.drop('track_name', 1)
-
-    #delete samples without lyrics
-    data = data[data['lyrics'] != '-']
-    logging.info('Loaded {} samples from {}'.format(data.shape[0], path))
+def load_test(test_samples, test_labels, vocab, CONFIG):
 
     #transform the dataframe into (sample, label) pairs
     #for the moment samples is a numpy array
-    samples = [preprocess(e) for e in data['lyrics'].values]
-    valence = torch.tensor(data['valence'].values, dtype=torch.float32)
-    arousal = torch.tensor(data['arousal'].values, dtype=torch.float32)
-
+    samples = [preprocess(e) for e in test_samples.values]
     #build the labels tensor
-    labels = torch.tensor([findQuadrant(l[0], l[1]) for l in zip(valence, arousal)])
+    labels = torch.tensor([find_emotion(e) for e in test_labels])
 
     #transform the samples into tensors and pad them to the maximum length
-    samples = pad_sequence([text_to_tensor(e.split(), vocab) for e in samples], batch_first=True)
-    #set the maximum length of an input to max_len
+    samples = [text_to_tensor(e.split(), vocab) for e in samples]
+    #add a list of 0s to pad the others to max_len
+    samples.append(torch.zeros(CONFIG['max_len']))
+    samples = pad_sequence(samples, batch_first=True)
+    print('Test data padded!')
     samples = samples[:, :CONFIG['max_len']]
+
+    #remove the added list
+    samples = samples[:samples.shape[0]-1]
 
     test_data_loader = build_loader(samples, labels, 'test data', CONFIG)
     return test_data_loader
 
 def load_data(CONFIG=None):
 
+    data = pd.read_csv(constants.DATA_PATH)
+
+    samples = data['text']
+    labels = data['emotions']
+
+    #get train&validation sizes
+    train_size = (int)(samples.shape[0] * CONFIG['train_cutoff'])
+    val_size = (int)(samples.shape[0] * CONFIG['validation_cutoff'])
+    
+    #build samples tensors
+    train_samples = samples[:train_size]
+    validation_samples = samples[train_size:(train_size + val_size)]
+    test_samples = samples[(train_size + val_size):]
+
+    #build labels tensors
+    train_labels = labels[:train_size]
+    validation_labels = labels[train_size:(train_size + val_size)]
+    test_labels = labels[(train_size + val_size):]
+
     #build the data loaders
-    #build train&validation in the same function to append the inputs and create the vocabulary
-    vocab, train_data_loader, validation_data_loader = load_train_val(constants.TRAIN_PATH, constants.VALIDATION_PATH, CONFIG)
+    #build train&validation in the same function to append the samples and create the vocabulary
+    vocab, train_data_loader, validation_data_loader = load_train_val(train_samples, train_labels, 
+                                                                      validation_samples, validation_labels, CONFIG)
     #won't add the test words in vocabulary
     #for unknown words use special word UNKW
-    test_data_loader = load_test(constants.TEST_PATH, vocab, CONFIG)
+    test_data_loader = load_test(test_samples, test_labels, vocab, CONFIG)
     logging.info('Vocab size : {}'.format(vocab.size()))
 
     return vocab, train_data_loader, validation_data_loader, test_data_loader
@@ -242,7 +256,7 @@ def load_logging():
     logging.info('Logger loaded')
 
 def save_model(model):
-    return 0
+
     log_path = 'log/'
 
     try:
@@ -267,7 +281,7 @@ def save_model(model):
 
     #save the model in the created directory
     logging.info('Saving the model at {}'.format(log_path + '/my_model.pth'))
-    torch.save(model.state_dict(), log_path + '/my_model.pth')
+    torch.save(model, log_path + '/my_model.pth')
 
     #copy the used config
     logging.info('Saving the model s config at {}'.format(log_path + '/config.json'))

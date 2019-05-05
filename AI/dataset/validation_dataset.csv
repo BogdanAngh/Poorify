@@ -1,8 +1,9 @@
-valence,arousal,artist_name,track_name,lyrics,Unnamed: 5
+valence,arousal,artist_name,track_name,lyrics,
 -1.1766400794,-0.3147197497,CALLA,Strangler,"(I'll find it out...) 
 I can get the same effect, if You strangle me 
 Say what You said 
 See what You've done ",
+0.482477707,-0.4714368038,Gun Club,Sex beat,-,
 -0.7809623179,-0.7894802371,The Box Tops,The Letter,"My baby, just-a wrote me a letter
 Lonely days are gone, I'm-a goin' home
 Ain't got time to take a fast train
@@ -51,6 +52,11 @@ But I know Jesus and I talk to God",
 Set 'em up, my friend
 And you can let some other fool sit down
 Then I'll be gone",
+-0.3634540591,-0.4875694417,Journey,Faithfully,-,
+-1.6550918095,0.1646500629,Journey,I'll Be Alright Without You,-,
+1.178324805,1.1833109145,Journey,Any Way You Want It,-,
+0.3733252211,-0.9231506656,Journey,When You Love A Woman,-,
+0.9572910209,0.3905069938,Bomfunk MC's,In Stereo,-,
 1.5467144451,2.119003914,Nina Simone,The House Of The Rising Sun,"Ain't comin' back
 Yeah, come-a
 They call it the Rising Sun
@@ -79,10 +85,15 @@ Or will I feel this way the rest of my life?",
 
 From the bottom of my heart
 Prospero ano y felicidad",
+1.178324805,1.1833109145,Boney M.,Jingle Bells,-,
 1.050070634,1.049640486,Santana,She's Not There,"Please don't bother trying to find her
 How would I know, why should I care
 Well, let me tell you about the way she looked
 Well, it's too late to say you're sorry",
+0.5261387014,-1.6283774091,Lou Reed,Walk On The Wild Side,"
+""Doo do doo do doo do do doo, ...""
+She says, ""Hey babe
+Plucked her eyebrows on the way",
 0.8153927892,0.6624571759,Bonnie Tyler,Holding Out For A Hero,"I need a hero
 I'm holding out for a hero till the end of the night
 He's gotta be sure, and it's gotta be soon
@@ -143,10 +154,15 @@ Held down just to impair you",
 So why don't you give it up, baby and bring it home to me
 Or write it on a piece of paper, woman - so it can be read to me
 Now, when the night begins, whoa, I'm at an end",
+1.178324805,1.1833109145,Daryl Hall & John Oates,You Make My Dreams,"
+(Ooh, ooh, ooh ooh ooh)
+You make my dreams
+(You) You (You, you, ooh ooh ooh, you)",
 -0.8691939107,0.5088130052,Nick Lachey,What's Left Of Me,"Will you take what's left?
 To find a place I've never been
 Now I'm broken
 I'm half the man I thought I would be",
+-1.1548095822,-0.6880750845,The Chieftains,The Foggy Dew,-,
 -1.7442330064,1.3354186435,Donell Jones,My Apology,"Wish that I could just rewind all the years I hurt ya boo
 Understand you got no trust in me
 That's the Gemini in me [echo]
@@ -179,6 +195,10 @@ The sound of your sorrow comes",
 Didn't I blow your mind this time
 There'll be no more
 Ten times or more",
+-0.9078520828,-0.2455798729,Ray Peterson,Tell Laura I Love Her,"Tell Laura I need her
+Tell Laura I love her
+Tell Laura not to cry
+Tell Laura I may be late",
 0.8153927892,0.6624571759,Ram Jam,Black Betty,"
 A-whoa, Black Betty, bam-ba-lam
 Well, she's shaking that thing, bam-ba-lam
@@ -291,10 +311,15 @@ People creepin'",
 You were only waiting for this moment to arise
 
 Blackbird fly",
+1.0719011312,0.8468301807,Jennifer Lopez,Sola,"Alimentando esta ilusion y soportando este dolor
+Me queda seguir, esperar y cambiar y llorar y dejarlo todo
+Mi mundo se derrumba todo
+Quitarme el llanto de mis ojos,",
 -1.0483859084,0.3351950923,Alan Parsons,Don't Answer Me,"Can you change the things we've said and done?
 Don't answer me, don't break the silence
 Don't answer me, stay on your island
 Don't let me in",
+0.8153927892,0.6624571759,Alan Parsons,I Wouldn't Want To Be Like You,-,
 -1.4959111008,0.0401982846,The Alan Parsons Project,Time,"But time
 Forevermore
 If ever 
@@ -383,6 +408,7 @@ Carry the weight of the world in the palm of my hand",
 'Cause you know darn well
 That you'll go to hell
 I say hell",
+0.53705395,-0.2686264985,Peter White,Crazy Love,-,
 -0.3088778161,-0.1026907941,The Alan Parsons Project,May Be A Price To Pay,"Something's wrong in this house today
 And it's cold in the heat of the night
 Something unrighteous is possessing my soul
@@ -411,6 +437,7 @@ Seems so much more easier to just give in",
 
 Can't you feel me stepping all over your soul
 Can't you feel me walking over your soul",
+1.0719011312,0.8468301807,Tom Tom Club,On On On On...,-,
 1.5412568208,1.7041646532,Natalie Imbruglia,Perfectly,"Perfectly
 The further away you push me
 The closer I feel to you
@@ -443,10 +470,15 @@ You lay me down on thorns and nails",
 (Like the knife is in you)
 Like the knife is in you?
 Can't complain, can't complain, can't complain",
+-1.040199472,-0.0658161932,A Static Lullaby,Half Man_ Half Shark, Equals One Complete Gentleman,-
 -1.040199472,-0.0658161932,A Static Lullaby,Calmer Than You Are,"(We're packing our bags) our bags, too full
 (We're taking some time) we can't wait for...
 Unloved, we'll lose ourselves
 (x3)",
+0.9791215181,0.588707974,A Static Lullaby,Modern Day Fire,"
+So you can save our day
+(We are are better)
+(You better get better)",
 -1.040199472,-0.0658161932,A Static Lullaby,The Jesus Haircut,"Praise, fuck, destroy
 We trusted you
 Played the part
@@ -491,6 +523,7 @@ I'm so sure I just won't last much longer",
 Ain't got no crystal ball
 I just can't stand to leave her be
 I love the woman",
+0.3733252211,-0.9231506656,DJ Krush,Road To Nowhere,-,
 0.3733252211,-0.9231506656,Bic Runga,The Be All And End All,"Then come on now love lets make a start
 But it's alright it's alright
 If it's the be all and end all
@@ -515,6 +548,7 @@ I get no letters in the mail",
 Our love was meant to be
 Can't forget you ever
 Oh, when I lay me down to sleep",
+-0.7145612222,0.6563114091,Tori Amos Featuring Damien Rice,The Power of Orange Knickers,-,
 -1.4959111008,0.0401982846,Tori Amos,Mother Revolution,"You could've had me
 Was another Mother of a Mother Revolution
 But what you didn't count on
@@ -559,6 +593,7 @@ Darlin' companion, come on and give me understandin'",
 Would I ever feel like that again?
 We'd have gone for coffee and talked all night
 There's something special 'bout six o'clock",
+0.9504689905,0.572575336,Natasha Bedingfield,These Words,-,
 1.0282401368,0.6962588935,Lou Bega,Mambo No. 5 (A Little Bit Of...),"A little bit of Erica by my side
 A little bit of Jessica, here I am
 A little bit of Mary all night long
@@ -571,6 +606,7 @@ Is just to love and be loved in return""",
 Take that vow 
 Remember, you decide 
 It's not a whim ",
+0.7226131761,-0.0381602424,Babyface,How Come_ How Long,-,
 -0.6854538926,0.2061339889,Babyface,When Can I See You,"When can I see you again
 When can my heart beat again
 So when can I see you
@@ -607,6 +643,7 @@ I took a chance on the other side but nobody survived",
 I never want to cry like this
 And the world would not subside
 Then goodbye",
+-1.0565723449,0.7362063778,Fuel,Luck,-,
 -1.9352498568,-0.6558098086,Tammy Wynette,D-I-V-O-R-C-E,"Our D-I-V-O-R-C-E; becomes final today
 Oh, I wish that we could stop this D-I-V-O-R-C-E.
 I love you both and this will be pure H-E double L for me
@@ -632,10 +669,16 @@ You treat me so darn, darn fine",
 How can you be so sure? 
 If all things must fall
 If all things must pass",
+1.0719011312,0.8468301807,Kitty Kallen,I'm Beginning to See the Light,-,
 0.995494391,-1.1075236705,Jorma Kaukonen,Genesis,"Along with you
 The time has come for us to pause
 So let me stay with you 
 So let me stay with you",
+-0.3143354404,-0.7825662494,Bic Runga,When I See You Smile,-,
+1.5412568208,1.7041646532,Aerosmith,You Gotta Move,"
+You gotta move...
+Yes...
+You can not see",
 0.5752573201,1.2801067421,Kansas,Cheyenne Anthem,"We will share it with you, no man owns this earth we're on
 We wed this land and pledge our souls to meet its end,
 We are mighty on the earth, on the earth
@@ -664,6 +707,7 @@ Champion lover, no ease up tonight, no",
 I promise these things to you
 Don't let nobody say it ain't so (don't let nobody say it ain't so)
 And I pray to God one day they will see",
+1.2601891694,1.1464363136,Evan and Jaron,Done Hangin' On Maybe,-,
 -0.4316743628,0.0955101861,Aerosmith,I Don't Want To Miss A Thing,"'Cause I miss you baby and I don't wanna miss a thing
 'Cause even when I dream of you, the sweetest dream would never do
 I don't wanna close my eyes, I don't wanna fall asleep
@@ -680,6 +724,7 @@ Carbon nitrogen and oxygen, protons electrons collide",
 
 A little later than the rest 
 Autumn comes to a seaside town ",
+1.0719011312,0.8468301807,Journey,Open Arms,-,
 -1.3185383112,0.9574539836,Vivian Green,Emotional Rollercoaster,"Up and down it goes
 Then disappearin so suddenly
 That I was still bein taken for a constant ride
@@ -760,6 +805,10 @@ Remove all the bars",
 That pleases me
 Are you hip to what I'm sayin'?
 Are you ready for this action?",
+-0.2788608825,-0.2686264985,Nina Simone,Let It Be Me,"Je t'appartiens
+Tell me you'll love me only
+And so I beg you, let it be me.
+L'esclave docile",
 -1.040199472,-0.0658161932,Kurt Nilsen,Games We Play,"The games we play
 The games we play...
 The shows we give
@@ -780,6 +829,11 @@ And give all your love to me",
 
 Done with yours, I'm living my life for me
 I don't know who you think I should be",
+-1.9352498568,-0.6558098086,The Promise Ring,Stop Playing Guitar,"
+Yeah oh yeah yeah oh yeah
+Stop playing guitar
+Yeah yeah yeah yeah yeah  ",
+-0.3334371255,-0.4944834294,The Promise Ring,Bread & Coffee,-,
 0.4497319612,-2.0754819458,The Weakerthans,Psalm For The Elks Lodge Last Call,"Before we say goodnight
 And the weather show we care
 Form a picture of our leader
@@ -816,6 +870,7 @@ What we know 'bout love",
 Skin again
 The paper cuts my skin again
 Cash out, cash in",
+-1.9352498568,-0.6558098086,The Matches,The Barbers Unhappiness,-,
 0.3733252211,-0.9231506656,Xavier Rudd,Come Let Go,"Come let go
 Come my brother, put our hands up, take your heart out, let go, come let go
 Come my sister can I hold you, can I squeeze you, let go, come let go
@@ -832,6 +887,7 @@ That blacken our fingers, smear their prints on every door pulled shut",
 
 Always, ""No huggee, no kissee until I get a wedding ring""
 And said, ""No huggee, no kissee until I get a wedding vow""",
+1.5412568208,1.7041646532,Crosby_ Stills & Nash,Suite: Judy Blue Eyes,-,
 -1.4877246644,-0.3608130009,Crosby_ Stills & Nash,Just A Song Before I Go,"Traveling twice the speed of sound
 Just a song before I go
 It's easy to get burned
@@ -840,6 +896,7 @@ To whom it may concern",
 Like a promise to be free
 Mermaids live in colonies
 Never mind their questions there's no answer for",
+0.6325623752,-0.7065123849,Brad Mehldau,From This Moment On,-,
 1.178324805,1.1833109145,The Cars,Just What I Needed,"I guess you're just what I needed (just what I needed)
 I don't mind you comin' here
 And wastin' all my time
@@ -896,6 +953,10 @@ I don't wanna know, I don't wanna know",
 They'll get you one day
 The skull and bones are breaking our homes
 The free masons...",
+0.3733252211,-0.9231506656,Seeed,Schwinger,"Uh Baby, schwing dein Teil
+Teile schwingen, Typen findens geil
+Nananana nanana
+Seeed geht ab und ihr geht steil",
 0.3733252211,-0.9231506656,Seeed,Stand Up,"When morning come, you can get some
 You must rebound - stand up my friend
 Keep movin on - get up again
@@ -920,6 +981,8 @@ Here's to tomorrow, not yesterday",
 Burn forever where the flame turns blue
 Words dismantled hey and all the books unbound
 With a whistle and the flame turns blue",
+0.3733252211,-0.9231506656,Jose Padilla,Adios Ayer 2001,-,
+-0.3416235619,-0.0934721439,Jose Padilla,The Look Of Love,-,
 0.2505286744,0.81917423,Kathryn Williams,Flicker,"
 'Cause there's not enough time
 Breeze, breeze
@@ -940,6 +1003,11 @@ I wonder how you can endure",
 Tell me should I touch the ground
 And all is lit by candlelight
 Maybe I won't make a sound",
+0.3806020535,-0.9769261254,Enya,Water Shows The Hidden Heart,"A-he rhay
+A-he rhay o rhay mr-hee mo-ay.
+Mo-ay eed-hoo dhoo ee-oo.
+Neth-ee la rhay na",
+1.2083417386,-0.517530055,Enya,The Magic Of The Night,-,
 -0.4507760479,1.4460424464,Sugarcult,Hate Every Beautiful Day,"I can feel a change, I can feel, can you feel it?
 Ready to take it all here
 I wish it was raining
@@ -996,6 +1064,7 @@ Wants to be from where he came",
 Take my fear away
 Don't lead me astray 
 That I die",
+0.3733252211,-0.9231506656,Pete Philly & Perquisite,Awake,-,
 1.178324805,1.1833109145,Tori Amos,Glory of the 80's,"Sure you're out there orbiting around
 And then when it all seemed clear
 Wish I had you back now
@@ -1056,6 +1125,7 @@ He's trying.",
 Aren't we always drawing guns from our holsters
 Aren't we always looking over our shoulders
 Pray in God, can you hold it all inside your brain",
+1.5412568208,1.7041646532,Bootsy Collins,Bootzilla,-,
 1.306578976,1.275497417,Seal,Waiting For You,"I have been waiting, I have been waiting for you
 I can't deny these things that I do
 There has been no one brighter than you
@@ -1164,6 +1234,7 @@ But it's plain to see",
 You can shut up all the world
 You can show me what you got
 You can do just what you like",
+0.0076643931,0.7915182793,HAMMERFALL,Dark Wings_ Dark Words,-,
 0.5461499905,-0.7787251452,Morcheeba,Tape Loop,"
 Focus, your mind will be strong, no distractions
 Patience, love is comin' 'round for your pleasure
@@ -1210,14 +1281,20 @@ And who can say
 As your heart chose",
 0.2477998622,-1.1198152041,Morcheeba,Fragments Of Freedom,"When the party's over
 You got no way to go...",
+0.7662741705,-2.1123565468,Brad Mehldau,Paranoid Android,-,
 0.3733252211,-0.9231506656,All Saints,Pure Shores (Cosmos Remix),"It's calling you my dear
 Can you hear what I hear
 I can hear it calling you
 Out of reach (take me to my beach)",
+1.306578976,1.275497417,Olodum,I Miss Her,"Oh jah! Oh jah!
+Oh bring me, darling
+I miss you darling
+Your sweet kiss, darling.",
 1.5412568208,1.7041646532,The Matches,Wake the Sun,"Wake up, wake up, wake the sun 
 Wake up, wake up, hanging like a chain 
 Every dawn gets its day like 
 Wait for, wait for the first train ",
+0.5261387014,-1.6283774091,Chris Botti,Someone To Watch Over Me,-,
 -0.1851716654,0.7915182793,Echo And The Bunnymen,My Kingdom,"Do do do do do do do, do do do do do do do
 Thy will be done 
 B-b-b-burn the skin off and climb the roof top 
@@ -1334,6 +1411,7 @@ So bittersweet",
 It makes me feel so alive
 Turn the lights down, the lights are too strong
 Realize that nothing lasts long",
+-1.9352498568,-0.6558098086,Magnolia Electric Co.,The Dark Don't Hide It,-,
 0.9845791424,-0.0105042917,Rush,Entre Nous,"
 I think it's time for us to recognize
 I think it's time for us to realize
@@ -1342,6 +1420,7 @@ For you and I to grow",
 
 Is there even room for you
 It was hard to love a man like you",
+-1.9352498568,-0.6558098086,Nickelback,How You Remind Me - LP Mix,-,
 -1.4004026756,1.5382289488,Faith No More,Land Of Sunshine,"Does life seem worthwhile to you?
 Here's how to order!
 Do you feel sometimes that age is against you?
@@ -1454,11 +1533,13 @@ Bringing back your love that used to be",
 And be the one to make your dreams come true
 But I'd rather stay around and love you
 But if it takes good-bye to make you happy",
+0.8153927892,0.6624571759,Keb' Mo',God Trying To Get Your Attention,-,
 0.3733252211,-0.9231506656,Leftfield,Cheshire Cat,Chant of a Poor Man,-
 -0.3088778161,-0.1026907941,Rasputina,Transylvanian Concubine,"
 Wonder how they chew with their pointy 
 What have you learned from what has been shown?
 To the place where all the concubines",
+-0.7809623179,-0.7894802371,Lauryn Hill,Mr. Intentional,-,
 -0.0050700635,0.1800144799,Lauryn Hill,Adam Lives In Theory,"Where we gonna go now, what we gonna say now
 What, what we gonna do now
 Now can you tell me, what, what we gonna do now
@@ -1483,6 +1564,7 @@ Who don't turn my upside down",
 You are my peace of mind
 Touch my mouth with your hands
 That old me is left behind",
+-1.9352498568,-0.6558098086,Lauryn Hill,I Get Out,-,
 -0.1633411682,-0.2440434312,Lauryn Hill,I Remember,"With you in my life (2x)
 I remember
 I'm yours to command
@@ -1511,6 +1593,10 @@ Don't be so quick to walk away (dance with me)",
 You will know the difference when I touch ya
 Sing this song with me
 Late at night I talk to you",
+0.8153927892,0.6624571759,Falco,Rock Me Amadeus,"Amadeus, Amadeus, Amadeus
+Oh, oh, oh, Amadeus
+Amadeus, Amadeus
+Ooh-ooh oh",
 -1.6368997285,-0.4591452701,Falco,Jeanny,"Jeanny, life is not what it seems
 
 You're lost in the night, don't wanna struggle and fight
@@ -1535,6 +1621,7 @@ Funky dancing get up, get down, shake your booty",
 
 Again, again
 I know you just got over your man",
+0.5261387014,-1.6283774091,Stevie Ray Vaughan And Double Trouble,Lenny,-,
 0.5861725687,0.513115042,Pete Yorn,Just Another,"And I could never see you depart us
 Trying to get over your stardom,
 You were lying wide awake in the garden,
@@ -1563,6 +1650,7 @@ You just bear this in mind, a true friend is hard to find",
 All we are is dust in the wind
 Only for a moment and the moment's gone
 Oh",
+-1.9352498568,-0.6558098086,Kansas,Hold On,-,
 0.793562292,1.0404218358,Willie Dixon,Back Door Man,"
 Well the, men don't know, but little girls understand
 When everybody's trying to sleep
@@ -1591,6 +1679,10 @@ You better not blink",
 So don't let the world bring you down
 Remember why you came and while you're alive
 Experience the warmth before you grow old",
+-0.26931004,0.2153526392,Incubus,Drive,"Whatever tomorrow brings, I'll be there
+I'll be there
+Doo-doo-doo, doo-doo-doo, doo-doo, doo, doo-doo
+With open arms and open eyes, yeah",
 -0.8337193527,-0.0950085856,Incubus,I Miss You,"Whether far or soon
 To see you when I wake up
 To know that you feel the same as I do
@@ -1599,6 +1691,7 @@ That I care and I miss you",
 Forever on the dance floor
 'Cause we've only got one life, double your pleasure
 Forever",
+0.5943590051,-0.1303467449,Mariah Carey Featuring Joe & 98 Degrees,Thank God I Found You,-,
 0.3733252211,-0.9231506656,Jagged Edge,Remedy,"It's me that makes you rush right now after work
 If you feel it
 Girl I got the cure
@@ -1615,6 +1708,7 @@ Not just a physical thang",
 I check my dipstick, you need lubrication, honey
 And all you people here you're tremendous
 With me, me and KG",
+1.178324805,1.1833109145,Tenacious D,Hard Fucking,-,
 0.9572910209,0.3905069938,Tenacious D,Fuck Her Gently,"What's your favorite dish?
 This is a song for the ladies
 That's fuckin' teamwork
@@ -1627,6 +1721,7 @@ What's the name of my girlfriend, I don't know",
 You must give your cape and scepter to me. 
 We're takin' you to a home, 
 Now it's time for him to pass the torch. ",
+0.8153927892,0.6624571759,Tenacious D,Kyle Quit The Band,-,
 1.178324805,1.1833109145,Tenacious D,The Road,"The road is fuckin' hard, 
 Right after the show. 
 Why can't I stay in one place 
@@ -1695,6 +1790,10 @@ On top of the world",
 Like I love mine?
 Do you love your mother
 Solite tiro re tira-o-o",
+0.775825013,-1.5845888204,Era,Cathar Rhythm,"Impera samie nero
+Impera e nessimo
+I'll be you waiting
+E nere mani diavole",
 -1.9352498568,-0.6558098086,Toby Keith,Who's That Man,"There's the window to the room
 There's my kids and that's my wife
 That's my house and that's my car
@@ -1851,6 +1950,7 @@ Late night you make me feel like I'm desperate, I'm not desperate",
 In the cold winter
 You'll never dream alone
 In the cold",
+0.7662741705,-2.1123565468,Righteous Brothers,Ebb Tide,-,
 1.4130026498,1.5704942247,Meat Loaf,All Revved Up With No Place To Go,"All revved up with no place to go?
 Do ya know what it's like
 All revved up with no place to go
@@ -1867,6 +1967,7 @@ Everything, everything will be all right, all right",
 On sleepless roads, the sleepless go
 Hear you me my friends
 I never said thank you for that",
+0.8153927892,0.6624571759,Jimmy Eat World,If You Don't_ Don't,-,
 -1.700572012,1.8424444068,Jimmy Eat World,Get It Faster,"
 Not getting an answer
 I don't care if you're angry
@@ -1951,14 +2052,17 @@ Come on girl reach on out for me",
 Oh baby, I'm losing you
 When I look into your eyes
 What happened to the love we shared?",
+-1.7169448849,1.5935408503,Soulja Boy Tell'em,Don't Get Mad,-,
 0.4224438398,0.3444137426,The Cardigans,My Favourite Game,"I'm losing my baby
 You're losing your mind again
 Losing my favourite game
 I'm losing my favourite game",
+-0.2979625675,-1.0038138552,The Cardigans,Higher,-,
 -0.3825557441,-0.1994866217,The Cardigans,For What It's Worth,"And what is worse I really do
 For what it's worth I love you
 Things have been worse
 There'll be no more loving attack",
+1.0719011312,0.8468301807,The Cardigans,Happy Meal I,-,
 1.5412568208,1.7041646532,The Cardigans,Give Me Your Eyes,"
 So I can see me straight
 Yeah, yeah
@@ -2007,6 +2111,8 @@ And eyes dilate",
 You're wrong 
 Ex-friends till the end 
 Better off as lovers ",
+-1.0552079388,0.8468301807,Fall Out Boy,You're Crashing_ But You're No Wave,-,
+0.8153927892,0.6624571759,Christina Milian / Dre,So Amazing,-,
 0.5261387014,-1.6283774091,Lizz Wright,My Heart,"My feelings over you
 My heart my mind my soul
 My tears my touch remember all that I am
@@ -2043,6 +2149,10 @@ Nothing sweet about me, yeah",
 So let me hear you scream if you're with me
 Locked up with all of my people
 And it feels so, and it feels so good",
+1.5412568208,1.7041646532,The Housemartins,Five Get Over Excited,"Fun, fun, fun
+Fun, fun, fun (Jeremy)
+Fun, fun, fun (Fifi)
+Which gives me",
 -1.1220638365,-0.3792503014,Rivers Cuomo,The World We Love So Much,"Come walk with me through the world we love so much
 We could fall in love and then HATE yes HATE
 Then we'll dance on the graves of our enemies--won't that be a blast?
@@ -2051,6 +2161,10 @@ So come walk with me through the world we love so much",
 I don't care what they say about us anyway
 Ooh wee ooh, I look just like Buddy Holly
 I don't care 'bout that, I don't care 'bout that",
+-1.7278601335,-1.1075236705,Rivers Cuomo,Superfriend,-,
+1.5412568208,1.7041646532,Rivers Cuomo,Lover In The Snow,-,
+-1.9352498568,-0.6558098086,Rivers Cuomo,Crazy One,-,
+1.1101045013,-0.3147197497,Rivers Cuomo,I Was Made For You,-,
 1.178324805,1.1833109145,No Doubt,Spiderwebs,"And I'll call you back
 I'm walking into spiderwebs
 So leave a message
@@ -2087,6 +2201,7 @@ That kinda lovin'",
 And the walls are much too thin
 (Can't stand to hear it)
 The talk is so loud",
+0.0322237025,-0.5129207299,The Cardigans,Paralyzed,-,
 0.9845791424,-0.0105042917,Snoop Dogg,Sensual Seduction,"
 She gon' get hers before I
 I'm not gonna rush the stroke
@@ -2139,6 +2254,7 @@ Our car became a spacecraft",
 She's just watching the water at fall
 You don't want to feel her at all
 You don't want the sun to shine in",
+1.0719011312,0.8468301807,Roger Daltrey,Without Your Love,-,
 -1.7169448849,1.5935408503,LL Cool J,I'm Bad,"(Cool J)
 I'm bad
 (Think I'm gonna need backup)
@@ -2167,6 +2283,7 @@ There' no escape",
 It's deja vu whenever I'm with you
 Sayin' amour kissing you on the ear
 Romance, sheer delight how sweet",
+1.306578976,1.275497417,LL Cool J,Around The Way Girl,-,
 0.3733252211,-0.9231506656,Vanessa Paradis,La La La Song,"Right or wrong I don't wanna know
 Now you gave me the reason why
 Keep it coming baby la la la la la
@@ -2179,6 +2296,7 @@ Cover my ears",
 Even when I was having fun
 Should have known you'd be the one
 And all you wanted to",
+0.3733252211,-0.9231506656,Fergie,Big Girls Don't Cry (Personal),-,
 0.3733252211,-0.9231506656,Elvis Costello,Watching The Detectives,"Watching the detectives
 She is watching the detectives
 But he can't be wounded 'cause he's got no heart
@@ -2195,6 +2313,7 @@ But we need somebody to burn",
 Every time I phone you
 I just wanna put you down
 I'm not a telephone junkie",
+0.5697996958,-1.5177536062,Shelby Lynne,Just A Little Lovin',-,
 0.3733252211,-0.9231506656,Paul Weller,Country,"I know a place not far from here
 Where fresh cut grass will fill your hair
 This place I say - half hour away
@@ -2203,6 +2322,8 @@ Is that so far to go - so near",
 I found it just by coincidence
 Some place I can't remember where
 ",
+-1.4877246644,-0.3608130009,Traffic,No Face_ No Name_ No Number,-,
+-0.7809623179,-0.7894802371,Junior Murvin,Police & Thieves,-,
 0.3733252211,-0.9231506656,The Orb,S.A.L.T.,"It's a long way to go
 Look, if you take the whole of time represented by one year
 Mankind must cease to exist, at least in a material form
@@ -2219,6 +2340,7 @@ They say you have to be someone's",
 I'm gonna live a long time
 From now on
 Take me along",
+0.7662741705,-2.1123565468,The White Stripes,Prickly Thorn_ But Sweetly Worn,-,
 -1.370385742,0.8883141068,The White Stripes,Little Cream Soda,"Oh well, oh well, oh well, oh well
 Well, each beautiful thing I come across
 Than the last one that I knew about, oh, well
@@ -2227,6 +2349,8 @@ Than the last one that I found, oh, well",
 Leave you alone, now
 Is to leave you alone
 But one of these days, I'm bound to choke",
+0.8535961593,0.6901131266,The Fiery Furnaces,South Is Only A Home,-,
+1.5467144451,2.119003914,The Fiery Furnaces,Bright Blue Tie,-,
 0.8153927892,0.6624571759,Luxuria,The Beast Box Is Dreaming,"What you believe
 The beast box is dreaming
 Perfectly preserved
@@ -2247,6 +2371,10 @@ Weird pop",
 Man and moon plays a melody
 Mr. Music Man needs a string quartet
 On the planet where the alphabet starts with Z",
+-0.4971658544,-0.3861642891,Tones On Tail,Burning Skies,"I love you like you love me not
+You'll get blue eyes
+And if I jump for help
+You die inside your dream",
 1.5412568208,1.7041646532,Adam Green,Friends Of Mine,"No matter what you think is true
 We fall in love by accident
 A heavenly coincidence
@@ -2261,10 +2389,12 @@ But this feels so unnatural, Peter Gabriel",
 
 Here is my address
 Wrote you this",
+0.8153927892,0.6624571759,The Fiery Furnaces,Chris Michaels,-,
 0.0867999455,-0.287063799,The White Stripes,Blue Orchid,"You took a white orchid, turned it blue
 You took a white orchid
 Get behind me
 Get behind me now, anyway",
+1.5412568208,1.7041646532,The Fiery Furnaces,Birdie Brain,-,
 -0.8728323269,-0.2809180321,Blonde Redhead,The Dress,"I love you less now that I know you
 Don't let the dress trick you
 I won't count the scars again
@@ -2377,6 +2507,10 @@ She just looking for something new",
 Oh, well
 I'm thinkin' about my doorbell
 Yeah, I'm thinkin' about my doorbell",
+0.8153927892,0.6624571759,M.I.A.,Boyz,"Boyz there! How many?
+Na na na na na na na na
+Duppa bounce
+How many no money boyz are rowdy?",
 0.9572910209,0.3905069938,M.I.A.,Jimmy,"Jimmy! (Aaja)
 I know that you hear me
 Your lovin' gets me crazy
@@ -2389,6 +2523,7 @@ And you'll ask yourself:",
 And a
 And take your money
 Sticks and stones and weed and bongs",
+-1.1629960187,-0.1257374197,Kristin Hersh,Shake,-,
 -1.040199472,-0.0658161932,Adam Green,Computer Show,"Follow you follow you follow you follow you
 Tell me what I'm for
 They turned me into snow
@@ -2421,6 +2556,7 @@ Accept my apology.",
 
 Feel my love, commin' from the heavens above.
 Heart and soul, baby there is no goal. ",
+0.7662741705,-2.1123565468,Lavender Diamond,The Garden Rose,-,
 0.3733252211,-0.9231506656,Throwing Muses,Limbo,"Baby go back to your womb
 Nice limbo you have here
 Dead is next door
@@ -2465,6 +2601,7 @@ The stream was too far and the rains too high ",
 My heart stopped beating 
 This messy state of love affair 
 The poor girl look is on the owners spouse ",
+-0.3334371255,-0.4944834294,Emiliana Torrini,Fisherman's Woman,-,
 1.0719011312,0.8468301807,Emma Pollock,Adrenaline,"Set up the day
 Give it away
 Keep it coming around
@@ -2477,10 +2614,12 @@ Crash",
 And the cops responding called out to me, ""Hey is this your cat?"" ""Yeah, but sometimes it forgets. Ah, wait a minute. I gonna come out there and smell a couple a cigarettes.""
 And then he's coming toward me, and I took a swig of my tequila 'cause it made me feel a little nervous as he started across against the light: but he didn't look to his right as he didn't stay put. And a billboard truck came and ran over his foot.
 Don't you hurry-worry with me",
+0.9572910209,0.3905069938,The Fiery Furnaces,Sullivan's Social Slub,-,
 -1.040199472,-0.0658161932,The Fiery Furnaces,Teach Me Sweetheart,"Teach me, sweetheart.
 Brave young bachelors.
 Come away;
 Come on past,",
+-1.040199472,-0.0658161932,The Fiery Furnaces,Benton Harbour Blues,-,
 1.5412568208,1.7041646532,Jack Penate,Spit At Stars,"All got our dreams
 And then you say
 We're all the same
@@ -2573,6 +2712,8 @@ There's only me",
 Maybe you should think about it
 Maybe you need more time to decide
 Before you go and break her heart",
+0.7226131761,-0.0381602424,Nicole Scherzinger / will.i.am,Baby Love,-,
+0.3733252211,-0.9231506656,Jay-Jay Johanson,Wonderful Combat,-,
 1.5412568208,1.7041646532,Dead Or Alive,You Spin Me Round (Like A Record),"Right 'round, 'round, 'round
 Right 'round like a record, baby
 You spin me right 'round, baby
@@ -2581,6 +2722,7 @@ I want your love",
 So where's the mountain?
 With the thrill of a kid on my side
 With my soul",
+0.8153927892,0.6624571759,Brad Paisley,I'm Gonna Miss Her,-,
 -1.9352498568,-0.6558098086,Brad Paisley,You'll Never Leave Harlan Alive,"Where the sun comes up about ten in the morning 
 And it's there I read on a hillside gravestone 
 And the sun goes down about three in the day 
@@ -2649,6 +2791,7 @@ I don't even want to be with myself anymore.",
 The very first day of summer
 So tell me what's up
 Schemin' on you and your homies",
+0.8290368499,-0.9461972912,Will Ackerman,Shella's Pictures,-,
 0.5752573201,-0.3423757004,Monica,U Should've Known Better,"You should've known better
 You should've known that
 Was gonna ride or die
@@ -2665,6 +2808,7 @@ She makes it look easy",
 Spread my wings and fly away
 If I just believe it, there's nothing to it
 I believe I can touch the sky",
+-0.4316743628,0.0955101861,James Ingram,Just Once,-,
 1.306578976,1.275497417,James Ingram,One Hundred Ways,"
 Love her today
 That's the secret of romance
@@ -2681,6 +2825,7 @@ You're only human",
 It's my life, it's my life
 And I'm tired and bored of waiting for you
 And all those things you never do",
+0.3733252211,-0.9231506656,Phil Coulter,In Loving Memory,-,
 -0.9801656047,0.5195680972,Justin Timberlake,Cry Me A River,"Cry me a river
 Cry me a river, oh (Cry me, cry me)
 Oh (Oh)
@@ -2693,6 +2838,7 @@ The open sky ",
 We shall live again, shake out the ghost dance.
 What is it children that falls from the sky?
 What is it, Father, I can tell what I like",
+-1.0565723449,0.7362063778,Julie Doiron,Too Much,-,
 0.9572910209,0.3905069938,Gwen Stefani,What You Waiting For?,"What you waiting, what you waiting for?
 What you waiting, what you waiting, what you waiting
 Take a chance you stupid hoe
@@ -2725,6 +2871,7 @@ You got no place to hide",
 Down down baby
 Hotdog!
 Let's get the rhythm of the feet",
+-0.3710947331,-0.019722942,Jay-Jay Johanson,Far Away,-,
 0.8153927892,0.6624571759,Incubus,Vitamin,"Whatever helps you swallow truth
 On the surface you hate
 I'll come dressed as any pill you deem fit
@@ -2737,6 +2884,7 @@ I'm banging on my drums",
 And you are through and there's nothing you can do
 It's me again, yes, how did you guess?
 Now I'm suitable and MC, I'm no inbetween",
+-0.3825557441,-0.1994866217,Faithless,Flowerstand Man,-,
 -0.5744821986,-0.0842534937,Natalie Imbruglia,Do You Love?,"Do you love?
 
 Is your heart strung out?
@@ -2761,6 +2909,7 @@ Wingspan across",
 I know you! (I swear I do)
 I know you! (I swear I do) 
 The bass of my laughter-my gut is the speaker",
+-1.040199472,-0.0658161932,Venus Hum,Wordless May,-,
 -1.0358333726,0.2494616451,Guano Apes,Quietly,"Just let it all go
 
 (We go insane)
@@ -2773,6 +2922,7 @@ Bella luna, Bella baby girl",
 And I don't understand
 And I'm falling on my knees
 Still I don't understand",
+0.9398266232,0.2107433141,Finley Quaye,Even After All,-,
 1.5467144451,2.119003914,Finley Quaye,This Is How I Feel,"I found you, in the wilderness
 In tenderness, the sweetest kiss
 Holding you tight, right through the night, through everyday
@@ -2797,6 +2947,7 @@ I learned that from you",
 There won't be much of me when you get through.
 Well, I love you baby, but you don't even know my name.
 Well I love you baby, but you won't give me the time of day.",
+-1.700572012,1.8424444068,Prong,Cut rate (Album Version),-,
 -0.2652168217,-1.230439007,Rasputina,Rusty The Skatemaker,"And she told herself that this was enough 
 For a girl who was born in an oil drum 
 She didn't need it but she still wanted some 
@@ -2813,6 +2964,8 @@ Move ya, hey, hey, move move ya",
 Big Bad John
 Big John
 Miners were prayin' and hearts beat fast ",
+-0.3088778161,-0.1026907941,Toto,I Will Remember,-,
+-1.0565723449,0.7362063778,Toto,If You Belong To Me,-,
 -0.049640662,1.1418269885,Heather Nova,Maybe An Angel,"You are an angel, or maybe you could've been
 Something out here
 And I can't see very far
@@ -2821,6 +2974,8 @@ And when you said that you were dead I hung on",
 Could I be right beside her? 
 I carry you with me, 
 When the night is down. ",
+1.5412568208,1.7041646532,Lefty Frizzell,Shine_ Shave_ Shower (It's Saturday),-,
+-1.7278601335,-1.1075236705,Night Ranger,Forever All Over Again*,-,
 0.9099916103,-0.3485214672,Regina Belle,Baby Come To Me,"Baby, come to me
 Sweet baby
 Come to me now
@@ -2885,6 +3040,7 @@ Would you let me take care of you",
 Over and over
 Only you can make me
 Oh so easy",
+-1.8397414316,0.3398044174,Exposé,I'll Never Get Over You Getting Over Me,-,
 0.5752573201,-0.3423757004,Brandy,Sittin' Up In My Room,"Till my day comes, here's what I'm gonna do
 How can one be down, tell me where to start
 Cause every time you smile, I feel trembles in my heart
@@ -2961,10 +3117,12 @@ She's got everything a woman could need",
 That's what I like about you (That's what I like about you)
 That's what I like about you (That's what I like)
 Uh huh",
+1.5412568208,1.7041646532,Screaming Jay Hawkins,I Put a Spell On You,-,
 1.5412568208,1.7041646532,Martika,I Feel The Earth Move,"I feel my heart start to trembling
 I feel the earth move under my feet
 I feel the sky tumbling down tumbling down
 Whenever you're around",
+-1.9352498568,-0.6558098086,Stephen Stills,Myth of Sisyphus,-,
 -0.7673182571,0.9113607324,Chris Whitley,Phone Call From Leavenworth,"And I do not count no days
 He best be willing to pay
 Now, they hold me here much longer
@@ -2973,6 +3131,7 @@ Phone call from Leavenworth",
 She walks these hills in a long black veil
 Nobody knows, nobody sees
 She visits my grave when the night winds wail",
+-0.3088778161,-0.1026907941,Screaming Jay Hawkins,Alligator Wine,-,
 1.0719011312,0.8468301807,Céline Dion,Us,"You say it's never easy
 You say it doesn't matter
 When life keep giving
@@ -2989,6 +3148,10 @@ For years ...",
 Who doesn't notice all the others
 Somebody with eyes for me
 Is find myself a brand new lover",
+0.3733252211,-0.9231506656,TLC,FanMail,"Just like you (fan mail)
+Just like you
+I get lonely too
+",
 -0.4521404539,0.0563309225,TLC,Dear Lie,"
 Won't let you unnerve me
 The truth will only free me
@@ -3077,6 +3240,8 @@ You have made me a wreck",
 From the west down to the east 
 I see my light come shining 
 I shall be released ",
+1.0719011312,0.8468301807,Dionne Warwick / Reba McEntire,I Say A Little Prayer,-,
+1.5412568208,1.7041646532,Dionne Warwick / Celia Cruz,Do You Know The Way To San Jose,-,
 1.178324805,1.1833109145,Paula Abdul,Dance Like There's No Tomorrow,"All I wanna do is dance like there's no tomorrow
 All I wanna do is stay right here on the floor
 Somebody please just hit the lights
@@ -3109,6 +3274,10 @@ I close my eyes, and I dream of my butterfly",
 Baby that's all right
 Dream all through the night
 Its okay, you can dream all through the day",
+1.5412568208,1.7041646532,Donavon Frankenreiter,Make You Mine,"I'm gonna make you mine, mine, mine
+And I'll make you mine, mine, mine
+Said I'll make you mine, mine, mine
+But you got, show me a sign",
 0.6316527712,-0.7172674769,Donavon Frankenreiter,Call Me Papa,"You can call me papa
 Wherever you go, whatever you do
 And I'll call you baby
@@ -3145,14 +3314,22 @@ Cold sweat, my fists are clenching",
 A hopeless situation
 Stolen land, they can't fight it
 On reservations",
+-0.5471940771,0.9789641675,Kanye West / Mos Def / Freeway / The Boys Choir Of Harlem,Two Words,-,
+1.5412568208,1.7041646532,Aerosmith,Walk On Water,-,
+1.178324805,1.1833109145,Aerosmith,Dude (Looks Like A Lady),"
+Dude, dude, dude, dude looks like a lady
+So never judge a book by its cover
+She like it, like it, like it, like that",
 -1.3440072246,0.0048601253,Nirvana,The Man Who Sold The World,"With the man who sold the world
 You're face, to face
 Who knows, not me
 We never lost control",
+0.3733252211,-0.9231506656,The Orb,Towers Of Dub,-,
 -0.5959488542,-0.6484348884,Lizz Wright,Hit The Ground,"
 Hit the ground and run
 Leave the rest behind
 See your eyes in mine",
+0.0158508296,0.3905069938,Four Tops,I Can't Help Myself (Sugar Pie_ Honey Bunch),-,
 -1.040199472,-0.0658161932,Elvis Costello,Alison,"
 Alison
 O Alison
@@ -3245,6 +3422,10 @@ Don't be confused and think that I wanna be back in your arms because I closed t
 What could be sweeter than you and me
 You move me on
 Call me crazy, call me sad",
+0.5943590051,-0.1303467449,Commodores,Brick House,"Shaka gah shaka dow now
+Shaka gow shaka gow shaka now now
+Shaka gah shaka gah shaka now now
+Ah, she's a brick house",
 0.3733252211,-0.9231506656,Kool Keith,Blue Flowers,"I smell the bees and the birds blue flowers!
 It's a patient that's worth to keep the germs off the turf
 It's raining green, by the pond blue flowers!
@@ -3253,10 +3434,12 @@ It's totally raining green, pouring blue flowers!",
 Your love's the killin' kind (killin' kind)
 'Cause your love's the killin' kind
 Your love's the killin' kind",
+-1.0483859084,0.3351950923,Gene,You'll Never Walk Again,-,
 0.3733252211,-0.9231506656,Ashanti,Foolish,"But I'm hurtin' while I'm with you
 I keep on running back to you
 And though my heart can't take no more
 See, my days are cold without you",
+-1.040199472,-0.0658161932,Ryan Adams,Oh My God_ Whatever_ Etc.,-,
 1.0719011312,0.8468301807,Burt Bacharach,Close To You,"Just like me 
 They long to be
 
@@ -3277,6 +3460,7 @@ I'm a one-man band",
 Unless you have a suitcase and a ticket and a passport
 To stay within the city limits of a small Midwestern town
 The pursuit you see and never the arrest",
+0.1350089601,-0.0473788927,Nicolette Larson,Lotta Love,-,
 -0.3416235619,-0.0934721439,Laurie Anderson,Freefall,"We're going down to the bottom 
 There is another world 
 All the way to the bottom 
@@ -3305,6 +3489,8 @@ Got me feeling lovesick",
 Move your body real close
 Move closer
 Ooh, move closer",
+1.5412568208,1.7041646532,Fall Out Boy,Sugar_ We're Goin Down,-,
+1.178324805,1.1833109145,Fall Out Boy,Champagne For My Real Friends_ Real Pain For My Sham Friends,-,
 -0.2915953392,-0.758751403,Vienna Teng,Blue Caravan,"Blue, blue caravan, winding down to the valley of lights
 Blue, blue caravan, won't you drive away all of these tears?
 But now, my blue, blue caravan, I can feel my heart growing old
@@ -3357,6 +3543,11 @@ Well, baby, I don't want to take advice from fools",
 When you change with every new day 
 Goodbye, Ruby Tuesday 
 Still I'm gonna miss you ",
+0.7662741705,-2.1123565468,Gentle Giant,Isn't It Quiet And Cold,-,
+0.3733252211,-0.9231506656,John Martyn,Johnny Too Bad,"
+Too bad
+Johnny go walking
+You're too bad",
 0.3733252211,-0.9231506656,John Martyn,Hurt In Your Heart,"When that hurt in your heart has gone;
 When that hurt in your heart has gone.
 When that hurt in your heart has gone,
@@ -3377,6 +3568,11 @@ Nemo my name forevermore",
 He swears he will return one day
 Far from the mountains and blue seas
 Over the hills and",
+0.0322237025,-0.5129207299,Nina Simone,I Put A Spell On You,"I put a spell on you
+Because you're mine
+I love you
+And I don't care",
+0.3733252211,-0.9231506656,Emil Bulls,Quiet Night,-,
 -0.196996518,0.5241774223,Guns N' Roses,It's Alright,"That it's all right, yes it's all right
 And very soon you'll see and you'll begin to learn
 But it's all right, 'cause it all right
@@ -3449,6 +3645,7 @@ I must stick wit' you, my baby.",
 To make me feel complete
 So let me break it down
 I get off doing my thing",
+-1.8397414316,0.3398044174,The Pussycat Dolls,How Many Times_ How Many Lies,-,
 0.3733252211,-0.9231506656,The Pussycat Dolls,Sway,"Sway me smooth, sway me now
 Make me thrill as only you know how
 Sway me
@@ -3465,6 +3662,7 @@ That we two found a love that comes just to a few",
 Trouble on my worried mind,
 Trouble in my life before.
 Trouble in mind, that's true",
+-1.040199472,-0.0658161932,Wynton Kelly,Don't Explain,-,
 -0.5256234668,-0.5254317552,Anna Ternheim,Such A Lonely Soul,"
 Why tell her
 Such a lonely soul
@@ -3597,6 +3795,7 @@ Nothing I could do to change your mind",
 It's build a road for us to cross
 It's build a house where we can stay
 Add a new bit every day",
+-1.4877246644,-0.3608130009,Gene,For The Dead,-,
 1.5412568208,1.7041646532,Syreeta,Happiness,"I've found my paradise
 In my heaven here on earth
 Happiness is seeing all the stars
@@ -3653,6 +3852,7 @@ Another Saturday night and I ain't got nobody",
 Oh, I've had it up to
 What I've become is so burdensome
 Well, don't let me out of your sight",
+0.8153927892,0.6624571759,No Doubt / Bounty Killer,Hey Baby,-,
 1.5412568208,1.7041646532,No Doubt,Bathwater,"I can't help it... you're my kind of man
 Love to think that you couldn't love another
 But I still love to wash in your old bathwater
@@ -3737,6 +3937,9 @@ And you've got me wanting you
 Swarm god's acres;
 Shadowsphere,
 Pray, ne'er come hither daylight! -- wane to dust the wight,",
+-1.040199472,-0.0658161932,Theatre Of Tragedy,Intro / And When He Falleth,-,
+-0.3710947331,-0.8936509848,Theatre Of Tragedy,A Distance There Is,-,
+-1.6405381447,-0.6650284589,Caliban,Sycamore Dreams,-,
 0.3733252211,-0.9231506656,Karen Souza,Creep,"What the hell am I doin' here?
 You're so fuckin' special
 I wish I was special
@@ -3757,6 +3960,7 @@ Surfer Dan, someone that everyone knows",
 Now you love me too
 Oh, it's true
 You showed me how to do",
+-1.7878940008,-0.6604191337,Chokebore,It Could Ruin Your Day,-,
 -0.9037588645,0.4227722696,Tom Waits,Shiver Me Timbers,"My body's at home but my heart's in the wind
 To be up in the crow's nest singin' my say
 So swallow me, don't follow me, I'm travelin' alone
@@ -3781,10 +3985,15 @@ I'll never, ever let you go",
 And every time I hear you say, that I don't have to be this way
 But I'm telling you beware, the hand that fights you'll feed
 Good man gets the good wife, while bad boy's cleaning up his knife",
+-0.12331859,0.9021420822,Ronan Keating / Bryan Adams,The Way You Make Me Feel,-,
 0.3733252211,-0.9231506656,Ronan Keating,Lost For Words,"When I can't find the words
 Just look and see
 To tell you what I'm feeling
 But if you don't believe",
+0.3733252211,-0.9231506656,Martin Solveig,Jealousy,"Ahaaa! Jealousy!
+Ahaaa! I'm tired of your sympathy
+Ahaaa! Somebody set me free
+I don't wanna hear you baby",
 0.3733252211,-0.9231506656,The Cardigans,Losing A Friend,"You're losing a friend
 Oh no... Oh no...
 I would rather just die
@@ -3893,6 +4102,7 @@ Who's gonna catch me when I fall",
 So deceiving
 No one believed me
 With my eyes wide open",
+-1.626894084,0.1508220875,Ashlee Simpson,Say Goodbye,-,
 -1.3185383112,0.9574539836,Ashlee Simpson,Kicking and Screaming,"So get down and get off
 Gonna drag you through this kicking and screaming
 We break up, you break down
@@ -3913,10 +4123,12 @@ But I can't fight your blues",
 In her heart is my faith
 If only a day to let her know
 Just take it and spare me spare me",
+-1.6187076475,-0.7779569243,Ryan Adams,Elizabeth_ You Were Born To Play That Part,-,
 -1.8424702437,0.132384787,Fergie,Losing My Ground,"
 Where do I go?
 I'm losing my
 Who do I turn to?",
+0.3733252211,-0.9231506656,Dr. Dre / Hittman,Big Ego's,-,
 -0.5193861819,-0.5004097046,10cc,I'm Not In Love,"Big boys don't cry
 (It's because)
 I'm not in love, no, no
@@ -3925,6 +4137,7 @@ And just because I call you up",
 Death is a cold Lasagne
 Life is a minestrone
 Suspended in deep freeze",
+0.7662741705,-2.1123565468,John Fogerty,Who'll Stop The Rain,-,
 -0.3416235619,-0.0934721439,Bic Runga,Say After Me,"Set them alive
 Say after me
 Fire through the streets
@@ -4013,6 +4226,7 @@ Like this feeling you've found",
 It's only all of the things that you fear
 What if cards don't go my way?
 But in voices loud and clear",
+0.9572910209,0.3905069938,Raphael Saadiq featuring Stevie Wonder and CJ,Never Give You Up,-,
 0.3733252211,-0.9231506656,Emiliana Torrini,Big Jumps,"You hold your head up, your head up high, like you think I do.
 Come on make some big jumps, big jumps,
 Oh make some big jumps, big jumps,
@@ -4021,10 +4235,12 @@ You're afraid to break some bones.",
 (Want black people to be free, to be free, to be free)
 My Abi said shine your light on the world
 Yeah baby that's what I like",
+0.2928252627,-0.5636233062,Irma Thomas / Norah Jones,Thinking About You,-,
 -1.5504873438,1.6903366778,Papa Roach,Dead Cell,"Cut from the mold of the anti-social
 Dead Cell! Dead Cell!
 Process the data make yourself the bomb
 Born with no soul, lack of control",
+-0.3088778161,-0.1026907941,The Game / Chrisette Michele,Let Us Live,-,
 -1.3440072246,0.0048601253,The Who,Behind Blue Eyes,"No one knows what it's like
 To be the sad man
 To be the bad man
@@ -4073,6 +4289,7 @@ I'll wait",
 We have stayed too long
 So put on your hat because the forecast is rain clouds
 And we'll fly, take a trip, see the Euro sites",
+0.8153927892,0.6624571759,Toots & The Maytals,Take Me Home Country Roads,-,
 1.5467144451,2.119003914,Roger Miller,Chug-A-Lug,"
 Burns your tummy, don't you know
 Make you wanna holler hi-dee-ho
@@ -4169,6 +4386,10 @@ Oh, my way, your way, anything goes tonight",
 And you're a Rocket Queen
 And you're a Rocket Queen, oh yeah
 But honey, I ain't naive",
+0.5297771176,-1.1751271056,Vienna Teng,Harbor,"
+Meet your storm
+Sail your sea
+Will guide you home",
 0.8153927892,0.6624571759,Vienna Teng,Hope On Fire,"Ooh, you're gonna set your hope on fire
 Ooh, you're gonna make your mark this time
 Running out of time
@@ -4197,6 +4418,10 @@ How it grows heaven knows",
 My mother trembles with the sobs 
 My office door now bears a different name 
 My sister can't decide her truth ",
+-0.7531284339,-0.786714642,Vienna Teng,The Atheist Christmas Carol,"Don't forget
+Don't forget I love
+I love
+I love you",
 -1.4004026756,1.5382289488,Children Of Bodom,Are You Dead Yet,"Throw a punch, shards bleed on the floor
 Tearing me apart but I don't care anymore
 Should I regret or ask myself
@@ -4273,6 +4498,7 @@ Trying to make things better for Him",
 My love and I live in never to be found
 No way around
 Far for the ground",
+0.7699125867,0.4504282203,Tom Petty,I Won't Back Down,-,
 -1.9352498568,-0.6558098086,The Alan Parsons Project,Since The Last Goodbye,"It's all the wrong way round
 Since the last goodbye
 Breaking up two minds that were one and the same
@@ -4306,6 +4532,7 @@ What does it mean to be so sad",
 So this fight has just begun
 This war she says that I'm scared of, scared of
 This war they say that I'm scared of, scared of, scared of, scared of",
+1.0719011312,0.8468301807,Clifford Brown / Max Roach,Memories Of You,-,
 1.0719011312,0.8468301807,Lionel Richie,I Call It Love,"Don't tell me
 I just know what I'm feeling
 I want the truth
@@ -4322,6 +4549,10 @@ Uh, uh, I said whatever you need",
 That's the time you miss her most of all
 When your lonely heart has learned its lesson
 You'd be hers if only she would call",
+0.3733252211,-0.9231506656,Dave Brubeck,Take Five,-,
+0.5288675136,-0.2455798729,Beyoncé and Bilal,Everything I Do,-,
+0.2286981772,-1.1075236705,John Parish / PJ Harvey,Urn With Dead Flowers In A Drained Pool,-,
+-0.3088778161,-0.1026907941,John Parish / PJ Harvey,Taut,-,
 -1.9352498568,-0.6558098086,Ryan Adams,You Will Always Be The Same,"It'll be something smarter for the pain 
 It'll be pretty bad for the pain 
 Go on to the wars we won, they came home, they made up 
@@ -4378,6 +4609,7 @@ That we were winning",
 Not everyone lives for too long
 Not everyone can turn you on
 Just say my name",
+0.3733252211,-0.9231506656,Regina Belle,Lazy Afternoon,-,
 0.7044210951,-0.1026907941,Xavier Rudd,The Letter,"About the weight of the world and the way things could go
 With these trees as my witness I'll slice up some fruit
 There will be a time, when I will hold you again
@@ -4410,6 +4642,7 @@ But it's your heart, not mine, that's scarred",
 We're meant to be together
 To be everything I'm supposed to be
 The permanent installment of the daily dose",
+-1.040199472,-0.0658161932,Elliott Smith,In The Lost And Found (honky bach)/The Roost,-,
 -1.4953653384,0.6384886853,Elliott Smith,Easy Way Out,"
 'Cause without an enemy your anger gets confused
 A creative thinker who imagined you were more
@@ -4426,6 +4659,7 @@ Said sugar, take the time, 'cause the lights are shining bright",
 Your power hungry sellin' soldiers
 Ain't that fresh
 No, no, no, no, no",
+0.5943590051,-0.1303467449,Tricky / The Mad Dog Reflex / Kioka Williams / DJ Muggs,Hot Like A Sauna,-,
 1.1715027746,1.0749917742,Ronan Keating,Life Is A Rollercoaster,"(Na, na, na, na, na)
 Don't fight it, fight it, fight it
 Our love is a mystery
@@ -4446,10 +4680,12 @@ Let the daylight in
 How will I ever get to heaven, if I do 
 I'd be lost in space without you 
 You are my first star at night ",
+-0.7400301356,0.2153526392,Lighthouse Family,Ain't No Sunshine,-,
 0.2532574865,0.2798831909,LL Cool J,Headsprung,"
 When we be up in the club
 When we be in the club
 Girl always come to the back",
+-0.8673747026,-0.5482588891,Flipsyde / Piper,Happy Birthday,-,
 1.0719011312,0.8468301807,Peter Frampton,I'm In You,"I'm in you, you're in me
 
 'Cause you gave me the love
@@ -4470,6 +4706,7 @@ You're one in a million, babe",
 Take the streets completely
 Trade up for the fast ride (Close our eyes)
 Say hello to good times (Say hello)",
+-0.1888100816,-0.7986988874,The Roots / John John,Baby,-,
 -1.0565723449,0.7362063778,Paloalto,Going Going Gone,"
 I'm not gonna stay this way again
 I'm not going home
@@ -4494,6 +4731,7 @@ It's a lie",
 Kiss me with your cherry lipstick
 Never wash you off my face
 Hit me, I can take your cheap shots",
+-1.4959111008,0.0401982846,Tom Petty,A Face In The Crowd,-,
 1.5412568208,1.7041646532,Incubus,A Crow Left Of The Murder,"Do you get it yet?
 Yet, do you get it?
 Every piece contains a map of it all
@@ -4514,10 +4752,12 @@ But it would be nothing",
 I hope you dance... I hope you dance.
 (Time is a wheel in constant motion always rolling us along,
 And wonder where those years have gone.)",
+-1.9352498568,-0.6558098086,Richard Thompson / Linda Thompson,Calvary Cross,-,
 0.3733252211,-0.9231506656,Madeleine Peyroux,(Looking For) The Heart Of Saturday Night,"Looking for the heart of Saturday night
 Stumblin' onto the heart of Saturday night
 Now you're stumblin'
 Comb your hair",
+0.3733252211,-0.9231506656,DJ Encore / Engelina,Out There,-,
 0.7226131761,-0.0381602424,Gwen Stefani,The Real Thing,"But I still love to have you around
 I want you to stay in my life
 Don't go away, my lover (my love)
@@ -4590,6 +4830,8 @@ Who knew that sunshine don't hold up to dark",
 Everything I ever done was wrong
 I tried and I failed and I'm tired and weary
 Lord I feel like going home",
+1.0719011312,0.8468301807,Chris De Burgh,Lonely Sky,-,
+-0.9146741131,-0.2271425724,Bell X1,Eve_ The Apple Of My Eye,-,
 0.8153927892,0.6624571759,Bell X1,White Water Song,"No one can hear my screams
 From streams
 I make wild laughing rivers
@@ -4610,6 +4852,7 @@ Empty and cold ",
 'Cause I really want to make this little bell ring
 Ding dong, ding
 High, high, well if my ceiling isn't high enough",
+1.5412568208,1.7041646532,Cat Stevens,Portobello Road,-,
 1.5412568208,1.7041646532,Cat Stevens,Come On And Dance,"Baby come on and dance, you're holding me back
 I've gotta get out this feeling, before I go mad
 You gotta come on and dance, stop hangin' around
@@ -4650,6 +4893,7 @@ Why's it feel so good?",
 Everything is everything
 (Everything is everything)
 What is meant to be, will be",
+-0.7263860749,-0.5636233062,Lauryn Hill,The Miseducation Of Lauryn Hill,-,
 0.1350089601,-0.0473788927,Dido,Christmas Day,"On Christmas Day
 I shall return,
 For you,
@@ -4790,6 +5034,7 @@ Woo",
 Countdown to the disappointment
 Countdown, countdown
 They said ""Don't let me down again""",
+0.5288675136,0.6509338631,The Cardigans,I Need Some Fine Wine And You_ You Need To Be Nicer,-,
 0.9572910209,0.3905069938,The Cardigans,Godspell,"We wait, yeah
 And we wait
 Sit down in the boat, don't spill it
@@ -4798,6 +5043,7 @@ The book flew out the window",
 You're over it, over me
 Present just physically
 Last words from the dying scene",
+-0.9556062954,0.7131597522,White Zombie,Blood_ Milk And Sky,-,
 1.5467144451,2.119003914,The Alan Parsons Project,(The System Of) Doctor Tarr And Professor Fether,"Just what you need to make you feel better
 (Just what you need to make you feel better
 Just what you need to make you feel)
@@ -4814,6 +5060,7 @@ Since fat Cray-ons, I write and display chaos",
 If we follow the trends and keep count of the dollars we spend
 In the place where war be, based on a true story
 Lyrics you hear it, devastating the way you ear it",
+1.5412568208,1.7041646532,India.Arie / Rascal Flatts / Victor Wooten,Summer,-,
 1.2137993629,1.2678152084,No Doubt,Open The Gate,"Open the gate up, hurry
 Open the gate up hurry
 Open the gate up
@@ -4834,6 +5081,8 @@ Saved by the river now",
 Fire!
 You are in my heart
 Like a pardon from the governor",
+1.0719011312,0.8468301807,Lionel Richie,Running With The Night,-,
+1.0719011312,0.8468301807,Lionel Richie,Love Will Conquer All,-,
 1.0719011312,0.8468301807,Lionel Richie,Cinderella,"I ya ya ya ya ya
 Straight to my wishing well and
 Come to me my Cinderella
@@ -4926,6 +5175,9 @@ Give me your heart,",
 And losing my head
 Reading too much
 In the moment I was losing my head",
+0.9709350817,-0.2409705478,Fightstar,Mono,-,
+-1.9352498568,-0.6558098086,Fightstar,Amethyst,-,
+0.3733252211,-0.9231506656,LL Cool J,#1 Fan,-,
 1.0719011312,0.8468301807,Ronan Keating,She Believes (In Me),"I'll never know just what she sees in me
 I could change the world
 Forever in my heart she will remain
@@ -4982,6 +5234,7 @@ But Holly ... I'm the one",
 The dancing ones they really mean it
 Well you'll up and get another one
 When they've never seen it?",
+0.3733252211,-0.9231506656,Edie Brickell,More Than Friends,-,
 1.178324805,1.1833109145,Dirty Pretty Things,Bang Bang You're Dead,"Bang bang you're dead!
 Bang, bang you're dead
 Bang, bang, you're de-e-ead!
@@ -4990,6 +5243,7 @@ Put all those rumours to bed",
 Back on your feet again
 Yeah yeah yeah
 Bruised and battered shins",
+1.5412568208,1.7041646532,Dirty Pretty Things,Doctors & Dealers,-,
 1.5412568208,1.7041646532,Dirty Pretty Things,The Gentry Cove,"And so farewell
 Run and find us a helping hand
 Run they said to a promised land
@@ -5010,6 +5264,7 @@ This is hell, this is hell, I am sorry to tell you",
 When I think back a couple of days
 What can I say?
 Was there a warning?",
+0.3733252211,-0.9231506656,T-Pain featuring Akon_ Diddy & Mary J. Blige,Change,-,
 0.2505286744,0.81917423,Gabriella Cilmi,Sanctuary,"Lying here in my sanctuary
 'Cause you've been waiting got me ready to go
 And I sit here and wonder
@@ -5138,6 +5393,7 @@ But I promise you you'll see the sun again",
 I didn't know it would be the last time
 Just to keep you and Paris on my mind
 Trying to keep you and Paris on my mind",
+1.5412568208,1.7041646532,Roger Daltrey,Days Of Light,-,
 -1.7442330064,1.3354186435,Fall Out Boy,Disloyal Order Of Water Buffaloes,"Detox just to retox
 Nobody wants to hear you sing about tragedy
 Imperfect boys with their perfect lives
@@ -5150,6 +5406,7 @@ And daddy said you gotta show the world",
 We will never believe again
 Kick drum beating in my chest again
 Throw your cameras in the air",
+-0.6799962683,-0.4990927545,Fall Out Boy,What A Catch_ Donnie,-,
 0.8153927892,0.6624571759,Fall Out Boy,Tiffany Blews,"A little hot mess, woah, woah
 Stuck on a little hot mess
 Like a little black dress
@@ -5274,6 +5531,7 @@ She said, ""Maybe I do",
 I go and I find the one and only answer every week
 I had this wall and what I knew of the free world
 I say I hear a doubt, with the voice of true believing",
+-1.1711824551,1.4368237962,Dar Williams,Bought and Sold,-,
 -0.3416235619,-0.0934721439,Dar Williams,It's A War In There,"
 And don't you know I'll never give you a medal
 And it leads you all the way home
@@ -5402,6 +5660,7 @@ Probably form a team with his friends,",
 ""I wanna have what you have and get what you got""
 Air's fresher, full of vigour
 Turned up in places that I never intended to go",
+0.3733252211,-0.9231506656,Faithless,Six,-,
 -1.9352498568,-0.6558098086,Melissa Etheridge,Breathe,"
 It only hurts 
 I'm alright 
@@ -5462,6 +5721,7 @@ He's a runner",
 That nothing but sorrow I feel
 Somewhere, where the mountains collide
 Over the Forgotten sea",
+-0.9954469527,0.0097767388,3 Doors Down / Bob Seger,Landing In London,-,
 -1.4004026756,1.5382289488,Rick Ross,Maybach Music,"Rick Ro$$:
 Jay-Z:
 Come and take a ride.
@@ -5558,6 +5818,7 @@ Troubles hearing through the telephone",
 Till now I never knew
 There ain't no way I'm getting over you
 The love you give is just too hard to fight",
+0.3733252211,-0.9231506656,Joss Stone,Don't Know How,-,
 0.9572910209,0.3905069938,Joss Stone,Killing Time,"Stop what you're doing
 You better stop what you're doing
 What will it take for you to recognize your mistake
@@ -5658,6 +5919,9 @@ But every story I have told is part of me",
 And say out loud
 These words I found
 Hey let go",
+-0.3825557441,0.1416034373,Fischerspooner,Invisible,-,
+0.3733252211,-0.9231506656,Fischerspooner,Turn On,-,
+0.8153927892,0.6624571759,Fischerspooner,Natural Disaster,-,
 1.178324805,1.1418269885,Steeleye Span,One Misty Moisty Morning,"Then lusty Ralph and Robin with many damsels gay
 Then Will, the piper, he did play, while others dance and sing, sayin':
 Then I began to compliment and she began to sing, sayin':
@@ -5766,6 +6030,7 @@ To the place of clear and cloudy clouds that rumble",
 Johnny met June.
 Today's the day that Johnny met June
 Then it occurred to me as the daylight sky shone blue",
+0.8153927892,0.6624571759,Joss Stone,Tell Me 'Bout It (A Yam Who? Rework),-,
 1.2983925395,1.505963673,The Proclaimers,I'm On My Way,"I'm on my way
 ah-hah (ah-hah) ah-hah (ah-hah)
 I'm on my way from misery to happiness today
@@ -5910,6 +6175,7 @@ Tell me what your telescope says",
 Oh, whoa, oh...
 No matter gay or grim, it's those tiny little sparks
 It doesn't matter when, it may rain or it may shine",
+-0.4316743628,0.0955101861,Steeleye Span,Gone To America,-,
 0.8936187374,-0.4437808531,Röyksopp,Only This Moment,"Holds us (together)
 Only this (moment)
 Nothing else (out there)
@@ -5930,10 +6196,16 @@ Where have all the flowers gone?",
 How could you let it happen?
 Which presently entraps me
 Trusting to everything, praying it can be",
+-1.4959111008,0.0401982846,Coverdale Page,Take Me For A Little While,-,
+1.5412568208,1.7041646532,Coverdale Page,Pride And Joy,-,
 -0.6345160659,0.0417347263,Heart,Alone,"Alone
 
 'Til now, I always got by on my own
 And now it chills me to the bone",
+0.8153927892,0.6624571759,Heart,Crazy On You,"Crazy on you
+Let me go crazy, crazy on you, oh
+Ah
+What you gonna do?",
 -0.7673182571,0.9113607324,Heart,Soul Of The Sea,"Here and now
 Never ask what's become of us
 Time, time, time, time
@@ -5950,6 +6222,10 @@ I'll be there by your side, just you try and stop me",
 'Cause they're all spies
 They're gonna find us
 They're all spies",
+-0.1630812813,-0.6439572583,Coldplay,Sparks,"La-la-la-la, oh-oh
+Yeah, I saw sparks
+I say, ""Oh""
+Yeah that's what I'll do",
 -0.0523694741,-0.098739944,Coldplay,Yellow,"Look how they shine for you
 Oh, yeah, your skin and bones
 Oh, what a thing to do
@@ -5970,6 +6246,7 @@ So, I wanna live in a wooden house",
 
 Everything's not lost
 Hoping everything's not lost",
+-1.040199472,-0.0658161932,Shawn Mullins,Anchored In You (Live),-,
 -1.040199472,-0.0658161932,Shawn Mullins,The Gulf Of Mexico,"She irons his uniforms
 She does the dishes and
 She cooks him ham and hocakes
@@ -5978,6 +6255,7 @@ Seen just to keep from being blue",
 I seen myself in there upon my lover
 Sad we talk of how madmen think
 See 'em run now you're gone, dream on",
+-0.3816461401,0.321367117,Massive Attack,(Exchange),-,
 -0.6236008173,-0.5605504228,Massive Attack,Man Next Door,"All through the night
 I've got to take my family, and find a quiet place
 I've got to get away from here, this is not a place for me to stay
@@ -5998,6 +6276,7 @@ And just because you are rasta",
 Wandering, wandering
 Wandering
 Where we can do what we please",
+0.3733252211,-0.9231506656,Massive Attack,Light My Fire (Live),-,
 -0.5402810863,0.1277754619,Joss Stone,The Chokin' Kind,"It's the chokin' kind
 When you fall in love take a tip from me
 Whatever it is boy I surely hope you find
@@ -6006,6 +6285,7 @@ That's what you better do honey, honey",
 And never try to send me away
 I've fallen in love with you
 Whoa oh my beating heart wants you",
+-1.0483859084,0.3351950923,Brian Eno,An Ending (Ascent) (2005 Digital Remaster),-,
 -0.8673747026,-0.5482588891,The Sundays,Here's Where The Story Ends,"Oh, here's where the story ends
 It's that little souvenir of a terrible year
 Here's where the story ends
@@ -6058,6 +6338,7 @@ Thinking of ways to keep my time from running out.",
 Nevertheless, cleverness can't impress
 Now what you gonna do when I step to you
 Off your weak beat come on you need to quit",
+1.0719011312,0.8468301807,Roxy Music,2HB,-,
 -1.9352498568,-0.6558098086,Roxy Music,My Only Love (1999 Digital Remaster),"
 Only love
 There's a river flowing
@@ -6078,6 +6359,7 @@ You're never gonna keep me down (When we're winning)",
 This could be my moment, somethin' more than weather
 Don't you wanna try it (Maybe, Maybe)
 There's only one",
+0.3733252211,-0.9231506656,Future Sound Of London,We Have Explosive (Part 1),-,
 0.3733252211,-0.9231506656,The Verve,Lord I Guess I'll Never Know,"
 Tell me, who do you see when you die in your dreams?
 Am I holding you
@@ -6114,6 +6396,8 @@ But time makes you bolder, even children get older",
 And I think to myself
 They're really saying I love you
 Yes I think to myself",
+-1.3185383112,0.9574539836,Chet Baker,There Will Never Be Another You,-,
+0.3460370996,-0.2723139586,Air - Beth Hirsch,You Make It Easy,-,
 1.0900932122,0.9313344746,Röyksopp,Happy Up Here,"You know I really like it
 I know I'll always be here
 What's it gonna be?
@@ -6234,6 +6518,7 @@ You're out of sight",
 And the harder they hit me
 And when I 
 But maybe for now",
+1.0719011312,0.8468301807,Lionel Richie / Diana Ross,Endless Love,-,
 -1.4959111008,0.0401982846,KT Tunstall,False Alarm,"Maybe I can't see
 And every answer sounds the same
 So tell me why I feel like
@@ -6278,6 +6563,7 @@ Till that man, he comes with me",
 And you don't know me yet
 But faith is all I have, see
 I'm running for you baby",
+1.178324805,1.1833109145,Caesars,Jerk It Out (Original Mix),-,
 1.1101045013,-0.3147197497,Coldplay,Things I Don't Understand,"These are things that I don't understand
 (Wrong) Oh my wrong from right
 (Or dark) Or the dark from light
@@ -6310,6 +6596,7 @@ And I would do anything for love",
 If I could have
 What is it I don't remember
 (There's nothing there)",
+1.1537654956,0.9666726339,Coldplay,Life In Technicolor,-,
 0.407890175,1.2770338587,Coldplay,Glass Of Water,"To the mast
 Spend your whole life
 Son
@@ -6358,6 +6645,7 @@ Counting the leaves which tremble at dawn",
 On silent wings
 
 But the prayers, they go unanswered",
+1.5412568208,1.7041646532,Tina Turner,River Deep Mountain High (Recorded Live In London '99),-,
 -1.3440072246,0.0048601253,Unbelievable Truth,Higher Than Reason,"Is nowhere.
 
 So when is it a problem
@@ -6370,6 +6658,10 @@ Seconds of pleasure - life's little treasures, baby...",
 What can I say to keep your love around me?
 Around me...
 Somewhere along the way, I lost the melody,",
+0.7226131761,-0.0381602424,Van Hunt,Hold My Hand,"Hold my hand;
+Do-do-do-do, do-do, do-do, do-do, do-do...
+(Ba-ba-ba, ba-ba, ba-ba, ba-ba, ba, ba...)
+C'mon lover, get under my skin! It'll all make sense to you...",
 -1.3922162392,0.6348012252,Van Hunt,Who Will Love Me In Winter,"Spaceship crashed against the wall;
 My neighbour's grass ain't so green after all...
 I wouldn't have a second thought about the fall,
@@ -6446,6 +6738,7 @@ Stop what's going on, stop what's going wrong",
 I wish you'd never learnt to weep
 Shooting stars around your heart
 Don't sell the dreams you should be keeping",
+1.178324805,1.1833109145,The dB's,I'm In Love,-,
 0.3733252211,-0.9231506656,Chemical Brothers,Get Yourself High,"Don't rely on this, to get you high
 Don't rely on us, to get you high
 Wait, hold up, electrify, death defy, elect the high, Connect the sky
@@ -6466,6 +6759,7 @@ We'll beat this town black and blue",
 Their faces make them look so serious
 All of us here hate what we feel from you
 You have to be strong enough",
+1.5412568208,1.7041646532,Thalia,Alguien Real (Baby_ I'm In Love),-,
 0.7535397138,0.8207106717,Steeleye Span,All Around My Hat,"All around my hat I will wear the green willow
 All around my hat for a twelve-month and a day
 And if anyone should ask me the reason why I'm wearing it
@@ -6478,6 +6772,8 @@ That will soon take me to the other side",
 Where you'll be, I'll go
 Where you'll be, I'll know
 (Repeat)",
+0.3733252211,-0.9231506656,Röyksopp,Beautiful day without you (Rex the dog remix),-,
+0.3733252211,-0.9231506656,Röyksopp,Beautiful day without you (Cass and Mangan remix),-,
 1.5412568208,1.7041646532,Paula Abdul,Forever Your Girl,"I'm forever your girl
 You gotta remember
 Just remember I'm forever your girl
@@ -6498,10 +6794,12 @@ Did you dance your town away",
 And it won't stop raining
 And the fever stays
 Chasing days on the runaway",
+-0.3334371255,-0.4944834294,Pati Yang,1986,-,
 -1.9352498568,-0.6558098086,Olivia Newton-John,Goodbye Again,"It's goodbye again, and I wish you could tell me 
 Goodbye again, 'cause if you didn't know 
 Goodbye again, I'm sorry to be leaving you 
 Why do we always fight when I have to go? ",
+0.3733252211,-0.9231506656,Mississippi John Hurt,Pay Day,-,
 0.3733252211,-0.9231506656,Midnight Juggernauts,Shadows,"
 Ooh... you will give to me
 Tomorrow today
@@ -6594,6 +6892,7 @@ Still - the moon's company",
 Wasted all my days, over you
 There is no use in me a-crying
 Now you go your way, baby, and I'll go mine",
+-0.6854538926,0.2061339889,Amos Lee,Keep It Loose_ Keep It Tight,-,
 -0.9146741131,-0.2271425724,Amos Lee,Seen It All Before,"
 Know that I've seen it all before.
 Baby, I've seen it all before.
@@ -6646,6 +6945,11 @@ He won't be home tonight",
 We could be crawling this time
 And don't I know
 And how it soothes",
+0.5261387014,-1.6283774091,Chumbawamba,Pass It Along,-,
+-1.1220638365,-0.3792503014,Coldplay,Bigger Stronger,"
+Bigger, and better
+I wanna be bigger, stronger, drive a faster car
+And drive around my faster car",
 -0.2943241513,-1.3041882089,Coldplay,See You Soon,"I'll see you soon
 I know, you lost your trust
 And you never should have
@@ -6690,6 +6994,7 @@ Sometimes it gets so hard",
 Sometimes when we fall we just land in the right place,
 Oh no it's not real it's not real it's not real,
 And you check your phone 'cause you're looking for an escape,",
+-0.3334371255,-0.4944834294,Faultline,Your Love Means Everything,-,
 -0.3334371255,-0.4944834294,Faultline,Greenfields,"Where rivers used to run 
 With white clouds high above
 Who let their dreams depart 
@@ -6706,6 +7011,7 @@ MC's telling lies and poppin' all those myths",
 Oh shit, there goes my man the fat mack
 Phillies are cool but they burn much quicker...
 So bust it, I got one too and if you spark up yours",
+0.3733252211,-0.9231506656,Hot Chip,Boy From School (Cosmic Sandwich Remix),-,
 1.5412568208,1.7041646532,Ike & Tina Turner,Proud Mary,"Rolling
 Big wheels keep on turning
 Rolling on the river
@@ -6818,6 +7124,7 @@ Oh home, let me come home
 Brother, brother
 And away he gone dark 
 Up and away he gone away",
+0.8153927892,0.6624571759,Jason Mraz,Geek In The Pink [Phil Tan Remix],-,
 -0.0305389769,1.7456485793,Jason Mraz,No Doubling Back (Eagles Ballroom Live Version),"No doubling back now
 
 Is gonna state the obvious
@@ -6826,6 +7133,7 @@ And I'm not doubling back now",
 And there will be sorrow no more
 There will be sorrow
 And all the sorrow in this world",
+0.8153927892,0.6624571759,Coal Chamber,Untrue,-,
 -1.4004026756,1.5382289488,Faith No More,From Out Of Nowhere,"
 'Cause you come from out of nowhere, whoa
 My glance turns to a stare
@@ -6842,6 +7150,10 @@ I know",
 And we'll stroll to the edge of the world
 Would you like some candy?
 We'll sing and dance",
+0.9099916103,0.4811570545,Rusted Root,Send Me on My Way,"
+I may see you, I may tell you to run (On my way, on my way)
+Momadisay momadiyah
+Send me on my way",
 -1.700572012,1.8424444068,Yes,Leave It,"(...Leave it) Hello hello heaven
 Ah... leave it
 (Ah...) Goodbye goodbye goodbye bad
@@ -6870,6 +7182,7 @@ Eight by twelve four-bit room",
 I am in love with my brother's wife and her breasts
 There was a time when I thought that the longer
 There is no denying me",
+-0.7673182571,0.9113607324,Fleetwood Mac,Come (Live PBS Version),-,
 0.940918148,2.7550907807,Pennywise,Peaceful Day,"The superlative is telling me that help is on the way
 We're stuck here without a peaceful day
 How will I make it?
@@ -6902,6 +7215,7 @@ Sending all the posers back",
 You just cannot see it
 (I'm sick of you all the time)
 I wish you would die",
+-1.4004026756,1.5382289488,Raised Fist,Time Will Let You Go_ All Alone_ I Break,-,
 -0.3088778161,-0.1026907941,Tom Waits,Puttin' On The Dog,"
 Dog tonight
 You gotta tell me that
@@ -6910,6 +7224,7 @@ You gotta strut, wiggle and slide",
 That I got suck at
 That are blue. I do declare my
 The time in the world",
+-1.9352498568,-0.6558098086,Tom Waits,The Pontiac,-,
 0.0322237025,-0.5129207299,Tom Waits,Big In Japan,"
 But hey I'm big in Japan
 Hey-oh!
@@ -6922,10 +7237,18 @@ Who'll sweep out the wreckage, who'll sing the refrain ",
 Ba (Ba)
 Baba-rara-cucu-dada
 Cu (Cu)",
+1.5412568208,1.7041646532,The Pussycat Dolls,We Went As Far As We Felt Like Going,"
+I dig you, you dig me 
+Mmm mama ma mama ma 
+Took a ride, satisfied ",
 0.3733252211,-0.9231506656,Maxwell,Playing Possum,"If only you'd wake up
 Step down to my heart, and mend this broken...
 Speak your regrets
 Say what you will and won't forget",
+1.5412568208,1.7041646532,Shantel,Disko Partizani,"Tsiganizatsia tsiganizatsia
+Disko disko partizani
+Parti parti partizani
+Opt un tort (upgrade)",
 -1.040199472,-0.0658161932,Arab Strap,Who Named The Days?,"Who named the days?
 I need to get out less.
 Who named this mess?
@@ -7002,6 +7325,10 @@ And everyone in his life would mistake it as love
 and when the water grows and the dam starts to overflow
 It's not that I don't like you, I just don't wanna speak
 Let life be a bowl of melted ice cream",
+-1.7496906307,0.9205793827,Anthrax,Safe Home,"
+I've been places in my head;
+I've been places in my Head!
+Takes me from the inbetween;",
 -0.3088778161,-0.1026907941,Sirenia,The Path To Decay,"Along the path to decay.
 Feels like I'm growing weaker, much weaker each day.
 Seems like I'm falling deeper, deeper inside myself.
@@ -7066,6 +7393,7 @@ Where will we be when they come
 A wooden swing without laughter
 Wild honey and dew
 Until I see the 1st star of fall",
+-1.5313856588,1.1464363136,Malcolm Middleton,A New Heart,-,
 0.3787828454,-0.0596704263,ANGELZOOM,Back in the moment (feat. joachim witt),"There is no silence in my head
 The way I lose
 Ich fěhl' Deinen Schmerz. [I feel your pain.]
@@ -7110,6 +7438,7 @@ I only live to please you
 I know that you will be the one
 I think it's time that I went on a holiday
 Who leads me right into the sun",
+0.3733252211,-0.9231506656,Jose Padilla,Adios Ayer (Züell Remix),-,
 -0.6654426036,-0.0443060093,Thirsty Merc,Hope,"Hope
 Never lose what you see
 It will never be the same
@@ -7134,6 +7463,7 @@ No, no, no, no",
 
 (Where have you gone x3)
 And hither and dither",
+0.8153927892,0.6624571759,Mystery Jets,The Boy Who Ran Away,-,
 -1.0565723449,0.7362063778,Mystery Jets,Horse Drawn Cart,"
 If you don't (trust me I'll fall)
 (Trust me I'll fall)
@@ -7274,6 +7604,7 @@ Unseen this eternal wanting",
 A change is gonna come, oh yes it will
 Oh, there were times I thought I wouldn't last for long
 Now I think I'm able, able to carry on",
+-1.9352498568,-0.6558098086,Pursuit Of Happiness,Walking In The Woods,-,
 0.9572910209,0.3905069938,Atlantic Starr,Always,"When you come around you bring brighter days
 Chasing all of the rain away
 And I will love you so for always
@@ -7282,6 +7613,10 @@ For me and you forever will be",
 Sunny one so true, I love you
 And the bright days are here
 My Sunny one shines so sincere",
+0.4865709253,-0.7019030598,Cat Stevens,The Wind,"But never never never
+No never never never
+But they fall far below
+I let my music take me",
 0.0222180579,-0.8494014637,Alison Krauss,Stay,"To make you stay
 There is a way
 Stay
@@ -7314,6 +7649,7 @@ Wishin' there were ways",
 Love you thought you had and knew
 Yes I'm tryna get your attention
 It would be how you want this to be",
+0.8153927892,0.6624571759,Pixie Lott,Mama Do (uh oh_ uh oh),-,
 -1.8179109344,0.5933172991,The Housemartins,Flag Day,"It's a waste of time if you know what they mean
 For the poor, for the poor
 'Cause her purse is fat and bursting at the seams
@@ -7386,6 +7722,8 @@ More than words will ever say",
 When it wouldn't have made any difference
 How could you love me
 Do you remember the last time I said",
+-0.5380980366,0.0663177936,Alison Krauss,Empty Hearts,-,
+0.5752573201,-0.9508066163,Alison Krauss,That Kind Of Love,-,
 -1.7715211279,-1.282678025,Alison Krauss,Dreaming My Dreams With You,"But I'll always miss
 Dreaming my dreams with you
 I'll live to see it all through
@@ -7422,6 +7760,7 @@ But I was good, and your father's little pancakes",
 Its having trouble feeling good
 My heart it sits inside me
 It don't know we said good bye",
+0.4497319612,-2.0754819458,GRANDADDY,Taster,-,
 -1.9352498568,-0.6558098086,GRANDADDY,Egg Hit And Jack Too,"This conversation is hard for me and it's stupid
 I'd thought you want them over anything
 Keep trying them tapes and the records
@@ -7462,6 +7801,10 @@ Always so far away",
 In the saddest vacant lot in all the world
 As she drifts out of reach
 Boldly going",
+1.1483078713,-1.1536169217,GRANDADDY,O.K. With My Decay,"I have no choice 
+
+I have no say
+I have no voice",
 -1.3440072246,0.0048601253,GRANDADDY,The Warming Sun,"You were sitting there waiting by the door for me
 Overmisunderstood
 Oh I wish I really could
@@ -7494,6 +7837,7 @@ What will it take to set me free?",
 Solitude's frustration has been our only friend
 Now we must break free.
 Because now they'll show no mercy",
+-1.1002333393,-0.0074314083,Townes Van Zandt,Snake Mountain Blues,-,
 -1.9352498568,-0.6558098086,Esther Phillips,Use Me,"
 Oh you just keep on using me until you use me up
 They keep trying to tell me all you want to do is use me
@@ -7546,10 +7890,12 @@ You'll become one of mine",
 I've been watching her silent sleep
 Though her flesh is weak, my hand is strong
 There slow days and endless nights",
+-1.4727161976,0.1024241737,Swallow The Sun,Fragile,-,
 -1.0565723449,0.7362063778,Swallow The Sun,Ghost of Laura Palmer,"Through the emerald steps and lavender air
 The vines hanging on pillars and walls
 The statues praise the beauty of hers
 The fountain runs quiet",
+-1.5441201155,-0.1948772966,Swallow The Sun,Gloom_ Beauty and Despair,-,
 -1.0565723449,0.7362063778,Swallow The Sun,The Ship,"To the sea I shed my last hope
 The waves greeted me with majestic mourn
 The triumph of fear and ending lives
@@ -7822,6 +8168,7 @@ Well it's easier than just waitin' around to die",
 If I had no place to fall
 And I needed to
 And if we help each other grow",
+-1.0483859084,0.3351950923,Townes Van Zandt,Kathleen,-,
 -1.4877246644,-0.3608130009,Townes Van Zandt,For The Sake Of The Song,"And who do I think that I am to decide that she's wrong
 Maybe she just has to sing, for the sake of the song
 Maybe she'll start someday to realize
@@ -7898,6 +8245,10 @@ Dans the love game",
 Baby, there's no other superstar
 Baby, you'll be famous
 Promise I'll be kind",
+0.8153927892,0.6624571759,Lady GaGa,Beautiful_ Dirty_ Rich,"We're beautiful and dirty rich
+Bang Bang
+Bang bang bang
+But we got no money",
 1.178324805,1.1833109145,Lady GaGa,The Fame,"Fame (fame)
 'Cause we gotta taste for champagne and endless fortune
 'Cause we wanna live the life of the rich and famous
@@ -7986,6 +8337,7 @@ Do you want to run away or do you want to stick around? ",
 (Ride it) from head to toe...
 (Ride it) just lose control...
 (Ride it) turn the lights down low...",
+0.6789521817,-2.3336041526,Monica Zetterlund,The second time around,-,
 0.3733252211,-0.9231506656,X-press 2 Feat. David Byrne,Lazy,"Ooh, don't you wanna save me
 I-I-I-I'm wicked and I'm lazy
 Imagine there's a girlfriend, imagine there's a job
@@ -8066,6 +8418,7 @@ Girl I love you but your loving has gone forever",
 Twigs snap, I catch, no canoe
 The sunset a-begging me
 The sun seeds a sickle and a scythe",
+-0.270674446,-0.5378110855,Massive Attack,Paradise Circus,-,
 -1.040199472,-0.6926844096,Massive Attack,Rush Minute,"Peaches living in niches
 Digging the scene like beautiful cliches
 We draw liquor from the mattress springs
@@ -8078,10 +8431,14 @@ In the limestone caves, in the south ways lands",
 Yeah, let him feast, my heart is big, my heart is big, my blood will slide
 It took all the man in me to be the dog you wanted me to be
 ",
+0.0322237025,-0.5129207299,Massive Attack,Paradise Circus (Gui Boratto Remix),-,
+0.3733252211,-0.9231506656,Massive Attack,Paradise Circus (Breakage's Tight Rope Remix),-,
+0.8153927892,0.6624571759,Gabriella Cilmi / Eve,On A Mission,-,
 0.995494391,1.6119781508,Dragonforce,Disciples of Babylon,"
 You live a life of fear
 I see it all so clear
 Tonight your flight will take you higher",
+0.8153927892,0.6624571759,Bomfunk MC's,Freestyler,-,
 1.0719011312,0.8468301807,REO Speedwagon,Can't Fight This Feeling,"I've forgotten what I started fighting for
 It's time to bring this ship into the shore
 Baby, I can't fight this feeling anymore
@@ -8110,10 +8467,13 @@ Oh, in between the drinks",
 And I'm glad that you're gone
 I moved on and I'm strong
 'Cause I'm right and you're wrong",
+0.3733252211,-0.9231506656,Karen Souza,Every breath you take,-,
 -1.7715211279,-1.282678025,The Weakerthans,Reconstruction Site,"Well, I'm lost, I'm a frayed
 Well beauty's just another word I'm never certain how to spell
 Up the street in the town that you were born in
 To the roof of a car on a road in the dark",
+-0.8546402459,0.7177690773,The New York Dolls,Frankenstein,-,
+-1.4004026756,1.5382289488,The New York Dolls,Vietnamese Baby,-,
 0.4497319612,-2.0754819458,Eddi Reader,Bell_ Book And Candle,"I need a bell, book and candle
 
 Keep your ghost away
@@ -8158,6 +8518,7 @@ To yourself in the mirror",
 But the stem is even thornier
 The rose smells sweet
 What more do you want to know?",
+0.3733252211,-0.9231506656,Soul Coughing,Bus To Beelzebug,-,
 0.3733252211,-0.9231506656,Soul Coughing,True Dreams Of Wichita,"True dreams of Wichita...
 They say ""You had it, but you sold it..."" You didn't want it, no...
 Signal got lost to the satellite; got lost in the ride up to the plungedown...
@@ -8262,6 +8623,15 @@ Love is a lesson to learn in our time",
 What became of all the years
 We live within a dream and never wake
 Try to live forever and you won't get far",
+1.178324805,1.1833109145,Solange Knowles,Sandcastle Disco,"(Ooh-ooh-ooh, hoo-hoo, hoo-hoo-hoo...)
+Ba-, ba-ba-ba-baby, don't blow me away...
+(Ba, ba-da, ba-ba, ooh-ooh...)
+Baby, I know you do that to all the girls - You know that I'm fragile...",
+-1.9352498568,-0.6558098086,SUE THOMPSON,Sad Movies (Make Me Cry),-,
+-1.9352498568,-0.6558098086,A-Ha,Train Of Thought (Remix) (Remastered Version),-,
+-1.9352498568,-0.6558098086,A-Ha,The Living Daylights (Remastered Single Version),-,
+-1.9352498568,-0.6558098086,A-Ha,Shapes That Go Together (Remastered Version),-,
+0.3733252211,-0.9231506656,Thievery Corporation feat. Perry Farrell,Revolution Solution,-,
 -0.7982447948,-0.6988301764,Foals,Spanish Sahara,"
 'Cause I am
 I'm the ghost in the back of your head
@@ -8334,6 +8704,8 @@ So, open up the sky, yeah",
 The memories don't mean shit
 Fuck you forever
 Fuck what we fucking said",
+1.0719011312,0.8468301807,BRENDA K STARR,I Still Believe,-,
+1.178324805,1.1833109145,Young Dubliners,The Rocky Road To Dublin,-,
 1.5412568208,1.7041646532,Kaddisfly,Empire,"Where perfect vision may not offer the correct point of view
 We need to believe in where we are
 We can all fly if we'd just believe
@@ -8370,6 +8742,10 @@ You bury me alive",
 I belong with you now
 Oh, don't leave me behind
 Oh, please give into me",
+-0.8728323269,-0.2809180321,We Are The Fallen,Sleep Well_ My Angel,"I'm sorry
+Holding wind to keep you on,
+So sleep well my angel.
+Sleep well, my angel.",
 -1.0047249141,0.8698768063,We Are The Fallen,Without You,"Oh I without you I just feel
 Oh I let you go to feel the light outside
 There must be more to life
@@ -8382,6 +8758,7 @@ After all that I've become",
 
 My loveless life
 I'm lost in you tonight",
+0.3733252211,-0.9231506656,Gordon Gano,Impossible Love,-,
 -0.4807929815,-0.994595205,Nada Surf,Blonde On Blonde,"
 From a giant golden radio
 I've got Blonde on blonde
@@ -8390,6 +8767,7 @@ On my portable stereo",
 I wanna know what it's like
 I'm standing at the gates
 I see the beauty above",
+-1.4677133753,0.1677229463,Nada Surf,Killian's Red,-,
 1.5467144451,2.119003914,Nada Surf,Happy Kid,"Always searching like it's on junk
 And then I walk around and wanna cry
 The roller coaster mountain top so high
@@ -8414,6 +8792,7 @@ Don't suffer for the light",
 You're gonna leave her
 Just a girl
 Just a girl with featherweight curls",
+0.3733252211,-0.9231506656,CMW - Compton's Most Wanted,Hood Took Me Under,-,
 -1.0565723449,0.7362063778,Alabama,Keepin' Up,"Keepin' up, in a circle that never ends
 Keepin' up
 Keepin' up, I'm movin' as fast as I can
@@ -8454,6 +8833,10 @@ Waiting for the phone to ring",
 Guess I was in deeper than I thought I was
 If I have enough love for the both of us
 So strange",
+-0.7935148537,-0.2022522167,Tori Amos,I Don't Like Mondays,"Tell me why
+I don't like Mondays
+I don't like, I don't like, I don't like Mondays
+Mmm, mmm",
 -1.040199472,-0.0658161932,John Fogerty,The Old Man Down The Road,"The old man is down the road
 You got to hidey-hidey-hide
 You got to hidey-hide
@@ -8482,6 +8865,11 @@ You eat eat eat",
 I've long run out of my last chances but she's on her way
 Baby's comin' back
 I can't take it anymore ",
+-1.1366175013,1.0926608538,Strapping Young Lad,Rape Song,"
+Body, body, body, body, body
+Die bastard, die bastard, burn
+He says",
+0.8153927892,0.6624571759,DJ Encore / Engelina,I See Right Through To You,-,
 0.2709947655,-0.6189352077,Aqualung,7 Keys,"This is where we belong.
 Closer than anyone
 Darling believe
@@ -8494,6 +8882,10 @@ Out of my",
 Peace in your soul
 Peace in your heart
 Good goodnight.",
+-0.3088778161,-0.1026907941,Danzig,Bodies,"Bodies, please don't cry
+Bodies
+Bodies, don't die
+Save your soul tonight",
 -1.0565723449,0.7362063778,Danzig,How The Gods Kill,"Oh, would you let it go?
 Ah, oh
 They cannot end this mourning of my life
@@ -8514,6 +8906,7 @@ For love makes a fool of me",
 
 To hold them down
 Walking the streets in dark",
+1.0719011312,0.8468301807,B.O.B.,Cloud Nine,-,
 1.5412568208,1.7041646532,Village People,Macho Man,"I gotta be a macho
 Macho, macho man
 Macho, macho man, yeah
@@ -8646,6 +9039,7 @@ And be forever with my poison arms around you",
 Well, I'm tired of being down, I got no fight
 She's a sight to see, she's a-good to me
 She's a pretty thing and she knows everything",
+1.0719011312,0.8468301807,Jessica Andrews,Helplessly_ Hopelessly,-,
 0.5943590051,-0.1303467449,Rooney,Calling The World,"Calling everyone
 I'm calling the world
 For you, for you
@@ -8826,6 +9220,7 @@ You aren't the ways you wish you were",
 I understand why they say
 ""High school never ends""
 This isn't coincidence",
+0.3733252211,-0.9231506656,Maxwell,Arroz Con Pollo,-,
 -0.3088778161,-0.1026907941,Santana,No One To Depend On,"Ain't got no one (no tengo a nadie)
 Ain't got nobody that I can depend on
 I ain't got nobody that I can depend on
@@ -8866,6 +9261,10 @@ They'll never say hello to you",
 Playing, playing with the boys
 One of life's simple joys
 Staying, playing with the boys",
+0.3733252211,-0.9231506656,Maxwell,Get To Know Ya,"Know ya (Ooh)
+Know ya (ha-ha)
+Name, number, game
+(Oh)",
 0.3733252211,-0.9231506656,Maxwell,Lifetime,"(I can let my life pass me by)
 (Lifetime, lifetime)
 Or I can get down and try
@@ -8874,6 +9273,7 @@ Now I, I can let my life pass me by",
 (I know you've got a lotta strength left)
 I should be hopin' but I can't stop thinkin'
 I know you've got a lotta strength left",
+0.3733252211,-0.9231506656,Toto,The Turning Point,-,
 -1.7878940008,0.0263703092,Fuel,Hemorrhage (In My Hands),"Leave love bleeding
 In my hands, in my hands again
 Don't fall away, leave love bleeding
@@ -8894,6 +9294,10 @@ We'd be bought and sold",
 And she don't know - she's one of many lies...
 And you don't know - you fill many spaces,
 (I would've been the one...)",
+1.178324805,1.1833109145,Solange,Sandcastle Disco,"(Ooh-ooh-ooh, hoo-hoo, hoo-hoo-hoo...)
+Ba-, ba-ba-ba-baby, don't blow me away...
+(Ba, ba-da, ba-ba, ooh-ooh...)
+Baby, I know you do that to all the girls - You know that I'm fragile...",
 0.8153927892,0.6624571759,Tina Cousins,Pray,"While there's still time. So
 So say a prayer for the dying
 Pray one day we can live as one
@@ -8910,6 +9314,7 @@ When I see the faith in my children's eyes",
 What do you want from me?
 You can lose yourself this night
 You can have anything you want",
+-0.3416235619,0.5057401218,The Boo Radleys,The Future Is Now,-,
 -0.3088778161,-0.1026907941,Cranes,Loved,"And I hope you find your way
 Find a way to carry on
 I know you are brave
@@ -8978,6 +9383,7 @@ Someday",
 Lies a world I'm not a part of
 Maybe now I can fight through
 My suicide will follow""",
+-0.5685048006,-0.2989163493,Fisher,I Will Love You,-,
 -1.9352498568,-0.6558098086,The Temptations,The First Time Ever I Saw Your Face,"The first time ever I saw your face I thought the sun rose in your eyes And the moon and stars were the gifts you gave To the dark and the empty skies, my love, To the dark and the empty skies. The first time ever I kissed your mouth And felt your heart beat close to mine Like the trembling heart of a captive bird That was there at my command, my love That was there at my command. The first time ever I lay with you I felt the earth move in my hand I thought our joy would fill the earth And last till the end of time, my love, And last
 WRITER EWAN MacCOLL",
 0.9572910209,0.3905069938,Natasha Bedingfield,Freckles,"Reflecting who you are
@@ -8988,10 +9394,16 @@ Why waste a second not loving who you are?",
 All you girls 
 When you look into the mirror tell me how do you appear, well
 But, baby, that's OK",
+0.3815116575,0.3720696933,A-Ha,The Swing Of Things - Live,-,
 -1.700572012,1.8424444068,Korn,Y'all Want A Single,"Fuck that! Fuck that! Fuck that!
 
 Y'all want a single, say fuck that
 Fuck that. Fuck that shit!",
+-1.700572012,1.8424444068,Korn,Somebody Someone,"Someone
+Loved just for me.
+I need somebody, someone.
+I need somebody (SOMEONE), somebody (SOMEBODY)",
+1.0719011312,0.8468301807,Kenny Loggins,This Is It,-,
 0.0322237025,-0.5129207299,The Herbaliser,The Sensual Woman,"To become aware of my own sensuality,
 They are very proper indeed, and they distinctly enhance sex.
 The wildest adventure proposed to me was in a bathtub which was full of Jello!
@@ -9036,6 +9448,7 @@ Throwing caution to the wind",
 In the arms of rimed soil, lies the autumns last withered leaf
 I'm riding above with north wind,
 I'm a whirl deep in dark waters,",
+0.4497319612,-2.0754819458,Stacey Kent,'Tis Autumn,-,
 -0.801883211,0.1892331302,The Gathering,These Good People,"Need us to smile too?
 Why choosing?
 Which will be black
@@ -9132,6 +9545,7 @@ We wrote these plans ",
 We don't want it
 You prostitute
 You fucking punk rock",
+-1.3621993055,-0.8125268627,The Dillinger Escape Plan,Phone Home,-,
 -1.700572012,1.8424444068,The Dillinger Escape Plan,We Are the Storm,"Well they said we'd tear ourselves apart
 Watch this pawn capture the queen
 And it turns out they were right
@@ -9168,6 +9582,10 @@ Make a mess of me",
 Don't be silly
 Turn on Billie
 We'll paint the town blue",
+0.8535961593,1.5290102986,The Pierces,Boy In A Rock And Roll Band,"La da da da da da dum
+La da da da da da da da da dum
+With just one touch of my hand
+With a boy in a rock and roll band",
 1.0719011312,0.8468301807,Tracey Ullman,They Don't Know,"'Cause they don't know about us
 And they've never heard of love
 Got my eyes wide open and I see the signs
@@ -9192,6 +9610,7 @@ There's just one thing that I need to feel",
 
 Beneath the glow
 And remember to forget yourself",
+0.0322237025,-0.5129207299,Hybrid,Dream Stalker,-,
 -1.3440072246,0.0048601253,Logh,The Big Sleep,"Weary eyed
 The sun is challenging over my head
 The night has tired
@@ -9216,6 +9635,9 @@ By the lives that I have loved",
 (Sweet Spanish sweet Spanish... doll)
 We hear of a lovely daughter, shot down in her mistaken flight, unaware yet of how her life will be affected by this experience.
 How come it's a house of leaves?",
+-1.9352498568,-0.6558098086,Warren Zevon,Dirt Life & Times,-,
+-1.4959111008,0.0401982846,Warren Zevon,Knockin on Heaven's Door,-,
+-1.4004026756,1.5382289488,Shadows Fall,Suffer The Season,-,
 1.5412568208,1.7041646532,K'Naan,Smile,"Never let them see you down smile while you bleeding
 Smile despite the pain yo
 Smile cause girl he needs you
@@ -9228,6 +9650,7 @@ Sus'pi'cious he moved",
 I'm not hateful, I'm grateful, my girlfriend is tasteful, livin' it up,
 I'm something like gail scott heroine,
 I'm still awake, and it's quarter to six,",
+1.5412568208,1.7041646532,Haircut 100,Fantastic Day,-,
 -1.0565723449,0.7362063778,Live,The River,"Bring your burning skin to my river once again
 I'll give you life
 Oh babe, let my lovin' ease your pain
@@ -9347,6 +9770,9 @@ In the meadow we can build a snowman ",
 Please
 'Cause I remember when you were here
 And all the fun we had last year",
+-0.3088778161,-0.1026907941,Nero,Innocence,-,
+-1.040199472,-0.0658161932,Duran Duran featuring Justin Timberlake,Falling Down,-,
+1.178324805,1.1833109145,OutKast Featuring Sleepy Brown,The Way You Move,-,
 0.8153927892,0.6624571759,Justin Timberlake,LoveStoned/I Think She Knows,"I think that she knows
 The way they hit 'em I have to stop and stare
 Those flashing lights come from everywhere
@@ -9427,6 +9853,7 @@ I refuse to kneel before",
 And the fire needs its flames
 And the night needs the moon
 Like an eagle needs its wings",
+1.5412568208,1.7041646532,The Lovin' Spoonful,Rain On The Roof,-,
 0.5261387014,0.9666726339,The Lovin' Spoonful,Coconut Grove,"In coconut grove.
 It's really true how nothin' matters.
 No mad, mad world and no mad hatters.
@@ -9495,6 +9922,7 @@ I don't wanna kiss any other lips, I don't wanna move not a",
 Wrong if I didn't take care of you, and I know I'd be wrong if I didn't wanna marry, you it just touch, and kiss something I
 Up, will be together and whenever, no there's nothing better, In the morning when we wake up, you be looking at me so
 Peacefully, got your day starting so crazy, baby, do you know, there ain't nothing like just being with you baby In the",
+0.8153927892,0.6624571759,Liza Minnelli,Losing My Mind,-,
 -1.040199472,-0.0658161932,Shawn Mullins,Twin Rocks_ Oregon,"Disappear into the ocean
 I met him on the cliffs
 I met him on the cliffs of Twin Rocks, Oregon
@@ -9519,6 +9947,7 @@ Yeah, I should have known better
 No matter what we do tonight
 Pink, it was love at first sight
 Yeah, pink is like red but not quite",
+-1.7442330064,1.3354186435,Tammy Wynette,There Goes My Everything,-,
 1.5412568208,1.7041646532,Maxwell,Welcome,"Welcome
 Make yourself at home 'cause you're
 You didn't dig my flow
@@ -9539,6 +9968,7 @@ Whenever Wherever Whatever
 The mountains and the rivers
 I was inside of you
 I saw the sun, the moon",
+1.0719011312,0.8468301807,Az Yet,Every Little Bit of My Heart,-,
 1.0719011312,0.8468301807,Az Yet,I Don't Want to Be Lonely,"I don't wanna be lonely
 My bags are packed and I'm about to go
 I don't want nobody laughing wit you
@@ -9575,10 +10005,18 @@ Would you run, I'll be gone today",
 I saw three roads and I didn't know
 I sat two years in the same old chair
 I sat alone and I didn't care",
+1.0719011312,0.8468301807,Peter White,Life Story,-,
+0.5752573201,-0.3423757004,Cartel,I Will Hide Myself Away/I Will Follow,-,
+-1.700572012,1.8424444068,KRS-One,Ah Yeah!,-,
 1.306578976,1.275497417,Helena Paparizou,My Number One,"You are the one, you're my number one
 You're my lover, undercover
 You're my sacred passion and I have no other
 Anything for you 'cause you're the one I love",
+-0.5959488542,-0.6484348884,Patrick Watson,The Great Escape,"Doo doo doo doo doo no no no no
+Doo doo doo doo doo doo no no no
+Doo doo doo doo doo doo doo
+Doo doo doo doo doo no no",
+1.0719011312,0.8468301807,Tammy Wynette,I Stayed Long Enough,-,
 -1.040199472,-0.0658161932,The Boo Radleys,Everything Is Sorrow,"Know the truth, read the signs
 You don't have to die
 Don't paint blue all the time
@@ -9623,6 +10061,7 @@ Peace out bro",
 Meet me halfway
 To only you and I
 In a lifetime",
+-1.700572012,1.8424444068,The Forces Of Evil,Angry Anthem,-,
 0.8153927892,0.6624571759,The Forces Of Evil,Worst Day,"This is the worst day of my life (yeah yeah)
 This is the worst day of my life (wo oh)
 I can't keep up this hopeless fight
@@ -9651,6 +10090,7 @@ Your Venus man your Venus man",
 And when the day is dawning
 And when your world is calling
 Once again I brave the world",
+-1.2694196925,-1.3103339758,UGK (Underground Kingz),One Day,-,
 -1.3485552448,0.0355889595,Pretty Maids,Please don't leave me,"Oh darling please don't hurt me this way
 
 We'd fool around all the time
@@ -9735,6 +10175,7 @@ Now want those good, good, good times",
 Lost in the moment of what she needs
 Are you there
 Are you there can you hear me",
+0.6789521817,-2.3336041526,Edie Brickell,Green,-,
 0.5352347419,0.2261077311,UNKLE,Eye For An Eye,"Run, run, run
 But you sure can't hide
 A tooth for a tooth
@@ -9751,6 +10192,7 @@ I will buy you a new car",
 And you lie by my feet 
 And you're down on your knees 
 What a big mistake, I see you fallin' ",
+1.5412568208,1.7041646532,Manic Street Preachers featuring Nina Persson,Your Love Alone Is Not Enough,-,
 -0.2925049432,1.1003430624,The Hives,Main Offender,"
 Can't settle down
 This is what I've got and it's got me saying
@@ -9759,6 +10201,7 @@ This is my main offender",
 Because I'm gonna
 Come on!
 Do believe I told you so",
+-1.7278601335,-1.1075236705,Sage Francis,The Best of Times,-,
 0.3733252211,-0.9231506656,Spoon,Don't Make Me A Target,"Don't make me a target
 We don't know why he go so far
 They come from a parking lot town
@@ -9767,6 +10210,7 @@ There's something back there he got",
 Looking for a slow woman who don't mind my home cookin'.
 Looking for a slow woman who wants to slow dance.
 Lost in the shuffle of the Grand Prix hustlers.",
+-1.6405381447,-0.6650284589,Dead Man's Bones,Buried in Water,-,
 -0.4425896114,1.2524507913,Nirvana,Breed,"
 Even if you have, even if you need
 I don't even care, we could have all three
@@ -9791,6 +10235,10 @@ I don't know why, I don't know why",
 
 And I'm living off of grass 
 And the animals I've trapped ",
+-0.6981883493,0.9635997505,Joss Stone,You Had Me,"Taking it back I'm taking it back
+Taking back my life
+You lost me
+You had me",
 0.3733252211,-0.9231506656,Joss Stone,Right To Be Wrong,"
 So just leave me alone 
 So I can finally breathe 
@@ -9811,6 +10259,7 @@ I'll get back on my feet",
 The music played, the morning sun streamed in
 The Ship of Fools had finally run aground
 Promises lit up the night like paper doves in flight",
+-0.3088778161,-0.1026907941,My Ruin,Tainted Love,-,
 1.3093077881,1.4829170474,Aiden,Die Romantic,"(Die romantic, romantic)
 (To die romantic)
 I... Won't... Let... This... Go...
@@ -9835,14 +10284,27 @@ If I believed in what was right, but I'm all wrong",
 But sweetness, can you believe this?
 In years to come it might make sense,
 Just what's become of it?",
+-1.8370126194,-0.658882692,Bayside,Don't Call Me Peanut,-,
 0.3733252211,-0.9231506656,Earlimart,Face Down In The Right Town,"We'll get back home
 But maybe somehow
 Ooh in the right crowd
 It's everything you want",
+-1.040199472,-0.0658161932,Dark Sanctuary,Le Paradis Noir,"(Music by Arkdae and Hylgaryss, Lyrics by Hylgaryss)
+M'ont condamné pour un crime,
+Mais je pourrai traverser les enfers,
+Où je pleurerai pour l'éternité.",
+-0.0564626924,-0.6004979072,Dark Sanctuary,Cet Enfer Au Paradis,"(Music and Lyrics by Arkdae)
+Nor had thought I could love
+Ni jamais avoir cru pouvoir aimer,
+Lentement ils s'effacent de ma mémoire,",
 -0.6827250805,0.3167577918,Dark Sanctuary,Au Milieu Des Sepultures,"(Music and Lyrics by Hylgaryss)
 The black eyes of this being staring at the piece of stone
 That shall be trodden by the melancholic angel
 That even Paradise makes him sad",
+-0.1997253302,-0.4929469877,Dark Sanctuary,Les Entrailles De Ce Purgatoire,"(Music by Arkdae and Hylgaryss, Lyrics by Hylgaryss)
+In the mist and the winds
+La terre s'est ouverte de part le cimetière,
+Les anges et les démons sont morts,",
 1.5412568208,1.7041646532,Xavier Rudd,Shelter,"Do, do, do
 I hope your dreams they come alive
 Well, I wish you well on your journey
@@ -9867,6 +10329,8 @@ You use to say",
 Does it thunder and lightnin' even when the sunshines
 (Hank Cochran/Dean Dillon/Vern Gosdin)
 --- Instrumental ---",
+0.3733252211,-0.9231506656,Jose Padilla,Close To You,-,
+0.3733252211,-0.9231506656,Röyksopp,What Else Is There ? (Live),-,
 0.7226131761,-0.0381602424,KT Tunstall,Another Place To Fall (Radio Version),"Find another place to fall
 Well I don't see no holes in the road but you
 Find yourself up against another brick wall
@@ -9891,6 +10355,7 @@ Maniac I sure know",
 Trains across the plains
 Trains and winter rains
 ",
+0.8677859824,-0.784870912,Enya,River,-,
 0.1451965254,-0.9839937572,Enya,If I Could Be Where You Are,"To bring you back home?
 Is there a way I can find you?
 Is there a sign I should know?
@@ -9967,10 +10432,12 @@ Was it a victory, a shame",
 Again...
 And I know I can make you believe
 You can stay in my arms now",
+-1.700572012,1.8424444068,Outkast with Khujo Goodie,Gasoline Dreams,-,
 -1.4604365429,0.4024912391,Korn,Hey Daddy,"When I am down.
 I'm gagged and bound.
 You pick me up
 You fuck me up",
+1.0719011312,0.8468301807,Journey,All The Way,-,
 1.5412568208,1.7041646532,Incubus,Nebula,"Wander off into your nebula
 Your nectarine of multiplicity
 Your tangerine of electricity is ripe
@@ -9991,6 +10458,7 @@ But I'm afraid tonight it won't be enough",
 You're gonna find, yes you will
 You've got to get up every morning
 And show the world all the love in your heart",
+1.0719011312,0.8468301807,Céline Dion,Love Doesn't Ask Why,-,
 0.3733252211,-0.9231506656,Charlotte Gainsbourg,The Operation,"Our love goes under the knife
 There is no room for doubt
 The pressure points that cause your joy and pain
@@ -10031,6 +10499,7 @@ Ev'ry road has a bend",
 Nobody like sad songs - since you went away.
 Nobody like sad songs, ones about devise,
 Seems like sad songs are all I can play.",
+1.0719011312,0.8468301807,Ronnie Milsap,Happy_ Happy Birthday Baby,-,
 -1.3185383112,0.9574539836,Ronnie Milsap,He Got You,"He got a lifetime of love to see him through
 I got the mem'ries, he got you.
 He got the sunshine, I got the rain
@@ -10167,10 +10636,15 @@ To be where I was,",
 You're my life
 Why can't I wake up with you
 Hear you thinking",
+0.7662741705,-2.1123565468,Chris Botti,Hallelujah,-,
 1.0719011312,0.8468301807,Céline Dion,Declaration Of Love,"So listen up, it's you I trust
 Tonight to you baby I make my declaration of love
 I pledge allegiance to the heavens above
 I feel magic every time that we touch",
+-1.0565723449,0.7362063778,Céline Dion,(You Make Me Feel Like) A Natural Woman,"You make me feel like a natural woman
+You make me feel, you make me feel
+'Cause you make me feel, you make me feel
+You make me feel so good inside good inside",
 0.3733252211,-0.9231506656,Faithless,Miss U Less_ See U More,"
 And when I kiss you, I'm never sure,
 (LSK)
@@ -10215,6 +10689,7 @@ Return to me",
 Every breath that you take breaks my heart
 Made a trade with the devil and he gave me your hand
 I will save this life tonight",
+1.5412568208,1.7041646532,Moony,Dove (I'll Be Loving You) (T&F vs Moltosugo Radio Mix),-,
 0.9572910209,0.3905069938,Faithless,Muhammad Ali,"I want you to know
 
 Watchin' you shape destiny with your 2 hands
@@ -10279,6 +10754,7 @@ In a cage where only one thing could be free",
 
 Ageless beauty
 But on the shoreline",
+1.5439856329,1.9115842836,Stars,What I'm Trying To Say,-,
 -0.8673747026,-0.5482588891,Stars,Sleep tonight,"You will cry, and I will cry
 
 With buried heads we both forget
@@ -10327,6 +10803,7 @@ And all the things I should have said",
 And through the bodgs and mire
 And to my heart's desire
 Go where I would, J can not",
+-0.3088778161,-0.1026907941,Gun Club,Yellow eyes,-,
 -1.700572012,1.8424444068,Gentle Giant,Free Hand,"
 What ever made you think that I'd change my mind,
 Leaving you behind
@@ -10373,10 +10850,12 @@ I'm trying to build a balance",
 No matter where I am, no matter what I do
 A car pulled up, a fixed up cutlass
 Immediately apprehensive till I heard him say",
+0.3733252211,-0.9231506656,Piers Faccini,Days Like These,-,
 0.8153927892,0.6624571759,Gamma Ray,Into the storm,"I'm riding on the wind, I'm on my way
 Into the storm, Into the storm
 Will take me further on I know
 We're riding on together on our way",
+0.4497319612,-2.0754819458,Marylin Monroe,The River Of No Return,-,
 -0.56356695,-0.5636233062,Spoon,The Ghost Of You Lingers,"If you were here
 Just like a sailor with his wounds being salted
 Must I set up the scene?
@@ -10425,6 +10904,10 @@ Don't you let it get to you",
 To believe
 I believe
 You could be",
+0.8153927892,0.6624571759,Keyshia Cole,(I Just Want It) To Be Over,"
+LaLaLaLaLaLaLaLaLa
+I swear
+Oh, you don't even try no more",
 0.5752573201,-0.3423757004,Keyshia Cole,Superstar,"Superstar
 (One two three four)
 No matter what you do (no matter what you do)
@@ -10481,6 +10964,10 @@ Unless I was aboard a jet plane",
 Hold up I think I'm losing you
 Hold up I think you're cutting out
 ",
+1.5412568208,1.7041646532,No Doubt,You Can Do It,"You can do it
+You can do it, you're gonna do it
+You can do it, You're gonna do it
+And win the race",
 1.0364265732,0.8744861314,No Doubt,World Go 'Round,"We've got to find another way
 To make the world go 'round
 Not so important to the plot
@@ -10517,6 +11004,11 @@ Because right now, I don't dare to breathe",
 Please don't tell me now
 You rip my heart right out 
 You rip my heart right out (You rip my heart right out)",
+1.178324805,1.1833109145,Jimmy Eat World,The Authority Song,"
+(I, I)
+I don't seem obvious, do I?
+(Do I? Do I?)",
+0.9436469602,0.7546436783,Tom Petty,Love Is A Long Road,-,
 1.0118672639,0.7976640461,Tom Petty,Depending On You,"
 I don't know why you can't see
 Is it too late now
@@ -10597,6 +11089,7 @@ Saving my life",
 Dance (Dance),
 And we move a little closer.
 Oh yeah with a shuffle motion.",
+1.0719011312,0.8468301807,KeKe Wyatt / Avant,Nothing In This World,-,
 0.8153927892,0.6624571759,Aqua,Halloween,"Halloween is the fear that I fight in my dreams
 Halloween in the dead of the night hear me scream
 You better run I'm back to hunt you down
@@ -10609,6 +11102,8 @@ The gentleman's in the lane",
 The enemy is within
 That I hope tomorrow brings
 Savannah shoulder raised a cheer coloring the sky with ash",
+-0.1806236451,-1.1997101729,Elliott Smith,Wouldn't Mama Be Proud,-,
+1.5412568208,1.7041646532,Elliott Smith,Colorbars,-,
 -1.4877246644,-0.3608130009,Elliott Smith,Can't Make A Sound,"
 Why should you want any other when you're a world within a world?
 'Til there's a ghost in every town
@@ -10769,6 +11264,7 @@ Some of them dies about it",
 I remember we learned about love in the back of a chevrolet
 What do you do when it's falling apart
 Well it felt so good to be young, feels like yesterday",
+1.0719011312,0.8468301807,Warlock,I Rule The Ruins,-,
 0.7226131761,-0.0381602424,Shelby Lynne,The Look Of Love,"Waited just to love you
 Don't ever go
 Feel my arms around you
@@ -10781,10 +11277,14 @@ I can't find my watch",
 And it shouldn't be clear but it's not for me to decide
 It's a number I can see
 It's a delicate degree",
+-0.3416235619,-0.0934721439,Thirteen Senses,Automatic,-,
 0.3733252211,-0.9231506656,The Cardigans,Iron Man,"Nobody wants him
 We'll just pass him there
 Vengeance from the grave
 They just turn their heads",
+-0.3088778161,-0.1026907941,Tom Waits,Telephone Call From Istanbul,-,
+-0.3334371255,-0.4944834294,The Cardigans,Starter,-,
+-1.1220638365,-0.3792503014,The Cardigans,Marvel Hill,-,
 -0.3416235619,-0.0934721439,The Cardigans,Do You Believe,"And do you really think
 Do you really think
 I just don't think so
@@ -10821,14 +11321,23 @@ We never talk on the phone, and you're never at home",
 I destroy myself
 And the lack of sympathy
 The reasons",
+0.8153927892,0.6624571759,The Crystals / Barbara Alston,Uptown,-,
+1.4130026498,1.5704942247,The Crystals / Darlene Love,He's Sure The Boy I Love,-,
+-0.8339012735,-0.1386435301,Blackfield,1_000 People,-,
+-0.8673747026,-0.5482588891,Rhythms Del Mundo feat. Jack Johnson / Jack Johnson,Imagine,-,
 -0.0291745709,-1.5062302934,The Pussycat Dolls,Feelin' Good,"
 I'm feeling good
 And a new day
 Feeling good",
+0.3733252211,-0.9231506656,The Cardigans,Deuce,"
+I'll be gone, I'll be gone
+Use it against me
+Because you left me",
 1.5412568208,1.7041646532,Evan Rachel Wood,It Won't Be Long,"It won't be long yeah, yeah, yeah 
 It won't be long yeah, 'til I belong to you 
 I'll be good like I know I should 
 Now you're coming, you're coming on home ",
+0.8153927892,0.6624571759,Billy Currington,I Got A Feelin',-,
 -1.700572012,1.8424444068,Hatebreed,Proven,"(You want to see me fail...)
 You want to see me fail
 From within our souls
@@ -10881,6 +11390,10 @@ Oh, the feeling grows",
 I need a bishop preaching fire
 To get away with my sins
 Led by the Reaper I walk in the night",
+1.178324805,1.1833109145,O Zone,Dragostea Din Tei,"
+Ma-i-a hi, ma-i-a hu, ma-i-a ho, ma-i-a ha-ha
+Chipul tău şi dragostea din tei
+Mi-amintesc de ochii tăi",
 -0.3088778161,-0.1026907941,Nightwish,Whoever brings the night,"All you love is a lie
 Whoever brings the night
 Hurt me, be the one
@@ -10905,6 +11418,7 @@ Oh baby, oh, I'm gonna follow where you lead",
 ""We don't like you - go away""
 ""We must be new wave - they'll like us next year""
 I wonder how we'll answer when you say.",
+0.4497319612,-2.0754819458,Little Milton,Tin Pan Alley,-,
 1.178324805,1.1833109145,Easybeats,Friday On My Mind,"
 She looks fine tonight
 She is out of sight to me
@@ -10941,6 +11455,7 @@ Why not try something new?",
 
 If you think that this is cruel, then you should see what my friends do.
 Leave me alone, you're just a one night stand.",
+1.178324805,1.1833109145,The Pipettes,ABC,-,
 1.142850247,1.0711506699,The Pipettes,I Love You,"
 And I will love you,
 Till the day I die,
@@ -10961,6 +11476,7 @@ I left you crying at the altar of your mind",
 And left her with this.
 I know you need to find what you thought you left behind in a past life;
 I won't question why the only light that you have you give away.",
+-1.0074537262,1.8424444068,Man Man,Banana Ghost,-,
 -1.3239959355,-0.6220080911,Man Man,Skin Tension,"Goddamn
 Oh goddamn you, miette, goddamn.
 We want to be loved?
@@ -11021,10 +11537,12 @@ Speed so fast I felt like I was drunk",
 Okay, okay okay
 
 Where have you been all night?",
+0.8399520985,0.6716758261,XIU XIU,Clowne Towne,-,
 -0.3416235619,0.5057401218,XIU XIU,Muppet Face,"Tiny, tiny paws turning into dust
 Tiny, tiny paws covered in the dirt
 Tiny shining eye, rolling like a die
 Tiny purring sounds rising like a pike",
+-0.3088778161,-0.1026907941,XIU XIU,Buzz Saw,-,
 1.5412568208,1.7041646532,XIU XIU,Hello From Eau Claire,"That you are on my mind
 Plainly the words love and your name
 I read it's lame to wish
@@ -11181,10 +11699,18 @@ Free",
 Pardon me, pardon me, I'll never be the same
 I've had enough of the world and its people's mindless games
 So pardon me while I burst into flames",
+0.7226131761,-0.0381602424,Incubus,Stellar,"
+Make me feel like I do
+You are stellar
+Meet me in outer space",
 -1.040199472,-0.0658161932,Incubus,Warning,"Ohh, ohh, ohh
 She woke in the morning
 She knew that her life had passed her by
 ""Don't ever let life pass you by.""",
+0.3733252211,-0.9231506656,Incubus,Are You In?,"Are you in?
+
+Are you? Are you? Are you? Are you?
+Oh",
 -0.379826932,2.2987675937,Incubus,Circles,"'Round and 'round and
 To know that it'll come back around again?
 Know that everything moves in circles, yeah
@@ -11217,10 +11743,13 @@ Oh-oh-oh (she's a femme fatale)",
 Run, run, run, run, run, Gypsy Death and you
 When she turned blue, all the angels screamed
 Went to sell her soul, she wasn't high",
+-0.9528774832,-0.0151136168,The Velvet Underground / Nico,Heroin,-,
+-0.3088778161,-0.1026907941,The Velvet Underground / Nico,Venus In Furs,-,
 1.5412568208,1.7041646532,Gogol Bordello,My Companjera,"Where are you now, my companjera?
 Where are you now, my sonidera?
 Who took you from the nest?
 My final down",
+-1.4959111008,0.0401982846,Bic Runga,Drive,-,
 -0.8728323269,-0.2809180321,Bic Runga,Bursting Through,"
 Oh, it's filling up this room
 I know you're listening now
@@ -11233,6 +11762,7 @@ We would all go flying.",
 And open your mind in a cheap suit
 I was dreaming
 I'll get it together",
+1.5412568208,1.7041646532,Figurines,Hey Girl,-,
 -0.3088778161,-0.1026907941,Penumbra,Tragical Memories,"I don't care
 I saw my tragedy
 For us here
@@ -11301,6 +11831,7 @@ Everybody's coming down with the same thing",
 As long as he doesn't love her
 In a brick yard, it's raining up in heaven
 In a brick yard, we'll be making babies",
+1.5412568208,1.7041646532,Of Montreal,Psychotic Feeling,-,
 1.5412568208,1.7041646532,10cc,Rubber Bullets,"Load up, load up, load up with rubber bullets
 Whatcha gonna do about it? Whatcha gonna do?
 At the local dance at the local county jail
@@ -11393,6 +11924,7 @@ Up go the flaps, down go the wheels",
 She runs guns everyone wants guns
 Why you wanna save me?
 Doo doo doo doo doo doo",
+-1.9352498568,-0.6558098086,Brad Paisley,With You_ Without You,-,
 0.9572910209,0.3905069938,Enya,Only If,"only if you want to will you find a way.
 If you really want to you can hear me say
 If you really want to you can seize the day,
@@ -11405,6 +11937,7 @@ So a spirit has to fly?",
 Psycho!
 I'm going out of my head
 Now I wish I was dead",
+-0.8033385775,-0.3976876019,Warren Zevon,Keep Me In Your Heart,-,
 -1.9352498568,-0.6558098086,Daryle Singletary,These Days I Barely Get By,"
 Don't think I can work, but I'll try
 He lost by a nose and I cried
@@ -11437,6 +11970,7 @@ I'm swimming in gray",
 How days creep by 
 How days creep by
 How days creep by come and ask me why",
+-0.3782676108,-0.7177064602,Emiliana Torrini,Baby Blue (Rae & Christian Remix),-,
 -0.9146741131,-0.2271425724,Emiliana Torrini,Dead Things,"Sometimes
 Dead things
 Sad things have to happen
@@ -11453,6 +11987,7 @@ Then afterwards, backstage, to let me know that you enjoyed the show.",
 But who knows
 Bulletproof, you won't have any trouble now
 Pretty baby",
+-1.040199472,-0.0658161932,Tarnation,Your Thoughts And Mine,-,
 0.8699690322,-1.3287712762,Four Tops,I Got A Feeling,"Oh, I'm crazy 'bout your love buttercup
 Your kind of love, can't get enough
 Oh I can't stand it, stand it
@@ -11465,6 +12000,7 @@ And caress your waiting fingertips",
 And if I try to be more than I am
 Showing me why
 Learned it from you",
+-1.700572012,1.8424444068,Toby Keith,Courtesy Of The Red_ White And Blue (The Angry American),-,
 0.3733252211,-0.9231506656,Toby Keith,American Soldier,"When liberty's in jeopardy
 I'm out here on the front lines
 I will always do what's right
@@ -11613,6 +12149,7 @@ I love you baby,",
 Up, down, turn around; please don't let me hit the ground
 And I've never met anyone quite like you before
 Oh it's the last time; Oh it's the last time",
+0.3733252211,-0.9231506656,Dominique Dalcan,The Look Of Love,-,
 -1.8315549951,-0.8816667395,Inspiral Carpets,This Is How It Feels,"So this is how it feels to be lonely
 This is how it feels to be small
 This is how it feels when your word means nothing at all
@@ -11644,6 +12181,7 @@ I fly so high
 
 Old school taking it back again)
 I love to move in here (old school taking it back again",
+0.9572910209,0.3905069938,Moby,Love Of Strings,-,
 0.3733252211,-0.9231506656,Charlotte Gainsbourg,In The End,"
 And nails digging in
 And some hands will beg
@@ -11744,6 +12282,7 @@ We used to wait for our heavy storm",
 If I had a voice I would sing
 This will never end 'cause I want more
 After the night when I wake up",
+0.3733252211,-0.9231506656,Booka Shade,Regenerate,-,
 -0.5367336305,0.0862915358,Fever Ray,Keep The Streets Empty For Me,"Whispering 
 Following the stream up North 
 We were hungry before we were born
@@ -11772,6 +12311,8 @@ Tells the world that you're thinking of what to do",
 And I can tell just what you want
 And I can't say it's what you know
 But you've known it the whole time",
+0.8153927892,0.6624571759,Two Door Cinema Club,Eat That Up_ It's Good For You,-,
+1.5412568208,1.7041646532,Two Door Cinema Club,You Are Not Stubborn,-,
 1.1210197499,1.1372176633,The Lovin' Spoonful,Darling Be Home Soon,"My darling be home soon
 It's not just these few hours but I've been waiting since I toddled
 For the great relief of having you to talk to
@@ -11920,6 +12461,7 @@ I'll kiss your tender cheek",
 Told my heart we'd wait it out
 Today I got the answer
 That in love you have no choice",
+0.8153927892,0.6624571759,Dixie Chicks,Tortured_ Tangled Hearts,-,
 -1.6132500232,-0.2271425724,Lou Reed,Sad Song,"
 Somebody else would have broken both of her arms
 ...
@@ -12228,6 +12770,7 @@ He wasn't coming up again",
 Through with the dark boys
 I swear you'll be the last one
 Done with the dark boys",
+0.3733252211,-0.9231506656,Axwell & Sebastian Ingrosso vs Salem Al Fakir,It's True,-,
 -1.1711824551,1.4368237962,Fireside,Shelagh,"And I don't think you love me
 And every time I see you I will have to let you be
 But now I'm really not so sure anymore
@@ -12352,6 +12895,8 @@ She's standing like an angel down the hall",
 When you come back we'll have a party
 We'll hang up the Christmas lights
 Of you falling asleep at the wheel",
+-1.9352498568,-0.6558098086,Magnolia Electric Co.,Dark Don't Hide It,-,
+-1.4877246644,-0.3608130009,Magnolia Electric Co.,Leave the City,-,
 0.5261387014,-1.6283774091,Air,Heaven's Light,"Put me on the top of the world
 You're so fine
 
@@ -12436,10 +12981,18 @@ No, I got instincts of my own",
 My baby
 Through my world
 Rock it through my world",
+0.0040259769,-1.1075236705,Poe,Amazed,"I'm amazed,
+I'm amazed, I'm amazed,
+It's a maze
+It's amazing",
 -0.9242249557,-0.3400710379,Poe,If You Were Here,"When you were here
 If you were here
 The best parts of you
 Singing inside me with",
+-0.0896632402,-0.0550611012,Broken Social Scene,Looks just like the sun,"Looks just like the sun
+Looks just like it
+And it looks just like it
+But I'm breathing, thinking one...",
 -0.7809623179,-0.7894802371,Broken Social Scene,Shampoo Suicide,"(I cried for we when all was to come free
 To come a time, some time we spent
 Sucks the jaws and they won't taste so good
@@ -12484,10 +13037,12 @@ If it's all just luck",
 But there's sadness in the air
 Please don't stop and stare
 I think you lost yours quicker",
+0.0322237025,-0.5129207299,UNKLE,Hold My Hand,-,
 -0.3088778161,-0.1026907941,UNKLE,Restless,"Gonna follow the light to the love
 You're on me
 I'm in you
 And you",
+-1.9352498568,-0.6558098086,UNKLE,Price You Pay,-,
 -0.3088778161,-0.1026907941,The Besnard Lakes,Albatross,"Took us to a new high
 Those days are now long gone
 Speeding along in a clean machine
@@ -12692,6 +13247,7 @@ Startin' soft and slow like a small earthquake",
 I am...I cried
 I am...said I
 To no one there",
+0.0076643931,0.7915182793,Neil Diamond,Girl_ You'll Be A Woman Soon,-,
 -1.0565723449,0.7362063778,Neil Diamond,Captain of a Shipwreck,"If you're a captain of a shipwreck
 I'll be first mate to your shame
 I'll be there to work the claim
@@ -12716,6 +13272,7 @@ I haven't stopped believin' yet",
 I could'a been - I am
 You could'a been - You are
 ",
+-1.6496341852,0.2752738658,Drowning Pool,Love & War,-,
 -1.5409365013,1.5866268626,Drowning Pool,Step Up,"If you wanna step up (Step up)
 
 You're gonna get knocked down (Knocked down)
@@ -12740,6 +13297,7 @@ I've had some time to think about you",
 Who served the world proud
 While the angels were singing his praises in a blaze of glory
 You're covered in roses",
+-1.5226534599,-0.1155969045,Patty Griffin,Nobody's Cryin',-,
 -0.0414542255,-0.2686264985,Jem,They,"I'm sorry
 So sorry
 And where are they
@@ -12784,6 +13342,10 @@ Waving the shiny new knife",
 After that her heart never ached again
 Some people want to know what it feels like to fly
 Some people don't care if they live or they die",
+-1.1111485879,-0.9538794998,Patty Griffin,Burgundy Shoes,"Sun
+Sun, sun, sun, sun
+Sun, sun
+Burgundy shoes",
 1.344782346,0.2752738658,Patty Griffin,Heavenly Day,"Heavenly day, heavenly day, heavenly day
 For a while anyway
 The smile on your face
@@ -12792,6 +13354,7 @@ Only I'm glad to be here with you",
 I don't need none of your bad news today
 You can't have my fear, I've got nothing to lose
 Why don't you burn it all down, burn your own house down",
+-0.672719436,-0.2809180321,Patty Griffin,Up To The Mountain (MLK Song),-,
 -1.3922162392,0.6348012252,Patty Griffin,Someone Else's Tomorrow,"And all the memories fade
 Tell them they've had their day
 It's someone else's tomorrow
@@ -12804,6 +13367,7 @@ We go straight for the thunder",
 I'm a midnight toker
 I'm a lover, and I'm a sinner
 I'm a joker, I'm a smoker",
+1.5412568208,1.7041646532,Brick,Ain't Gonna Hurt Nobody,-,
 -1.2816993472,1.2178808529,Korn,Clown,"Clown, you ain't shit, turn around, get your face split
 Hit me, clown, because I'm not from your town now, hit me, clown
 I'm just a fucking mental
@@ -12832,6 +13396,7 @@ That wants us to love just instead",
 To save my heart
 The way it feels
 You've gone too far",
+-0.0796575956,1.77330453,Pete Yorn,Life On A Chain,-,
 -0.3088778161,-0.1026907941,Pete Yorn,Black,"What you're doing to me,
 You're sitting all by yourself,
 You can never try to argue anyone,
@@ -12912,6 +13477,7 @@ Up-town high heels",
 The world town (a ni ni ni ni)
 The world town
 Guns out!",
+1.0719011312,0.8468301807,Shaggy / Rayvon / Brian & Tony Gold,Angel,-,
 1.5412568208,1.7041646532,Frightened Rabbit,Nothing Like You,"And this girl, she was nothing like you
 And all my questions still ask for answers
 She was not the cure for cancer
@@ -12968,10 +13534,15 @@ It's in our heart, it's in our head",
 Then you have to say so
 Out of the night we come
 If it starts to hurt you",
+-1.1711824551,1.4368237962,The Afghan Whigs,Fountain And Fairfax,"Let it dry up
+Let me tie off
+Let me drink
+Let it stink",
 -1.6923855755,0.3351950923,The Afghan Whigs,My Curse,"Your kisses scourge me
 Hyssop in your perfume
 I flinch so when you do
 And slave I only use as a word to describe",
+1.5412568208,1.7041646532,Cypress Hill featuring Tim Armstrong,What's Your Number?,-,
 0.4388167127,0.766935212,Two Door Cinema Club,Undercover Martyn,"Out on the main streets, completing your mission
 Sick in the carseat, 'cause you're not up to going
 You hid there last time, you know we're gonna find you
@@ -12984,6 +13555,7 @@ They're not there, when you love me, hold me and say, okay",
 We both deserve each other's love
 You must have stepped right out of my dreams
 You know to me you're so fine",
+1.5467144451,2.119003914,Musiq / Kindred The Family Soul / Cee-Lo,Momentinlife,-,
 -1.4004026756,1.5382289488,Mos Def,The Rape Over,"We poke out our asses for a chance to cash in
 Cocaine, is runnin' this rap shit
 We sold confusion, we run rap music
@@ -13108,6 +13680,7 @@ For love that cannot live yet never dies",
 What stands before us is not a machine
 But I saw it die.
 Its body is covered in hundreds of wires",
+0.3733252211,-0.9231506656,Clifford Brown / Max Roach,Blue Moon,-,
 -0.5092505939,0.3147823668,Pixie Lott,Cry Me Out,"You'll have to cry me out
 You can keep talkin'
 It's time to get over yourself
@@ -13156,6 +13729,7 @@ The love that I lost to the dark",
 I can't believe how much I see
 When you're lookin' back at me
 Such a long time ago I had given up on finding this emotion ever again",
+1.0719011312,0.8468301807,James Last,Always On My Mind,-,
 -1.0565723449,0.7362063778,Insomnium,Shades Of Deep Green,"There winds my path, narrow and fading 
 So in forms of evening mist
 Neither the glittering dew on moors, nor the the whispering wind in dales
@@ -13176,6 +13750,7 @@ All that I felt somehow dies",
 To stay in that
 To a porting game
 Through birds and variats",
+-0.3307083133,-0.0965450273,M83,Facing That,-,
 1.0719011312,0.8468301807,Donna Summer,This Time I Know It's For Real,"I'm going crazy just to let you know
 This time I know it's for real
 When I get my hands on you, I won't let go
@@ -13224,6 +13799,7 @@ But you're so precious to me",
 And separates the widow from the bride
 That trickles down through the mountain
 The dark of night was swiftly fading",
+0.5487488592,-0.70848781,Alison Krauss / Union Station,When You Say Nothing At All,-,
 -1.0565723449,0.7362063778,Unbelievable Truth,Agony,"Blood on my fingers,
 Jesus was that really me?
 Am...
@@ -13236,6 +13812,7 @@ Here we are, mighty, glorious",
 Now I'm stranded on the mountain's edge
 Of my fathers, mothers, sisters, brothers
 Or Houdini-like disguises",
+0.2669015473,-0.4184295649,Chris Botti,When I Fall In Love,-,
 1.0719011312,0.8468301807,Flyleaf,Tiny Heart,"
 Your lips touch every hand but mine
 Always waiting
@@ -13256,6 +13833,7 @@ I need somebody to carry me home to San Francisco",
 All I can do is wait for you
 Then the ground that we're on might be commom
 And I wait long enough",
+-1.0565723449,0.7362063778,Carole King / James Taylor,Up On The Roof,-,
 -1.5313856588,1.8009604807,Korn,Chi,"Sick of the same old thing
 
 Pain.
@@ -13276,6 +13854,8 @@ On that marbled bowling ball",
 Somebody loves you, girl
 And every day I watch you
 I got to have you and I've gotta say",
+1.2970281334,1.4806123848,Blackbyrds,Walking In Rhythm,-,
+-0.8546402459,0.7177690773,UNKLE,Lawless,-,
 1.0719011312,0.8468301807,The Zombies,Together,"And I've come to need you 
 As much as seasons have to change in time
 Like flowers need the rain
@@ -13292,6 +13872,7 @@ I wish that I'd sailed the darkened seas",
 Jump
 Ah, can't you see what I mean?
 Ah, might as well jump (jump)",
+-1.700572012,1.8424444068,Bad Company,Gone_ Gone_ Gone,-,
 -0.3088778161,-0.1026907941,Wall Of Voodoo,Red Light,"And a blue light by the car
 Blue light
 But he won't get far
@@ -13304,6 +13885,10 @@ I'm already in circles and circles and circles again",
 Let them break their hold over me
 Let them bleed, let them wash away
 Precious",
+0.3733252211,-0.9231506656,Air,Sing Sang Sung,"Do de dum, don't be so down
+Please please please don't be so long
+Ring rang rung, give me a ring
+Sing sang sung, sing me a song",
 0.3733252211,-0.9231506656,Hot Chip,Take Care,"Take care
 Take care into the home
 And I'm only on my way
@@ -13356,6 +13941,11 @@ When the time will be gone",
 Time's getting on, time's over now
 
 Don't try to be on time",
+-0.6827250805,0.3167577918,Antimatter,Saviour,-,
+-1.0565723449,0.7362063778,Antimatter,Psalms,-,
+-1.1002333393,-0.0074314083,Antimatter,Angelic,-,
+-1.2457699872,0.0017872419,Antimatter,The Last Laugh,-,
+-1.3485552448,0.0355889595,Antimatter,Over Your Shoulder,-,
 -0.6827250805,0.3167577918,Antimatter,Expire,"(Patterson)
 A a dark shade of fantasy as the serpent slips right into me
 And I think our god has been and gone, but I'm still waiting.
@@ -13376,6 +13966,7 @@ Ritual exclusion is just a part of everything",
 Am I the only one crushed by the weight of the world?
 Wide awake in this hole
 The world seems to spin as I'm left on this square",
+-1.2353095406,-0.1718306709,Antimatter,Mr White,-,
 -0.7323894616,-0.4843429141,Antimatter,A Portrait Of The Young Man As An Artist,"What's real about this story?
 When will this curtain fall?
 When all around are lost
@@ -13416,6 +14007,7 @@ I was blindsided",
 Don't let it form us
 So ready for us
 Tear on",
+-0.5844878431,-1.3840831777,Bon Iver,re:stacks,-,
 -1.0565723449,0.7362063778,Papa Roach,Do Or Die,"To live your life 
 The time is now 
 It's never too late 
@@ -13440,6 +14032,7 @@ Tiny lawnmower to mow me down.",
 Hey, Norman, was it thrown with a broken arm?
 One, two, into the amplifier, and you got to get to,
 One, two, into the amplifier,",
+0.1604778735,-0.7141945935,M83,You Appearing,-,
 0.0331333065,-1.0337744685,M83,Skin Of The Night,"(All of her soft parts call to me)
 (She could be mine...)
 Oh Queen of the Night!
@@ -13488,6 +14081,7 @@ That I'll soon forget",
 Where the stifling heat overpowers the air conditioning
 Though I am the reason
 This is when I start to lose",
+1.0719011312,0.8468301807,LL Cool J / Elan of the DEY,I Fall In Love,-,
 -1.9352498568,-0.6558098086,The Who,Love Reign O'er Me,"Love
 Reign o'er me
 Rain on me
@@ -13496,6 +14090,10 @@ Only love",
 Stranger it feels yeah 
 Now that your rose is in bloom 
 That when it snows ",
+0.5697996958,-1.5177536062,Stereolab,Miss Modular,"Sur la boîte cartonnée un trompe-l'oeil
+
+Donne l'idée do jeu et do mystère
+Spectacle qui rime, qui suscite dans les yeux un éclair",
 -0.8339012735,-0.4659056136,Garbage,Happy Home,"I never once in my wayward life was heading to run out
 In my happy home I barely breathe
 And there's a sky that's changing and a bird that sings
@@ -13508,6 +14106,10 @@ Can't do right tonight",
 
 Nothing you learn will stick
 You make me feel so worthless",
+-1.0019961019,-0.0105042917,Garbage,My Lover's Box,"
+Send me an angel to love
+(Do-do-do-do do do)
+I need to feel a little piece of Heaven",
 -1.7169448849,2.2296277169,Arch Enemy,Carry The Cross,"Hear my confession
 And suffer the loss
 Forever damnation
@@ -13676,6 +14278,7 @@ Come on back to me",
 You have no forgiveness
 Yeah, well, how am I supposed to feel?
 With your veins all full of beer",
+-1.040199472,-0.0658161932,Elliott Smith,Big Decision,-,
 -0.5959488542,-0.6484348884,Elliott Smith,Christian Brothers,"Don't be cross, it's sick I want
 I've seen the boss blink on and off
 Nightmares become me, it's so fucking clear
@@ -13696,6 +14299,7 @@ But there's a price that you'll pay",
 Her hand on your arm
 You got nothing better to do
 Told you her name, you can't pronounce it",
+-1.0156401627,-0.3331570502,Elliott Smith,St Ides Heaven,-,
 -1.3840298027,-0.5866699318,Elliott Smith,Good To Go,"If I wasn't such a zero
 You can do it if you want to
 It's all I ever see 'round here

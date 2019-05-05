@@ -35,15 +35,15 @@ class Trainer():
         self.val_verbose = val_verbose
 
         if optim == 'adam':
-            self.optimizer = Adam(self.model.parameters(), lr = self.lr, weight_decay=0.0001)
+            self.optimizer = Adam(self.model.parameters(), lr = self.lr, weight_decay=0)
         elif optim == 'SGD':
-            self.optimizer = SGD(self.model.parameters(), lr = self.lr, weight_decay=0.0001)
+            self.optimizer = SGD(self.model.parameters(), lr = self.lr, weight_decay=0)
 
         if loss == 'mse':
             self.loss_fn = nn.MSELoss()
         elif loss == 'cross-entropy':
-            weights = torch.tensor([1/3215, 1/194, 1/2956, 1/1851])
-            self.loss_fn = nn.CrossEntropyLoss(weight=weights.cuda())
+            weights = torch.tensor([0])
+            self.loss_fn = nn.CrossEntropyLoss()
 
         logging.info('Trainer created!')
 
@@ -125,12 +125,18 @@ class Trainer():
         for e in tqdm(range(self.epochs), ascii=True, desc='Epochs'):
             t_loss = self.train_epoch(e)
             v_loss = self.val_epoch(e)
-            
+
             #keep the losses from each epoch
             train_loss.append(t_loss)
             val_loss.append(v_loss)
 
         plot_loss(train_loss, val_loss)
+
+        self.model.input_example('i love you')
+        self.model.input_example('i hate you')
+        self.model.input_example('i am mad')
+        self.model.input_example('i am scared')
+        self.model.input_example('i am surprised to hear that')
 
         return self.model
 
