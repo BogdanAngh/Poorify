@@ -51,10 +51,10 @@ def main():
     model = trainer.train()
 
     #test the model
-    model.predict(test_generator)
+    conf_matrix = model.predict(test_generator)
 
     if CONFIG['save_model'] == True:
-        save_model(model)
+        save_model(model, conf_matrix)
 
 if __name__ == "__main__":
     try:

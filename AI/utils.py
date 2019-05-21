@@ -141,7 +141,6 @@ def load_train_val(train_path, val_path, CONFIG):
     print(torch.sum(train_labels == 2))
     print(torch.sum(train_labels == 3))
 
-
     #VALIDATION_DATA : build the samples & labels array
     val_samples = [preprocess(e) for e in val_data['lyrics'].values]
     valence = torch.tensor(val_data['valence'].values, dtype=torch.float32)
@@ -241,8 +240,8 @@ def load_logging():
 
     logging.info('Logger loaded')
 
-def save_model(model):
-    return 0
+def save_model(model, conf_matrix):
+
     log_path = 'log/'
 
     try:
@@ -268,6 +267,10 @@ def save_model(model):
     #save the model in the created directory
     logging.info('Saving the model at {}'.format(log_path + '/my_model.pth'))
     torch.save(model.state_dict(), log_path + '/my_model.pth')
+
+    #save the confusion matrix
+    logging.info('Saving the confusion matrix at {}'.format(log_path + '/cm.png'))
+    conf_matrix.savefig(log_path + '/cm.png')
 
     #copy the used config
     logging.info('Saving the model s config at {}'.format(log_path + '/config.json'))

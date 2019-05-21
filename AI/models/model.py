@@ -84,4 +84,4 @@ class MyModel(nn.Module):
             conf_matrix += cm
         
         label_names = ['Happy', 'Angry', 'Sad', 'Calm']
-        plot_confusion_matrix(conf_matrix.numpy(), label_names)
+        return plot_confusion_matrix(conf_matrix.numpy(), label_names)

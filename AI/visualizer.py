@@ -48,4 +48,6 @@ def plot_confusion_matrix(cm, labels, figsize=(10,10)):
     fig, ax = plt.subplots(figsize=figsize)
     sns.heatmap(cm, annot=annot, fmt='', ax=ax)
     plt.show()
+    
+    return fig
     #plt.savefig(filename)

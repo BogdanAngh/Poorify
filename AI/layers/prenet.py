@@ -4,9 +4,6 @@ import torch.nn as nn
 class Prenet(nn.Module):
     def __init__(self):
         super().__init__()
-        #self.in_size  = in_size
-        #self.out_size = out_size
-        #self.dropout_rate = dropout_rate
 
         self.dropout = nn.Dropout(p=0.5)
         self.linear  = nn.Linear(in_features = 256, out_features = 128)
