@@ -13,6 +13,9 @@ const passport      = require('passport');
 const cors          = require('cors') 
 const bodyParser    = require('body-parser');
 const app = express();
+
+// app.use(cors());
+
 app.use(
     cookieSession({
         name: 'session',
@@ -21,11 +24,7 @@ app.use(
     })  
 );
 
-// app.use(function(req, res, next) {  
-//     res.header('Access-Control-Allow-Origin', req.headers.origin);
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//     next();
-// });
+
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -54,7 +53,9 @@ app.set('json spaces', 2);
 require('./services/passport');
 
 
-mongoose.connect(keys.mongoURI);
+mongoose.connect(keys.mongoURI)
+    .then(() => {console.log("Connected to DB")})
+    .catch((err) => console.log("ERR + ", err))
  
 
 
