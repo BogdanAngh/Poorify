@@ -13,4 +13,4 @@ class PaddedConvolution(nn.Module):
 
     def forward(self, x):
         x = self.padder(x)
-        return self.activation(self.conv(x))
+        return self.activation(self.bn(self.conv(x)))

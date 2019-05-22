@@ -43,7 +43,7 @@ class Trainer():
             self.loss_fn = nn.MSELoss()
         elif loss == 'cross-entropy':
             weights = torch.tensor([1/3215, 1/194, 1/2956, 1/1851])
-            self.loss_fn = nn.CrossEntropyLoss(weight=weights.cuda())
+            self.loss_fn = nn.CrossEntropyLoss(weight=weights.to(constants.DEVICE))
 
         logging.info('Trainer created!')
 
@@ -105,10 +105,6 @@ class Trainer():
 
                 predicted = torch.argmax(F.softmax(result, dim=1), dim=1)
                 acc = torch.sum(predicted == label)
-
-                del sample
-                del label
-                del result
 
                 if idx % self.val_verbose == 0:
                     print('Epoch {} - batch {} / {} - validation loss : {} - accuracy : {}'.format(epoch, idx, self.val_generator_size, \

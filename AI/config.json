@@ -8,7 +8,7 @@
     "batch_size" : 64,
     "max_grad_norm" : 5.0,
     "enable_log" : false, 
-    "max_len" : 128,
+    "max_len" : 64,
     "train_verbose" : 1,
     "validation_verbose" : 10,
     "shuffle" : true,

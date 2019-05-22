@@ -266,7 +266,7 @@ def save_model(model, conf_matrix):
 
     #save the model in the created directory
     logging.info('Saving the model at {}'.format(log_path + '/my_model.pth'))
-    torch.save(model.state_dict(), log_path + '/my_model.pth')
+    torch.save(model, log_path + '/my_model.pth')
 
     #save the confusion matrix
     logging.info('Saving the confusion matrix at {}'.format(log_path + '/cm.png'))

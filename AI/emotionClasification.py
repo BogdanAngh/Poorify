@@ -8,6 +8,8 @@ class Emotion(Enum):
   SAD   = 2,
   CALM  = 3
 
+emotion_map = {'0' : 'HAPPY', '1' : 'ANGRY', '2' : 'SAD', '3' : 'CALM'}
+
 def findQuadrant(valence, arousal):
   if(valence == 0 and arousal == 0):
     return -1

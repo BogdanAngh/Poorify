@@ -10,10 +10,12 @@ from layers.postnet import Postnet
 from layers.recurrence import Recurrence
 from utils import confusion_matrix
 from visualizer import plot_confusion_matrix
+import constants
+from emotionClasification import Emotion, emotion_map
 
 class MyModel(nn.Module):
     def __init__(self, vocab_size, embedding_size, output_size, max_len, 
-                 batch_size=64, out_channels=100, hidden_size=256):
+                 batch_size=64, out_channels=100, hidden_size=256, vocab=None):
         super().__init__()
 
         # EMBEDDING PARAMETERS
@@ -31,6 +33,8 @@ class MyModel(nn.Module):
         # POSTNET PARAMETERS
         self.output_size = output_size
 
+        if vocab is not None:
+            self.vocab = vocab
 
         self.embedding = nn.Embedding(num_embeddings = self.vocab_size,
                                       embedding_dim  = self.embedding_size)
@@ -79,9 +83,14 @@ class MyModel(nn.Module):
         conf_matrix = torch.zeros(self.output_size, self.output_size)
 
         for sample, label in test_generator:
-            predicted = torch.argmax(F.softmax(self.forward(sample.cuda(), is_training=False), dim=1), dim=1)
+            predicted = torch.argmax(F.softmax(self.forward(sample.to(constants.DEVICE)), dim=1), dim=1)
             cm = confusion_matrix(predicted, label, self.output_size)
             conf_matrix += cm
         
         label_names = ['Happy', 'Angry', 'Sad', 'Calm']
         return plot_confusion_matrix(conf_matrix.numpy(), label_names)
+
+    def single_prediction(self, x):
+        result = torch.argmax(F.softmax(self.forward(x.to('cuda:0')), dim=1), dim=1).item()
+        return emotion_map[str(result)]
+        

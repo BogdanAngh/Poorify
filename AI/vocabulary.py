@@ -1,4 +1,4 @@
-class Vocabulary:
+class Vocabulary():
     """
         Class which holds a vocabulary defined with the words found in the input.
         The indexing starts with 1(0 is reserver for padding)
